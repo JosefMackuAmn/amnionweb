@@ -47,9 +47,12 @@
         width: 100%;
         height: 100%;
         list-style: none;
+        padding: 12rem;
     }
     &__desc-item {
-
+        font-family: 'Eczar', serif;
+        color: $color-gold;
+        font-size: $font-big;
     }
 
     &__bottom {

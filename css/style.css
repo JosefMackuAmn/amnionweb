@@ -1111,7 +1111,12 @@ a, a:visited, a:link {
   .pyramid__list {
     width: 100%;
     height: 100%;
-    list-style: none; }
+    list-style: none;
+    padding: 12rem; }
+  .pyramid__desc-item {
+    font-family: 'Eczar', serif;
+    color: #968D5E;
+    font-size: 2.5rem; }
   .pyramid__bottom {
     width: 100%;
     padding: 3rem;
