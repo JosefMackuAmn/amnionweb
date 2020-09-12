@@ -12,10 +12,13 @@
 
     &__slider {
         width: 100%;
+        height: 30rem;
 
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        position: relative;
 
         &__btn {
             cursor: pointer;
@@ -29,18 +32,31 @@
         }
         &__window {
             width: 80%;
+            height: 30rem;
             background-color: $color-white;
             border-radius: 5px;
             box-shadow: 0 .2rem .4rem .1rem $color-black-overlay-light-2;
             padding: 6rem;
             padding-top: 7.5rem;
+            transform: translate(-50%, -50%);
 
-            position: relative;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            display: none;
+
+            animation: appTypesSlideIn .2s;
+
+            &.active {
+                display: block;
+            }
         }
         &__title {
             background-color: $color-blue-dark-2;
-            padding: 1rem 3rem 1rem 3rem;
+            padding: 1rem 5rem 1rem 3rem;
             transform: translateY(-50%);
+            clip-path: polygon(0 0, 100% 0, calc(100% - 2rem) 2rem, calc(100% - 2rem) 100%, 0 100%);
 
             color: $color-white;
             font-size: $font-big;

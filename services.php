@@ -12,10 +12,62 @@
 
             <!-- TYPES OF APPLICATIONS -->
             <section class="app-types">
-                <container class="app-types__slider">
+                <container class="app-types__slider" id="app-types__slider">
                     <div class="app-types__slider__btn app-types__slider__btn--prev"><</div>
+                    <div class="app-types__slider__window active">
+                        <div class="app-types__slider__title">Produktové prezentace</div>
+                        <div class="app-types__slider__content">
+                            <div class="app-types__slider__icon">Icon here</div>
+                            <div class="app-types__slider__text">
+                                Máte produkt či službu a chcete jej prezentovat cílové skupině?<br><br>
+                                Všechno spolu prokonzultujeme a promítneme jeho osobnost do podoby originálních webových stránek!
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="app-types__slider__window">
+                        <div class="app-types__slider__title">Webové aplikace</div>
+                        <div class="app-types__slider__content">
+                            <div class="app-types__slider__icon">Icon here</div>
+                            <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet.</div>                        
+                        </div>
+                    </div>
+                    <div class="app-types__slider__window">
+                        <div class="app-types__slider__title">E-shopy</div>
+                        <div class="app-types__slider__content">
+                            <div class="app-types__slider__icon">Icon here</div>
+                            <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet.</div>                        
+                        </div>
+                    </div>
+                    <div class="app-types__slider__window">
+                        <div class="app-types__slider__title">SPA - Single page applications</div>
+                        <div class="app-types__slider__content">
+                            <div class="app-types__slider__icon">Icon here</div>
+                            <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet.</div>                        
+                        </div>
+                    </div>
                     <div class="app-types__slider__window">
                         <div class="app-types__slider__title">PWA - Progressive web apps</div>
+                        <div class="app-types__slider__content">
+                            <div class="app-types__slider__icon">Icon here</div>
+                            <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet.</div>                        
+                        </div>
+                    </div>
+                    <div class="app-types__slider__window">
+                        <div class="app-types__slider__title">Mobilní aplikace</div>
+                        <div class="app-types__slider__content">
+                            <div class="app-types__slider__icon">Icon here</div>
+                            <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet.</div>                        
+                        </div>
+                    </div>
+                    <div class="app-types__slider__window">
+                        <div class="app-types__slider__title">API - Application programming interfaces</div>
+                        <div class="app-types__slider__content">
+                            <div class="app-types__slider__icon">Icon here</div>
+                            <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet.</div>                        
+                        </div>
+                    </div>
+                    <div class="app-types__slider__window">
+                        <div class="app-types__slider__title">CMS - Content management systems</div>
                         <div class="app-types__slider__content">
                             <div class="app-types__slider__icon">Icon here</div>
                             <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet.</div>                        
@@ -94,13 +146,14 @@
                     </div>
                 </container>
             </section>
+            <script src="js/services.js" defer></script>
 
             <!-- PYRAMID -->
             <section class="pyramid">
                 <container class="pyramid__top">
                     <div class="pyramid__image">
                         <h2 class="heading-2">NAŠE STRÁNKY JSOU JAKO...</h2>
-                        <img src="images/figma-640.jpg" alt="Pyramidy">
+                        <img src="images/pyramids-1920.jpg" alt="Pyramidy">
                     </div>
                     <div class="pyramid__content">
                         <h2 class="heading-2">PYRAMIDY</h2>
