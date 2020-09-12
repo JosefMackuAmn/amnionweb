@@ -2483,3 +2483,6 @@ a, a:visited, a:link {
     background-image: linear-gradient(to right bottom, rgba(1, 13, 52, 0.6), rgba(6, 19, 62, 0.33)), url("../images/threeInside-1920.jpg"); }
   .services__header__background.animBackgroundBack {
     animation: headerBackgroundBack30 1.5s forwards; }
+.jirka {
+  line-height: 5rem;
+}
