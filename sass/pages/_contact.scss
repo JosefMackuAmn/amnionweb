@@ -1,0 +1,124 @@
+.contact {
+    &__header {
+        &__background {
+            background-image: url('../images/contact-1920.jpg');
+            background-position-y: 65%;
+
+            &.animBackground {
+                background-image: linear-gradient(to right bottom, $color-blue-overlay-dark-2, $color-blue-overlay-dark), url('../images/contact-1920.jpg');
+            }
+            &.animBackgroundBack {
+                animation: headerBackgroundBack65 1.5s forwards;
+            }
+
+            @media only screen and (max-width: 620px) {
+                background-position: 61%;
+                background-size: 150%;
+            }
+        }
+    }
+
+    &__form {
+        @include paddCube;
+        width: 100%;
+        background-color: $color-blue-light;
+        clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%);
+        margin-top: -12rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        @media only screen and (max-width: 620px) {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            margin-top: 0;
+        }
+   
+        & button {
+            height: 5rem;
+            width: 25rem;
+            margin-bottom: 5rem;            
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 900px) {
+            width: 100%;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+    &__text {
+        width: 35%;
+        margin-left: 10rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 900px) {
+            height: 37rem;
+            width: 100%;
+            margin-left: 0;
+            margin-top: 12rem;
+
+            text-align: center;
+        }
+    }
+    &__info {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .heading-6 {
+            margin-bottom: 1rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: $color-blue-dark-3;
+            font-size: $font-large;
+            letter-spacing: .5rem;
+        }
+        & .paragraph-small {
+            color: $color-blue-dark-3;
+            text-align: center;
+            font-weight: 400;
+            font-size: $font-big;
+        }
+    }
+    &__separator {
+        width: 3rem;
+        height: .5rem;
+        border-radius: 10rem;
+        background-color: $color-blue-dark-3;
+    }
+}
+.button {
+
+    &__delete {
+        width: 25rem;
+        height: 4.6rem;
+        font-size: $font-big;
+        font-weight: 200;
+        background-color: $color-vine;
+        color: $color-white;
+    }
+    &__send {
+        width: 25rem;
+        font-size: $font-big;
+        font-weight: 200;
+        background-color: $color-vine;
+        color: $color-white;
+        margin-left: 30rem;
+        margin-top: 0;
+    
+    }
+}
+
+

@@ -1,0 +1,37 @@
+.u-blur {
+    filter: blur(1rem);
+}
+
+.u-openMenu {    
+    animation: menuDisplay 2s;
+}
+.u-closeMenu {    
+    animation: menuDisplay .5s;
+    animation-direction: reverse;
+}
+
+.fadeFromLeft,
+.fadeFromRight {
+    opacity: 0;
+}
+
+.u-hoverTranslateUp {
+    transition: ease-out .1s;
+
+    &:hover {
+        transform: translateY(-1rem);
+        box-shadow: 0 .2rem 1rem .1rem rgba($color-black, .05);
+    }
+}
+.u-hoverTranslateLeft {
+    transition: ease-out .1s;
+    
+    &:hover {
+        transform: translateY(-1rem);
+        box-shadow: 0 .2rem 1rem .1rem rgba($color-black, .05);
+    }
+}
+
+.u-invalid-input {
+    background-color: $color-red-light !important;
+}

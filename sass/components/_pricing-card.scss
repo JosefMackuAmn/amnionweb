@@ -1,0 +1,83 @@
+.pricing-card {
+    width: 75%;
+
+    position: relative;
+
+    @media only screen and (max-width: 1650px) {
+        width: 85%;
+    }
+    @media only screen and (max-width: 1380px) {
+        width: 95%;
+    }
+    @media only screen and (max-width: 1250px) {
+        width: 100%;
+    }
+
+    &:nth-child(2) {
+        align-self: flex-end;
+
+        &::before {
+            right: 190%;
+            left: unset;
+        }
+    }
+    &:not(:last-child) {
+        margin-bottom: 10rem;
+    }
+
+    & .heading-3 {
+        color: $color-grey-text;
+        margin-bottom: 3rem;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        width: 200%;
+        height: $font-large;
+        background-color: $color-blue-dark-2;
+
+        position: absolute;
+        top: 5rem;
+        left: 190%;
+        z-index: -2;
+    }
+
+    &.animateLeft::before {
+        animation: pricingCardBeforeFromLeft 1s forwards cubic-bezier(.31,.84,.43,1.06);
+    }
+    &.animateRight::before {
+        animation: pricingCardBeforeFromRight 1s forwards cubic-bezier(.31,.84,.43,1.06);
+    }
+    
+    &__content {
+        width: 100%;
+        background-color: $color-white;
+        border: 1px solid $color-blue-overlay-dark;
+        padding: 5rem 8rem;
+        opacity: 0;
+        transform: translateX(-300rem);
+
+        @media only screen and (max-width: 460px) {
+            padding: 3rem 5rem;
+        }
+    }
+
+    &__shadow {
+        width: 85%;
+        height: 100%;
+        background-color: $color-black-overlay-light-2;
+        opacity: 0;
+        transform: translateX(-300rem);
+
+        position: absolute;
+        left: -.75rem;
+        bottom: -1.5rem;
+        z-index: -1;
+    }
+
+    & a {
+        color: $color-vine;
+        font-weight: 500;
+    }
+}

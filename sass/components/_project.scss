@@ -1,0 +1,247 @@
+.project {
+    width: 100%;
+    min-height: 80rem;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .heading-project {
+        height: 20rem;
+        padding: 0 4rem;
+        padding-top: 8rem;
+
+        font-size: $font-largest;
+        font-weight: 400;
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (max-width: 800px) {
+            margin: 2rem 0;
+            font-size: $font-larger;
+        }
+        @media only screen and (max-width: 500px) {
+            margin: 2rem 0;
+            font-size: 4.5rem;
+        }
+    }
+
+    &__content {
+        width: 100%;
+
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+
+        transform-style: preserve-3d;
+        
+        position: relative;
+
+        @media only screen and (max-width: 900px) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__text {
+            width: 50%;
+            padding: 12rem 20rem 8rem 0;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @media only screen and (max-width: 1650px) {
+                width: 60%;
+            }
+            @media only screen and (max-width: 1450px) {
+                padding: 8rem 16rem 16rem 0;
+            }
+            @media only screen and (max-width: 1000px) {
+                padding: 8rem 16rem 12rem 0;
+            }
+            @media only screen and (max-width: 900px) {
+                padding: 0;
+                margin: 8rem 0 4rem 0;
+            }
+            @media only screen and (max-width: 600px) {
+                width: 80%;
+            }
+        }
+    }
+
+    &__img {
+        width: 50%;
+        max-height: 70rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (max-width: 1650px) {
+            width: 40%;
+        }
+        @media only screen and (max-width: 900px) {
+            max-height: 50rem;
+        }
+        @media only screen and (max-width: 800px) {
+            width: 60%;
+        }
+        @media only screen and (max-width: 600px) {
+            width: 80%;
+        }
+
+        & img {
+            width: 70%;
+            max-width: 70rem;
+
+            object-fit: cover;
+            object-position: top;
+
+            @media only screen and (max-width: 1650px) {
+                max-width: 90rem;
+            }
+            @media only screen and (max-width: 900px) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__about, &__review {
+        line-height: 135%;
+        text-indent: 2rem;
+        font-weight: 300;
+    }
+    &__about {
+        font-size: $font-small;
+
+        @media only screen and (max-width: 1450px) {
+            font-size: $font-smallest;
+        }
+    }
+    &__review {
+        background-image: linear-gradient(to right, $color-project-fantasy-muzeum-brown-light, transparent);
+        padding: 4rem 0 4rem 6rem;
+        margin: 6rem 0;
+
+        font-size: $font-regular;
+
+        position: relative;
+
+        @media only screen and (max-width: 1450px) {
+            margin: 4rem 0;
+            font-size: $font-small;
+        }
+        @media only screen and (max-width: 500px) {
+            width: 125%;
+            padding: 4rem 10%;
+            transform: translateX(-10%);
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            height: 100%;
+            width: .3rem;
+            background-color: $color-project-fantasy-muzeum-gold;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            @media only screen and (max-width: 500px) {
+                display: none;
+            }
+        }
+    }
+    & .cta-text {
+        text-align: left;
+        margin: 0;
+
+        @media only screen and (max-width: 1450px) {
+            font-size: $font-big
+        }
+        @media only screen and (max-width: 500px) {
+            text-align: center;
+        }
+    }
+    &__outer-link {
+        background-image: linear-gradient(to right, $color-project-fantasy-muzeum-brown-light, transparent);
+        padding: 2rem 0 2rem 4rem;
+
+        letter-spacing: .1rem;
+
+        position: relative;
+
+        align-self: flex-end;
+
+        @media only screen and (max-width: 1450px) {
+            padding: 2rem 4rem;
+
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        @media only screen and (max-width: 900px) {
+            width: 100%;
+            background-image: linear-gradient(to right, $color-project-fantasy-muzeum-brown-light, $color-project-fantasy-muzeum-brown);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &--desktop {
+            @media only screen and (max-width: 900px) {
+                display: none;
+            }
+        }
+        &--mobile {
+            @media only screen and (min-width: 901px) {
+                display: none;
+            }
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            height: 100%;
+            width: .3rem;
+            background-color: $color-project-fantasy-muzeum-gold;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            @media only screen and (max-width: 900px) {
+                width: 100%;
+                height: .2rem;
+            }
+        }
+    }
+
+    // Fantasy muzeum & galerie
+    &--fantasy-muzeum-a-galerie {
+        background-color: $color-project-fantasy-muzeum-brown;
+
+        .heading-project {
+            color: $color-project-fantasy-muzeum-beige;
+        }
+
+        & .project {
+            &__about, &__review {
+                color: $color-project-fantasy-muzeum-beige;
+            }
+            &__outer-link {
+                color: $color-project-fantasy-muzeum-beige;
+            }
+        }
+        & .cta-text {
+            color: $color-project-fantasy-muzeum-gold !important;
+        }
+    }
+}

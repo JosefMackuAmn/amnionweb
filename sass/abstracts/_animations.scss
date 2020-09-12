@@ -1,0 +1,289 @@
+@keyframes menu-btnAlert {
+    0% {
+        box-shadow: 0 0 0 0 rgba($color-vine, .3);
+    }
+    100% {
+        box-shadow: 0 0 3rem 2rem rgba($color-vine, 0);
+    }
+}
+
+@keyframes menuDisplay {
+    0% {
+        width: 10rem;
+        height: 10rem;
+    }
+    100% {
+        width: 600rem;
+        height: 600rem;
+    }
+}
+
+@keyframes overlayFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(35rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    } 
+}
+@keyframes overlayFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-35rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    } 
+}
+@keyframes textFromBottom {
+    
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+
+@keyframes showTitle {
+    0% {
+        padding: 0;
+        clip-path: polygon(45% 0%, 55% 0%, 55% 100%, 45% 100%);
+        color: transparent; 
+    }
+    40% {
+        padding: 3rem 8rem;
+        clip-path: polygon(45% 0%, 55% 0%, 55% 100%, 45% 100%);
+    }
+    45% {
+        color: transparent;
+    }
+    65% {
+        color: $color-white;
+    }
+    75% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    100% {
+        padding: 3rem 8rem;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        color: $color-white;
+    }
+}
+@keyframes showTitleSmall {
+    0% {
+        padding: 0;
+        clip-path: polygon(45% 0%, 55% 0%, 55% 100%, 45% 100%);
+        color: transparent; 
+    }
+    40% {
+        padding: 2rem 5rem;
+        clip-path: polygon(45% 0%, 55% 0%, 55% 100%, 45% 100%);
+    }
+    45% {
+        color: transparent;
+    }
+    65% {
+        color: $color-white;
+    }
+    75% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    100% {
+        padding: 2rem 5rem;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        color: $color-white;
+    }
+}
+@keyframes showPreface {
+    0% {
+        padding: 0;
+        clip-path: polygon(45% 0%, 55% 0%, 55% 100%, 45% 100%);
+        color: transparent; 
+    }
+    40% {
+        padding: 8rem 12rem 10rem 12rem;
+        clip-path: polygon(45% 0%, 55% 0%, 55% 100%, 45% 100%);
+    }
+    45% {
+        color: transparent;
+    }
+    65% {
+        color: $color-white;
+    }
+    75% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    100% {
+        padding: 6rem 12rem 8rem 12rem;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        color: $color-white;
+    }
+}
+
+@keyframes headerBackground {
+    0% {
+        //clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+        clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%, 100% 100%);
+        background-size: 200% 200%;
+        background-position: 100% 100%;
+        opacity: 1;
+    }
+    50% {
+        //clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%);
+        clip-path: polygon(0% 100%, 0% 100%, 0% 0%, 100% 0%, 100% 0%);
+        animation-timing-function: linear;
+        
+        background-size: 200% 200%;
+        opacity: .7;
+    }
+    100% {
+        //clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%);
+        clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
+        
+        background-size: 200% 200%;
+        background-position: 50% 50%;
+        opacity: .4;
+    }
+}
+
+/* @keyframes headerBackground {
+    0% {
+        //clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+        clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%, 100% 100%);
+        background-size: 200% 200%;
+        background-position: 0% 0%;
+    }
+    50% {
+        //clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%);
+        clip-path: polygon(0% 100%, 0% 100%, 0% 0%, 100% 0%, 100% 0%);
+        animation-timing-function: linear;
+        
+        background-size: 200% 200%;
+        background-position: 50% 50%;
+    }
+    100% {
+        //clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%);
+        clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
+        
+        background-size: 200% 200%;
+        background-position: 100% 100%;
+    }
+} */
+
+@keyframes headerBackgroundBack65 {
+    0% {
+        opacity: .15;
+    }
+    30% {
+        opacity: .15;
+        background-position-y: 55%;
+    }
+    100% {
+        opacity: 1;
+        background-position-y: 65%;
+    }
+}
+
+@keyframes headerBackgroundBack30 {
+    0% {
+        opacity: .15;
+    }
+    30% {
+        opacity: .15;
+        background-position-y: 20%;
+    }
+    100% {
+        opacity: 1;
+        background-position-y: 30%;
+    }
+}
+
+@keyframes headerBackgroundBack50 {
+    0% {
+        opacity: .15;
+    }
+    30% {
+        opacity: .15;
+        background-position-y: 40%;
+    }
+    100% {
+        opacity: 1;
+        background-position-y: 50%;
+    }
+}
+
+@keyframes fromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pricingCardBeforeFromLeft {
+    from {
+        right: 190%;
+    }
+    to {
+        right: -10rem;
+    }
+}
+@keyframes pricingCardBeforeFromRight {
+    from {
+        left: 190%;
+    }
+    to {
+        left: -10rem;
+    }
+}
+
+@keyframes pricingCardFromRight {
+    from {
+        opacity: .8;
+        transform: translateX(300rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes pricingCardFromLeft {
+    from {
+        opacity: .8;
+        transform: translateX(-300rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromLeft {
+    from {
+        opacity: .5;
+        transform: translateX(-150%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,213 @@
+.footer { 
+    width: 100%;
+    height: 62rem;
+    padding: 7.3rem;
+    background-color: rgba(1, 13, 52, 1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 1500;
+    
+    @media only screen and (max-width: 800px) {
+        height: auto;
+    }
+    @media only screen and (max-width: 500px) {
+        padding: 6rem;
+    }
+
+    &__container {
+        width: 100%;
+        height: 100%;
+        margin: 5rem 0;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        @media only screen and (max-width: 800px) {
+            flex-direction: column;
+            margin: 0;
+        }
+    }
+    &__menu {
+        width: 33%;
+        height: 100%;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        @media only screen and (max-width: 800px) {
+            height: unset;
+        }
+        
+        & .heading-4 {
+           
+            @media only screen and (max-width: 800px) {
+                font-size: 4rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            height: unset;
+            width: 100%;
+            order: 2;
+            margin-bottom: 6rem;
+        }
+        
+    }
+    &__menu--list {
+        width: 100%;
+
+        // Until projects link:
+        line-height: 4.1rem;
+
+        @media only screen and (max-width: 800px) {
+            font-size: $font-large;
+            
+            & li {
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        @media only screen and (max-width: 500px) {            
+            & li {
+                &:not(:last-child) {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+    &__logo {
+        width: 42rem;
+        height: 42rem;
+        text-align: center;
+        background-image: url('../img/AmnionLogo-white.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: .30;
+
+        position: relative;
+
+        @media only screen and (min-width: 801px) {
+            height: 30rem;
+            width: 40%;
+
+            &::before, &::after {
+                content: "";
+                display: block;
+                width: .2rem;
+                height: 100%;
+                background-color: $color-blue-grey-2;
+    
+                position: absolute;
+            }
+            &::after {
+                top: 0;
+                left: 0;
+            }
+            &::before {
+                top: 0;
+                right: 0;
+            }           
+
+        }
+        @media only screen and (max-width: 500px) {
+            width: 26rem;
+            height: 26rem;
+            margin: 3rem 0;
+        }
+    }
+    &__kontakt {
+        color: rgba(54, 203, 191, 0.55);
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+        @media only screen and (max-width: 800px) {
+            height: unset;
+        }
+
+        &__box {
+            @media only screen and (max-width: 800px) {
+                margin-bottom: 5rem;
+            }
+            & .heading-4 {
+                margin-bottom: 6rem;
+
+                @media only screen and (max-width: 800px) {
+                    font-size: 4rem;
+                    margin-bottom: 2rem;
+                }
+            }
+            & .paragraph--small {
+                width: 100%;
+            }
+        }
+        & .paragraph--little  {
+            width: 65%;
+            opacity: .6;
+        }
+    }
+
+    & .heading-1 {
+        color: rgba(54, 203, 191, .55);
+        font-weight: 300;
+        font-size: 5rem;
+        text-align: center;
+
+        @media only screen and (max-width: 800px) and (min-width: 510px) {
+            font-size: 7rem;
+        }
+        @media only screen and (max-width: 510px) and (min-width: 401px) {
+            font-size: $font-larger;
+        }      
+        @media only screen and (max-width: 400px) {
+            font-size: 3.5rem;
+        }
+    }
+    &__copy--mobile {
+        color: rgba(54, 203, 191, 0.75);
+        order: 3;
+        text-align: center;
+        
+        @media only screen and (min-width: 801px) {
+            display: none;
+        }
+    }
+    &__copy--desktop {
+        color: rgba(54, 203, 191, 0.55);
+        
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }
+        
+    }
+    &--ul {
+        @media only screen and (max-width: 800px) {
+            font-size: 3rem;
+            
+            & li {
+                &:not(:last-child) {
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+    }
+}
+
+
+

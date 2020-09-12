@@ -1,0 +1,59 @@
+@mixin paddWide {
+    padding: 21rem 14rem;
+    
+    @media only screen and (max-width: 1500px) {
+        padding: 21rem 7.5rem;
+    }
+    @media only screen and (max-width: 1000px) {
+        padding: 21rem 5rem;
+    }
+    @media only screen and (max-width: 550px) {
+        padding: 21rem 2rem;
+    }
+}
+@mixin paddWidest {
+    padding: 14rem 0;
+}
+@mixin paddWidestTaller {
+    padding: 27rem 0;
+}
+@mixin paddCube {
+    padding: 27rem;
+
+    @media only screen and (max-width: 1500px) {
+        padding: 21rem 15rem;
+    }
+    @media only screen and (max-width: 1000px) {
+        padding: 21rem 5rem;
+    }
+    @media only screen and (max-width: 550px) {
+        padding: 21rem 2rem 10rem 2rem;
+    }
+}
+@mixin paddSmallCube {
+    padding: 14rem;
+
+    @media only screen and (max-width: 1500px) {
+        padding: 14rem 5rem;
+    }
+}
+@mixin paddTall {
+    padding: 14rem 28rem;
+
+    @media only screen and (max-width: 1550px) {
+        padding: 14rem 14rem;
+    }
+}
+@mixin paddTallest {
+    padding: 0 14rem;
+    
+    @media only screen and (max-width: 1900px) {
+        padding: 0 7.5rem;
+    }
+    @media only screen and (max-width: 1740px) {
+        padding: 0 5rem;
+    }
+    @media only screen and (max-width: 610px) {
+        padding: 0 1rem;
+    }
+}

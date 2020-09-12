@@ -1,0 +1,22 @@
+.blog {
+    width: 100%;
+    background-color: $color-blue-light;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__header {
+        background-color: $color-blue-light;
+    }
+
+    &__posts {
+        @include paddCube;
+        padding-top: 4rem;
+        width: 85%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

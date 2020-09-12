@@ -1,0 +1,104 @@
+///// HEADING
+.heading-1 {
+    font-size: $font-largest;
+    font-weight: 500;
+    letter-spacing: .4rem;
+    color: $color-white;
+    font-family: 'Raleway', sans-serif;
+
+    @media only screen and (max-width: 390px) {
+        font-size: 4.5rem;
+    }
+}
+.heading-2 {
+    margin-bottom: 12rem;
+    text-align: center;
+    font-size: $font-larger;
+    color: $color-blue-dark-2;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+
+    &-light {
+        margin-bottom: 6rem;
+        color: $color-cyan-text;
+        font-size: $font-large;
+        font-weight: 300;
+    }
+}
+.heading-3 {
+    font-size: $font-large;
+    color: $color-white;
+    font-weight: 400;
+    
+    &-dark {
+        color: $color-grey-text;
+    }
+}
+.heading-4 {
+    font-size: $font-large;
+    font-weight: 300;
+    color: rgba(54, 203, 191, 0.55);
+    letter-spacing: .5rem;
+
+    & a, a:link, a:visited {
+        text-decoration: none;
+        color: rgba(54, 203, 191, 0.55);
+    }
+}
+.heading-5 {
+    font-size: $font-big;
+    color: $color-grey;
+    font-weight: 400;
+    
+    &-vine {
+        color: $color-vine;
+    }
+}
+.heading-6 {
+    font-size: $font-regular;
+    font-weight: 200;
+    color: $color-grey-text;
+}
+
+///// PARAGRAPHS
+.paragraph-big {
+    font-size: $font-big;
+    font-weight: 300;
+    line-height: 3.5rem;
+    color: $color-white;
+
+    &-dark {
+        color: $color-grey-text;
+    }
+}
+.paragraph-small {
+    line-height: 2.8rem;
+    letter-spacing: 0.12rem;
+    font-size: $font-regular;
+    color: $color-grey-text;
+
+    &-white {
+        color: $color-grey-light1;
+    }
+}
+
+///// OTHERS
+.footer--link, .footer--link:link, .footer--link:visited {
+    font-size: $font-smallest;
+    color: $color-grey-grey-1;
+    text-decoration: none;
+}
+.footer--ul {
+    font-size: $font-big;
+    line-height: 3.6rem;
+    color: rgba(54, 203, 191, 0.55);
+    font-weight: 200;
+    list-style: none;
+
+    & a, a:link, a:visited {
+        text-decoration: none;
+        color: rgba(54, 203, 191, 0.55);
+    }
+}

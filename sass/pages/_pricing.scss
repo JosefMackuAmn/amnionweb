@@ -1,0 +1,54 @@
+.pricing {
+    &__header {
+        &__background {
+            background-image: url('../images/threeOutside-1920.jpg');
+            background-size: cover;
+
+            &.animBackground {
+                background-image: linear-gradient(to right bottom, $color-blue-overlay-dark-2, $color-blue-overlay-dark), url('../images/threeOutside-1920.jpg');
+            }
+            &.animBackgroundBack {
+                animation: headerBackgroundBack50 1.5s forwards;
+            }
+        }
+    }
+    &__main {
+        @include paddCube;
+        width: 100%;
+        background-color: $color-blue-light;
+        clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%);
+        margin-top: -12rem;
+        
+        @media only screen and (max-width: 1500px) {
+            padding: 21rem;
+        }
+        @media only screen and (max-width: 1500px) {
+            padding: 21rem 15rem;
+        }
+        @media only screen and (max-width: 720px) {
+            padding: 21rem 8rem;
+        }
+        @media only screen and (max-width: 620px) {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+            margin-top: 0;
+        }        
+        @media only screen and (max-width: 400px) {
+            padding: 21rem 4rem;
+        }
+    }
+    &__pricing {
+        width: 100%;
+        min-height: 120rem;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 1380px) {
+            min-height: 140rem;
+        }
+        @media only screen and (max-width: 1100px) {
+            min-height: 130rem;
+        }
+    }
+}

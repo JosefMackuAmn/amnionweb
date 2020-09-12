@@ -1,0 +1,81 @@
+//////////////////////////////////
+///// COLORS
+
+// BLUE
+
+$color-blue-light: #E6F0FC;
+$color-blue-light-2: rgba(208, 226, 248, 1);
+$color-blue: rgb(47, 128, 237,);
+
+$color-blue-menu: #5CB2F0;
+
+$color-blue-dark-1: #010D34;
+$color-blue-dark-2: rgb(6, 19, 62);
+$color-blue-dark-3: rgb(0, 22, 65);
+
+$color-blue-overlay-dark: rgba($color-blue-dark-2, .33);
+$color-blue-overlay-dark-2: rgba($color-blue-dark-1, .60);
+$color-blue-overlay-dark-3: rgba($color-blue-dark-2, .97);
+$color-blue-overlay: rgba($color-blue, .9);
+$color-blue-overlay-1: rgba($color-blue, .5);
+$color-blue-overlay-light: rgba($color-blue, .8);
+$color-blue-overlay-light-2: rgba($color-blue-light-2, .3);
+
+$color-grey-grey-1: #7D859B; // Footer links
+$color-blue-grey-2: #4D5671; // Footer paragraph-little
+
+
+// OTHERS
+
+$color-cyan-text: #36CBBF;
+$color-green-lime: rgba(0, 163, 26, 1);
+$color-red: rgba(202, 16, 16, 1);
+$color-red-light: rgb(248, 176, 176);
+
+$color-vine: #86064B;
+$color-vine-light: rgb(156, 13, 90);
+$color-vine-lightest: rgb(241, 60, 157);
+$color-vine-overlay: rgba($color-vine, .4);
+
+$color-gold-light: #A8A38B;
+$color-gold: #968D5E;
+$color-gold-overlay: rgba($color-gold, .19);
+
+
+// SHADES
+
+$color-black: black;
+$color-grey: #9A9A9A;
+$color-grey-light: #F3F3F3;
+$color-white: white;
+$color-grey-light1: rgba(238, 238, 238, 1);
+$color-grey-dark: rgba(54, 54, 54, 1);
+$color-grey-text: rgb(29, 29, 29);
+
+$color-white-overlay: rgba(white, .8);
+$color-white-overlay-light: rgba(white, .5);
+$color-black-overlay: rgba($color-black, .9);
+$color-black-overlay-light: rgba($color-black, .15);
+$color-black-overlay-light-2: rgba($color-black, .05);
+
+// PROJECTS COLORS
+$color-project-fantasy-muzeum-brown: rgba(24, 17, 11, 1);
+$color-project-fantasy-muzeum-brown-light: #332617;
+$color-project-fantasy-muzeum-beige: rgba(237, 221, 221, 1);
+$color-project-fantasy-muzeum-gold: rgba(159, 141, 93, 1);
+
+
+//////////////////////////////////
+///// FONT SIZES
+
+$font-smallest: 1.6rem;
+$font-small: 1.8rem;
+$font-regular: 2rem;
+$font-big: 2.5rem;
+$font-large: 3.3rem;
+
+$font-cta-btn: 2.6rem;
+$font-cta-txt: 3.5rem;
+
+$font-larger: 5rem;
+$font-largest: 5.9rem;
