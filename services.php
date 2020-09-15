@@ -173,7 +173,181 @@
 
             <!-- DEVELOPMENT PROCESS -->
             <section class="dev-process">
+                <div class="dev-process__heading">
+                    Cesta k webu
+                </div>
+                <div class="stepcard">
+                    <div class="stepcard__heading">
+                        První konzultace
+                    </div>
+                    <div class="stepcard__text">
+                    Ujasníme si, co stavíme, jak má výsledný produkt vypadat, fungovat, kdo je cílová skupina a další nezbytné informace. Nakonec vám řekneme náše návrhy a doporučení.
+                    </div>
+                </div>
+                <div class="stepscroll">
+                    <div class="stepscroll__step">
+                        <div class="stepscroll__round">
 
+                        </div>
+                        <div class="stepscroll__hint">
+                            <div class="stepscroll__textbox">
+                                Programování
+                            </div>
+                        </div>
+                        <div class="stepscroll__border">
+
+                        </div>
+                    </div>
+                    <div class="stepscroll__step">
+                        <div class="stepscroll__round">
+
+                        </div>
+                        <div class="stepscroll__hint">
+                            <div class="stepscroll__textbox">
+                                Programování
+                            </div>
+                        </div>
+                        <div class="stepscroll__border">
+
+                        </div>
+                    </div>
+                    <div class="stepscroll__step">
+                        <div class="stepscroll__round">
+
+                        </div>
+                        <div class="stepscroll__hint">
+                            <div class="stepscroll__textbox">
+                                Programování
+                            </div>
+                        </div>
+                        <div class="stepscroll__border">
+
+                        </div>
+                    </div>
+                    <div class="stepscroll__step">
+                        <div class="stepscroll__round">
+
+                        </div>
+                        <div class="stepscroll__hint">
+                            <div class="stepscroll__textbox">
+                                Programování
+                            </div>
+                        </div>
+                        <div class="stepscroll__border">
+
+                        </div>
+                    </div>
+                    <div class="stepscroll__step">
+                        <div class="stepscroll__round">
+
+                        </div>
+                        <div class="stepscroll__hint">
+                            <div class="stepscroll__textbox">
+                                Programování
+                            </div>
+                        </div>
+                        <div class="stepscroll__border">
+
+                        </div>
+                    </div>
+                    <div class="stepscroll__step">
+                        <div class="stepscroll__round">
+
+                        </div>
+                        <div class="stepscroll__hint">
+                            <div class="stepscroll__textbox">
+                                Programování
+                            </div>
+                        </div>
+                        <div class="stepscroll__border">
+
+                        </div>
+                    </div>
+                    <div class="stepscroll__step">
+                        <div class="stepscroll__round">
+
+                        </div>
+                        <div class="stepscroll__hint">
+                            <div class="stepscroll__textbox">
+                                Programování
+                            </div>
+                        </div>
+                        <div class="stepscroll__border">
+
+                        </div>
+                    </div>
+                    <div class="stepscroll__step">
+                        <div class="stepscroll__round">
+
+                        </div>
+                        <div class="stepscroll__hint">
+                            <div class="stepscroll__textbox">
+                                Programování
+                            </div>
+                        </div>
+                        <div class="stepscroll__border">
+
+                        </div>
+                    </div>
+                    <div class="stepscroll__step">
+                        <div class="stepscroll__round">
+
+                        </div>
+                        <div class="stepscroll__hint">
+                            <div class="stepscroll__textbox">
+                                Programování
+                            </div>
+                        </div>
+                        <div class="stepscroll__border">
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="beztohoaniklik">
+                <div class="beztohoaniklik__heading">
+                    Bez toho ani klik
+                </div>
+                <div class="beztohoaniklik__container">
+                            <div class="beztohoaniklik__box--left">
+
+                            </div>
+                            <div class="beztohoaniklik__box--right">
+                
+                            </div>
+                </div>
+                
+            </section>
+            <section class="zaridimevsechno">
+                <div class="zaridimevsechno__headingbox">
+                    <div class="zaridimevsechno__heading">
+                        Zařídíme všechno
+                    </div>
+                </div>
+                <div class="zaridimevsechno__bar">
+                    <div class="zaridimevsechno__button">
+                        Údržbu
+                    </div>
+                    <div class="zaridimevsechno__button">
+                        Google Analytics
+                    </div>
+                    <div class="zaridimevsechno__button zaridimevsechno__button--selected">
+                        Seo
+                    </div>
+                    <div class="zaridimevsechno__button">
+                        Marketing
+                    </div>
+                    
+                </div>
+                <div class="zaridimevsechno__iteminfo">
+                    <div class="zaridimevsechno__item">
+                        SEO
+                    </div>
+                    <div class="zaridimevsechno__text">
+                    V procesu tvorby webu dbáme na to, aby vaši stránku bylo možné jednoduše najít
+                    </div>
+                </div>
             </section>
 
         </main>

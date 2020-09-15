@@ -1,0 +1,36 @@
+.beztohoaniklik {
+    
+        height: 50rem;
+        background-color: #E6F0FC;
+        padding-top: 20rem;
+        &__heading {
+                
+                        text-align: center;
+                        font-size: 3rem;
+                        color: $color-blue-dark-3;
+                        letter-spacing: 1rem;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                       
+                       
+                       
+                      
+                    
+        }
+        &__container {
+
+        }
+        &__box {
+                width: 40rem;
+                background-color: white;
+                &--left {
+
+                }
+                &--right {
+
+                }
+
+        }
+        
+    
+}
