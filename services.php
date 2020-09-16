@@ -310,11 +310,21 @@
                     Bez toho ani klik
                 </div>
                 <div class="beztohoaniklik__container">
-                            <div class="beztohoaniklik__box--left">
-
+                            <div class="beztohoaniklik__box beztohoaniklik__box--left">
+                                <div class="beztohoaniklik__p">
+                                Nejde jen o vzhled, ale i o uspořádání informací, intuitivitu a celkový zážitek z webu
+                                </div>
+                                <div class="beztohoaniklik__boxname beztohoaniklik__boxname--left">
+                                UX / UI Design
+                                </div>
                             </div>
-                            <div class="beztohoaniklik__box--right">
-                
+                            <div class="beztohoaniklik__box beztohoaniklik__box--right">
+                                <div class="beztohoaniklik__p">
+                                Můžeme se v něm tak lépe a rychleji orientovat a kdokoli rychle pochopí, k čemu je ta zapeklitá funkce
+                                </div>
+                                <div class="beztohoaniklik__boxname beztohoaniklik__boxname--right">
+                                    Kvalitní kód
+                                </div>
                             </div>
                 </div>
                 

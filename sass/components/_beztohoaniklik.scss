@@ -1,8 +1,9 @@
 .beztohoaniklik {
     
-        height: 50rem;
+        
         background-color: #E6F0FC;
         padding-top: 20rem;
+        padding-bottom: 30rem;
         &__heading {
                 
                         text-align: center;
@@ -17,19 +18,85 @@
                       
                     
         }
+        &__p {
+                letter-spacing: .3rem;
+        }
         &__container {
-
+                display: flex;
+                justify-content: center;
+                margin-top: 20rem;
+                
         }
         &__box {
-                width: 40rem;
+                width: 30rem;
                 background-color: white;
+                padding: 8rem 4rem;
                 &--left {
+                        margin-right: 10rem;
+                }
+                
+                position: relative;
 
+        }
+        &__boxname {
+                position: absolute;
+                color: white;
+                background-color: $color-blue-dark-3;
+                top: -5rem;
+                
+                padding: 2rem;
+                text-transform: uppercase;
+                letter-spacing: .5rem;
+                &::before,
+                &::after {
+                        content: "";
+                        position: absolute;
+                        width: 2rem;
+                        height: 2rem;
+                        clip-path: polygon(0 0, 20% 0, 20% 80%, 100% 80%, 100% 100%, 0 100%);
+                }
+               
+             
+
+                &--left {
+                        &::before {
+                        
+                        
+                                bottom: -2rem;
+                                left: -2rem;
+                                
+                                background-color: $color-white;
+                        }
+                        &::after {
+                        
+                        
+                                top: -2rem;
+                                right: -2rem;
+                                transform: rotate(180deg);
+                                background-color: $color-white;
+                        }
+                        
+                left: -5rem;
                 }
                 &--right {
-
+                        right: -5rem;
+                        &::before {
+                        
+                        
+                                top: -2rem;
+                                left: -2rem;
+                                transform: rotate(90deg);
+                                background-color: $color-white;
+                        }
+                        &::after {
+                        
+                        
+                                bottom: -2rem;
+                                right: -2rem;
+                                transform: rotate(270deg);
+                                background-color: $color-white;
+                        }
                 }
-
         }
         
     

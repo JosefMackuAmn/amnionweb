@@ -1385,9 +1385,9 @@ a, a:visited, a:link {
     color: #363636; }
 
 .beztohoaniklik {
-  height: 50rem;
   background-color: #E6F0FC;
-  padding-top: 20rem; }
+  padding-top: 20rem;
+  padding-bottom: 30rem; }
   .beztohoaniklik__heading {
     text-align: center;
     font-size: 3rem;
@@ -1395,9 +1395,56 @@ a, a:visited, a:link {
     letter-spacing: 1rem;
     text-transform: uppercase;
     font-weight: 500; }
+  .beztohoaniklik__p {
+    letter-spacing: .3rem; }
+  .beztohoaniklik__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem; }
   .beztohoaniklik__box {
-    width: 40rem;
-    background-color: white; }
+    width: 30rem;
+    background-color: white;
+    padding: 8rem 4rem;
+    position: relative; }
+    .beztohoaniklik__box--left {
+      margin-right: 10rem; }
+  .beztohoaniklik__boxname {
+    position: absolute;
+    color: white;
+    background-color: #001641;
+    top: -5rem;
+    padding: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem; }
+    .beztohoaniklik__boxname::before, .beztohoaniklik__boxname::after {
+      content: "";
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      clip-path: polygon(0 0, 20% 0, 20% 80%, 100% 80%, 100% 100%, 0 100%); }
+    .beztohoaniklik__boxname--left {
+      left: -5rem; }
+      .beztohoaniklik__boxname--left::before {
+        bottom: -2rem;
+        left: -2rem;
+        background-color: white; }
+      .beztohoaniklik__boxname--left::after {
+        top: -2rem;
+        right: -2rem;
+        transform: rotate(180deg);
+        background-color: white; }
+    .beztohoaniklik__boxname--right {
+      right: -5rem; }
+      .beztohoaniklik__boxname--right::before {
+        top: -2rem;
+        left: -2rem;
+        transform: rotate(90deg);
+        background-color: white; }
+      .beztohoaniklik__boxname--right::after {
+        bottom: -2rem;
+        right: -2rem;
+        transform: rotate(270deg);
+        background-color: white; }
 
 .footer {
   width: 100%;
