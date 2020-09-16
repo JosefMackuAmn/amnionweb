@@ -336,16 +336,16 @@
                     </div>
                 </div>
                 <div class="zaridimevsechno__bar">
-                    <div class="zaridimevsechno__button">
+                    <div class="zaridimevsechno__button" data-text="blA" data-name="Údržba">
                         Údržbu
                     </div>
-                    <div class="zaridimevsechno__button">
+                    <div class="zaridimevsechno__button" data-text="blB" data-name="Google Analytics">
                         Google Analytics
                     </div>
-                    <div class="zaridimevsechno__button zaridimevsechno__button--selected">
+                    <div class="zaridimevsechno__button zaridimevsechno__button--selected" data-text="blC" data-name="SEO">
                         Seo
                     </div>
-                    <div class="zaridimevsechno__button">
+                    <div class="zaridimevsechno__button" data-text="blD" data-name="Marketing">
                         Marketing
                     </div>
                     
