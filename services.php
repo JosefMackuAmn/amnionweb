@@ -173,192 +173,194 @@
 
             <!-- DEVELOPMENT PROCESS -->
             <section class="dev-process">
-                <div class="dev-process__heading">
+                <h1 class="dev-process__heading heading-1">
                     Cesta k webu
-                </div>
-                <div class="stepcard">
-                    <div class="stepcard__heading">
+</h1>
+                <div class="step-card">
+                    <h5 class="step-card__heading heading-5">
                         První konzultace
-                    </div>
-                    <div class="stepcard__text">
+</h5>
+                    <p class="step-card__text">
                     Ujasníme si, co stavíme, jak má výsledný produkt vypadat, fungovat, kdo je cílová skupina a další nezbytné informace. Nakonec vám řekneme náše návrhy a doporučení.
-                    </div>
+</p>
                 </div>
-                <div class="stepscroll">
-                    <div class="stepscroll__step">
-                        <div class="stepscroll__round">
+                <div class="step-scroll">
+                    <div class="step-scroll__step">
+                        <div class="step-scroll__round">
 
                         </div>
-                        <div class="stepscroll__hint">
-                            <div class="stepscroll__textbox">
+                        <div class="step-scroll__hint">
+                            <div class="step-scroll__textbox">
                                 Programování
                             </div>
                         </div>
-                        <div class="stepscroll__border">
+                        <div class="step-scroll__border">
 
                         </div>
                     </div>
-                    <div class="stepscroll__step">
-                        <div class="stepscroll__round">
+                    <div class="step-scroll__step">
+                        <div class="step-scroll__round">
 
                         </div>
-                        <div class="stepscroll__hint">
-                            <div class="stepscroll__textbox">
+                        <div class="step-scroll__hint">
+                            <div class="step-scroll__textbox">
                                 Programování
                             </div>
                         </div>
-                        <div class="stepscroll__border">
+                        <div class="step-scroll__border">
 
                         </div>
                     </div>
-                    <div class="stepscroll__step">
-                        <div class="stepscroll__round">
+                    <div class="step-scroll__step">
+                        <div class="step-scroll__round">
 
                         </div>
-                        <div class="stepscroll__hint">
-                            <div class="stepscroll__textbox">
+                        <div class="step-scroll__hint">
+                            <div class="step-scroll__textbox">
                                 Programování
                             </div>
                         </div>
-                        <div class="stepscroll__border">
+                        <div class="step-scroll__border">
 
                         </div>
                     </div>
-                    <div class="stepscroll__step">
-                        <div class="stepscroll__round">
+                    <div class="step-scroll__step">
+                        <div class="step-scroll__round">
 
                         </div>
-                        <div class="stepscroll__hint">
-                            <div class="stepscroll__textbox">
+                        <div class="step-scroll__hint">
+                            <div class="step-scroll__textbox">
                                 Programování
                             </div>
                         </div>
-                        <div class="stepscroll__border">
+                        <div class="step-scroll__border">
 
                         </div>
                     </div>
-                    <div class="stepscroll__step">
-                        <div class="stepscroll__round">
+                    <div class="step-scroll__step">
+                        <div class="step-scroll__round">
 
                         </div>
-                        <div class="stepscroll__hint">
-                            <div class="stepscroll__textbox">
+                        <div class="step-scroll__hint">
+                            <div class="step-scroll__textbox">
                                 Programování
                             </div>
                         </div>
-                        <div class="stepscroll__border">
+                        <div class="step-scroll__border">
 
                         </div>
                     </div>
-                    <div class="stepscroll__step">
-                        <div class="stepscroll__round">
+                    <div class="step-scroll__step">
+                        <div class="step-scroll__round">
 
                         </div>
-                        <div class="stepscroll__hint">
-                            <div class="stepscroll__textbox">
+                        <div class="step-scroll__hint">
+                            <div class="step-scroll__textbox">
                                 Programování
                             </div>
                         </div>
-                        <div class="stepscroll__border">
+                        <div class="step-scroll__border">
 
                         </div>
                     </div>
-                    <div class="stepscroll__step">
-                        <div class="stepscroll__round">
+                    <div class="step-scroll__step">
+                        <div class="step-scroll__round">
 
                         </div>
-                        <div class="stepscroll__hint">
-                            <div class="stepscroll__textbox">
+                        <div class="step-scroll__hint">
+                            <div class="step-scroll__textbox">
                                 Programování
                             </div>
                         </div>
-                        <div class="stepscroll__border">
+                        <div class="step-scroll__border">
 
                         </div>
                     </div>
-                    <div class="stepscroll__step">
-                        <div class="stepscroll__round">
+                    <div class="step-scroll__step">
+                        <div class="step-scroll__round">
 
                         </div>
-                        <div class="stepscroll__hint">
-                            <div class="stepscroll__textbox">
+                        <div class="step-scroll__hint">
+                            <div class="step-scroll__textbox">
                                 Programování
                             </div>
                         </div>
-                        <div class="stepscroll__border">
+                        <div class="step-scroll__border">
 
                         </div>
                     </div>
-                    <div class="stepscroll__step">
-                        <div class="stepscroll__round">
+                    <div class="step-scroll__step">
+                        <div class="step-scroll__round">
 
                         </div>
-                        <div class="stepscroll__hint">
-                            <div class="stepscroll__textbox">
+                        <div class="step-scroll__hint">
+                            <div class="step-scroll__textbox">
                                 Programování
                             </div>
                         </div>
-                        <div class="stepscroll__border">
+                        <div class="step-scroll__border">
 
                         </div>
                     </div>
                 </div>
 
             </section>
-            <section class="beztohoaniklik">
-                <div class="beztohoaniklik__heading">
+            <!-- PRINCIPLES -->
+            <section class="principles">
+                <h1 class="principles__heading heading-1">
                     Bez toho ani klik
-                </div>
-                <div class="beztohoaniklik__container">
-                            <div class="beztohoaniklik__box beztohoaniklik__box--left">
-                                <div class="beztohoaniklik__p">
+</h1>
+                <container class="principles__container">
+                            <div class="principles__box principles__box--left">
+                                <p class="principles__p">
                                 Nejde jen o vzhled, ale i o uspořádání informací, intuitivitu a celkový zážitek z webu
-                                </div>
-                                <div class="beztohoaniklik__boxname beztohoaniklik__boxname--left">
+</p>
+                                <p class="principles__box-name principles__box-name--left">
                                 UX / UI Design
-                                </div>
+</p>
                             </div>
-                            <div class="beztohoaniklik__box beztohoaniklik__box--right">
-                                <div class="beztohoaniklik__p">
+                            <div class="principles__box principles__box--right">
+                                <p class="principles__p">
                                 Můžeme se v něm tak lépe a rychleji orientovat a kdokoli rychle pochopí, k čemu je ta zapeklitá funkce
-                                </div>
-                                <div class="beztohoaniklik__boxname beztohoaniklik__boxname--right">
+</p>
+                                <p class="principles__box-name principles__box-name--right">
                                     Kvalitní kód
-                                </div>
+</p>
                             </div>
-                </div>
+                </container>
                 
             </section>
-            <section class="zaridimevsechno">
-                <div class="zaridimevsechno__headingbox">
-                    <div class="zaridimevsechno__heading">
+            <!-- FEATURES -->
+            <section class="services-features">
+                <div class="services-features__heading-box">
+                    <h1 class="services-features__heading heading-1">
                         Zařídíme všechno
-                    </div>
+</h1>
                 </div>
-                <div class="zaridimevsechno__bar">
-                    <div class="zaridimevsechno__button" data-text="blA" data-name="Údržba">
+                <div class="services-features__bar">
+                    <button class="services-features__button" data-text="blA" data-name="Údržba">
                         Údržbu
-                    </div>
-                    <div class="zaridimevsechno__button" data-text="blB" data-name="Google Analytics">
+                    </button>
+                    <button class="services-features__button" data-text="blB" data-name="Google Analytics">
                         Google Analytics
-                    </div>
-                    <div class="zaridimevsechno__button zaridimevsechno__button--selected" data-text="blC" data-name="SEO">
+                    </button>
+                    <button class="services-features__button services-features__button--selected" data-text="blC" data-name="SEO">
                         Seo
-                    </div>
-                    <div class="zaridimevsechno__button" data-text="blD" data-name="Marketing">
+                    </button>
+                    <button class="services-features__button" data-text="blD" data-name="Marketing">
                         Marketing
-                    </div>
+                    </button>
                     
                 </div>
-                <div class="zaridimevsechno__iteminfo">
-                    <div class="zaridimevsechno__item">
+                <div class="services-features__item-info">
+                    <p class="services-features__item">
                         SEO
-                    </div>
-                    <div class="zaridimevsechno__text">
+</p>
+                    <p class="services-features__text">
                     V procesu tvorby webu dbáme na to, aby vaši stránku bylo možné jednoduše najít
-                    </div>
+</p>
                 </div>
-            </section>
+    </section>
 
         </main>
 <?php

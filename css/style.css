@@ -652,32 +652,30 @@ a, a:visited, a:link {
   padding: 10rem 0; }
   .dev-process__heading {
     color: rgba(150, 141, 94, 0.2);
-    letter-spacing: 2.5rem;
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 2.5rem;
     font-weight: bold;
-    font-size: 6rem;
     margin-bottom: 10rem; }
 
-.stepcard {
+.step-card {
   width: 50rem;
   margin: 0 auto;
   border: 2px solid rgba(150, 141, 94, 0.1);
   padding: 4rem;
   border-radius: 1rem; }
-  .stepcard__heading {
+  .step-card__heading {
     text-transform: uppercase;
     color: #968D5E;
     margin-bottom: 2rem;
-    font-size: 2.5rem;
     font-family: "Eczar", serif;
     letter-spacing: 0.5rem; }
-  .stepcard__text {
+  .step-card__text {
     letter-spacing: 0.25rem;
     color: #363636;
     font-size: 1.8rem; }
 
-.stepscroll {
+.step-scroll {
   margin-top: 8rem;
   margin-bottom: 8rem;
   width: 90rem;
@@ -687,18 +685,18 @@ a, a:visited, a:link {
   align-items: center;
   justify-content: space-between;
   position: relative; }
-  .stepscroll__round {
+  .step-scroll__round {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
     cursor: pointer;
     margin-right: 2rem;
     box-shadow: 0 2px 6px rgba(150, 141, 94, 0.25); }
-    .stepscroll__round--selected {
+    .step-scroll__round--selected {
       border: 2px solid #968D5E;
       width: 4rem;
       height: 4rem; }
-  .stepscroll__hint {
+  .step-scroll__hint {
     font-size: 2rem;
     font-family: "Eczar", serif;
     letter-spacing: 0.5rem;
@@ -707,12 +705,12 @@ a, a:visited, a:link {
     background-color: white;
     z-index: 1;
     animation: moveInHint; }
-  .stepscroll__border {
+  .step-scroll__border {
     content: "";
     background-color: rgba(150, 141, 94, 0.1);
     transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.02, calc( ((1.02 - 1) * 30 / 10) + 1));
     animation: moveInBorder; }
-  .stepscroll__hint, .stepscroll__border {
+  .step-scroll__hint, .step-scroll__border {
     text-transform: uppercase;
     color: #968D5E;
     width: calc(30 * 1rem);
@@ -721,19 +719,19 @@ a, a:visited, a:link {
     margin-top: 2rem;
     display: none;
     clip-path: polygon(0 10%, 45% 10%, 50% 0%, 55% 10%, 100% 10%, 100% 100%, 0 100%);
-    animation-duration: .25s; }
-  .stepscroll__textbox {
+    animation-duration: 0.25s; }
+  .step-scroll__textbox {
     width: 100%;
     height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center; }
-  .stepscroll__round:hover ~ .stepscroll__hint {
+  .step-scroll__round:hover ~ .step-scroll__hint {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     transform: translateX(calc(-50% + 1.5rem)) translateY(0%); }
-  .stepscroll__round:hover ~ .stepscroll__border {
+  .step-scroll__round:hover ~ .step-scroll__border {
     display: block;
     transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.02, calc( ((1.02 - 1) * 30 / 10) + 1)); }
 
@@ -1327,29 +1325,29 @@ a, a:visited, a:link {
     font-style: italic;
     color: #363636; }
 
-.zaridimevsechno {
+.services-features {
   clip-path: polygon(0 8rem, calc(50% - 70rem / 2) 8rem, calc(50% - 70rem / 2) 0%, calc(50% + 70rem / 2) 0%, calc(50% + 70rem / 2) 8rem, 100% 8rem, 100% 100%, 0 100%);
   background-color: white;
   z-index: 1;
   margin-top: -8rem; }
-  .zaridimevsechno__headingbox {
+  .services-features__heading-box {
     height: 8rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center; }
-  .zaridimevsechno__heading {
+  .services-features__heading {
     text-align: center;
     font-size: 3rem;
     color: rgba(150, 141, 94, 0.6);
     letter-spacing: 1rem;
     text-transform: uppercase;
     font-weight: 500; }
-  .zaridimevsechno__bar {
+  .services-features__bar {
     margin-top: 14rem;
     display: flex;
     justify-content: space-around; }
-  .zaridimevsechno__button {
+  .services-features__button {
     text-transform: uppercase;
     color: #968D5E;
     padding: 1rem 6rem;
@@ -1357,20 +1355,21 @@ a, a:visited, a:link {
     font-family: "Eczar", serif;
     letter-spacing: .3rem;
     font-size: 2rem;
+    background-color: white;
     cursor: pointer;
     transition: all .2s; }
-    .zaridimevsechno__button--selected {
+    .services-features__button--selected {
       background-color: rgba(150, 141, 94, 0.2); }
-    .zaridimevsechno__button:hover {
+    .services-features__button:hover {
       transform: translateY(-5px);
       box-shadow: 0 5px 10px rgba(150, 141, 94, 0.12); }
-    .zaridimevsechno__button:active {
+    .services-features__button:active {
       transform: translateY(-2px);
       box-shadow: 0 2px 10px rgba(150, 141, 94, 0.15); }
-  .zaridimevsechno__iteminfo {
+  .services-features__item-info {
     width: 40rem;
     margin: 8rem auto; }
-  .zaridimevsechno__item {
+  .services-features__item {
     text-transform: uppercase;
     color: #968D5E;
     font-family: "Eczar", serif;
@@ -1378,37 +1377,37 @@ a, a:visited, a:link {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem; }
-  .zaridimevsechno__text {
+  .services-features__text {
     text-align: center;
     letter-spacing: .3rem;
     line-height: 2rem;
     color: #363636; }
 
-.beztohoaniklik {
+.principles {
   background-color: #E6F0FC;
   padding-top: 20rem;
   padding-bottom: 30rem; }
-  .beztohoaniklik__heading {
+  .principles__heading {
     text-align: center;
     font-size: 3rem;
     color: #001641;
     letter-spacing: 1rem;
     text-transform: uppercase;
     font-weight: 500; }
-  .beztohoaniklik__p {
+  .principles__p {
     letter-spacing: .3rem; }
-  .beztohoaniklik__container {
+  .principles__container {
     display: flex;
     justify-content: center;
     margin-top: 20rem; }
-  .beztohoaniklik__box {
+  .principles__box {
     width: 30rem;
     background-color: white;
     padding: 8rem 4rem;
     position: relative; }
-    .beztohoaniklik__box--left {
+    .principles__box--left {
       margin-right: 10rem; }
-  .beztohoaniklik__boxname {
+  .principles__box-name {
     position: absolute;
     color: white;
     background-color: #001641;
@@ -1416,31 +1415,31 @@ a, a:visited, a:link {
     padding: 2rem;
     text-transform: uppercase;
     letter-spacing: .5rem; }
-    .beztohoaniklik__boxname::before, .beztohoaniklik__boxname::after {
+    .principles__box-name::before, .principles__box-name::after {
       content: "";
       position: absolute;
       width: 2rem;
       height: 2rem;
       clip-path: polygon(0 0, 20% 0, 20% 80%, 100% 80%, 100% 100%, 0 100%); }
-    .beztohoaniklik__boxname--left {
+    .principles__box-name--left {
       left: -5rem; }
-      .beztohoaniklik__boxname--left::before {
+      .principles__box-name--left::before {
         bottom: -2rem;
         left: -2rem;
         background-color: white; }
-      .beztohoaniklik__boxname--left::after {
+      .principles__box-name--left::after {
         top: -2rem;
         right: -2rem;
         transform: rotate(180deg);
         background-color: white; }
-    .beztohoaniklik__boxname--right {
+    .principles__box-name--right {
       right: -5rem; }
-      .beztohoaniklik__boxname--right::before {
+      .principles__box-name--right::before {
         top: -2rem;
         left: -2rem;
         transform: rotate(90deg);
         background-color: white; }
-      .beztohoaniklik__boxname--right::after {
+      .principles__box-name--right::after {
         bottom: -2rem;
         right: -2rem;
         transform: rotate(270deg);

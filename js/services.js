@@ -67,21 +67,24 @@ const switchAppType = (index, appTypeSlides, appTypeCards) => {
     state.curAppType = index;
 }
 
-//zaridimevsechno-section
-const zaridemevsechnoHook = document.querySelector('.zaridimevsechno');
-const buttons = zaridemevsechnoHook.querySelectorAll('.zaridimevsechno__button');
+//services-features-section
+const featuresHook = document.querySelector('.services-features');
+const buttons = featuresHook.querySelectorAll('.services-features__button');
+
 const removeSelectedClass = () => {
     for(const btn of buttons)  {
-        btn.classList.remove('zaridimevsechno__button--selected');
+        btn.classList.remove('services-features__button--selected');
     }
 }
+
 const btnClickHandler = event => {
-    const desc = zaridemevsechnoHook.querySelector('.zaridimevsechno__iteminfo')
+    const desc = featuresHook.querySelector('.services-features__iteminfo')
     desc.firstElementChild.textContent = event.target.dataset.name; 
     desc.lastElementChild.textContent = event.target.dataset.text;
     removeSelectedClass();
-    event.target.classList.add('zaridimevsechno__button--selected');
+    event.target.classList.add('services-features__button--selected');
 }
+
 for (const btn of buttons) {
     btn.addEventListener('click', btnClickHandler)
 }
