@@ -30,6 +30,15 @@ $scaleYratio: calc(
     opacity: 1;
   }
 }
+@keyframes moveContainer {
+  0% {
+  transform: translateX(-25%);
+
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
 
 //
 
@@ -43,10 +52,24 @@ $scaleYratio: calc(
     font-weight: bold;
     margin-bottom: 10rem;
   }
+
+  // For JS purposes
+  overflow-y : auto;
+  overflow-x: hidden;
+  height: 100rem;
+  &::after {
+    top: 200rem;
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+    display: block;
+  }
+  scrollbar-width: none;
 }
 .step-card {
   width: 50rem;
-  margin: 0 auto;
+  
   border: 2px solid rgba($color-gold, 0.1);
   padding: 4rem;
   border-radius: 1rem;
@@ -64,6 +87,17 @@ $scaleYratio: calc(
     font-size: 1.8rem;
   }
 }
+
+.card-container {
+  display: flex;
+  position: relative;
+  width: 200vw;
+  justify-content: space-around;
+  transform: translateX(-25%);
+ 
+  
+ 
+}
 .step-scroll {
   margin-top: 8rem;
   margin-bottom: 8rem;
@@ -80,8 +114,7 @@ $scaleYratio: calc(
     cursor: pointer;
     &--selected {
       border: 2px solid $color-gold;
-      width: 4rem;
-      height: 4rem;
+      
     }
     margin-right: 2rem;
     box-shadow: 0 2px 6px rgba($color-gold, 0.25);
@@ -92,7 +125,7 @@ $scaleYratio: calc(
     font-size: 2rem;
     font-family: "Eczar", serif;
     letter-spacing: 0.5rem;
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%); // calc funkce centruje hint s ohledem na poloměr roundu
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%); 
 
     text-align: center;
     background-color: white;

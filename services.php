@@ -176,17 +176,35 @@
                 <h1 class="dev-process__heading heading-1">
                     Cesta k webu
 </h1>
-                <div class="step-card">
-                    <h5 class="step-card__heading heading-5">
+<container class = "card-container"> 
+</container>
+                <template>
+                
+                <h5 class="step-card__heading heading-5">
                         První konzultace
 </h5>
                     <p class="step-card__text">
                     Ujasníme si, co stavíme, jak má výsledný produkt vypadat, fungovat, kdo je cílová skupina a další nezbytné informace. Nakonec vám řekneme náše návrhy a doporučení.
 </p>
+
+</template>
                 </div>
                 <div class="step-scroll">
                     <div class="step-scroll__step">
-                        <div class="step-scroll__round">
+                    <div class="step-scroll__round step-scroll__round--selected" data-text="ahojahojahoj" data-name="HUEHUE1">
+
+</div>
+                        <div class="step-scroll__hint">
+                            <div class="step-scroll__textbox">
+                                Programování
+                            </div>
+                        </div>
+                        <div class="step-scroll__border">
+
+                        </div>
+                    </div>
+                    <div class="step-scroll__step" >
+                        <div class="step-scroll__round" data-text="ahojahojahoj" data-name="HUEHUE2">
 
                         </div>
                         <div class="step-scroll__hint">
@@ -199,9 +217,9 @@
                         </div>
                     </div>
                     <div class="step-scroll__step">
-                        <div class="step-scroll__round">
+                    <div class="step-scroll__round" data-text="ahojahojahoj" data-name="HUEHUE3">
 
-                        </div>
+</div>
                         <div class="step-scroll__hint">
                             <div class="step-scroll__textbox">
                                 Programování
@@ -212,9 +230,9 @@
                         </div>
                     </div>
                     <div class="step-scroll__step">
-                        <div class="step-scroll__round">
+                    <div class="step-scroll__round" data-text="ahojahojahoj" data-name="HUEHUE4">
 
-                        </div>
+</div>
                         <div class="step-scroll__hint">
                             <div class="step-scroll__textbox">
                                 Programování
@@ -225,9 +243,9 @@
                         </div>
                     </div>
                     <div class="step-scroll__step">
-                        <div class="step-scroll__round">
+                    <div class="step-scroll__round" data-text="ahojahojahoj" data-name="HUEHUE5">
 
-                        </div>
+</div>
                         <div class="step-scroll__hint">
                             <div class="step-scroll__textbox">
                                 Programování
@@ -238,9 +256,9 @@
                         </div>
                     </div>
                     <div class="step-scroll__step">
-                        <div class="step-scroll__round">
+                    <div class="step-scroll__round" data-text="ahojahojahoj" data-name="HUEHUE6">
 
-                        </div>
+</div>
                         <div class="step-scroll__hint">
                             <div class="step-scroll__textbox">
                                 Programování
@@ -251,9 +269,9 @@
                         </div>
                     </div>
                     <div class="step-scroll__step">
-                        <div class="step-scroll__round">
+                    <div class="step-scroll__round" data-text="ahojahojahoj" data-name="HUEHUE7">
 
-                        </div>
+</div>
                         <div class="step-scroll__hint">
                             <div class="step-scroll__textbox">
                                 Programování
@@ -264,9 +282,9 @@
                         </div>
                     </div>
                     <div class="step-scroll__step">
-                        <div class="step-scroll__round">
+                    <div class="step-scroll__round" data-text="ahojahojahoj" data-name="HUEHUE8">
 
-                        </div>
+</div>
                         <div class="step-scroll__hint">
                             <div class="step-scroll__textbox">
                                 Programování
@@ -277,22 +295,9 @@
                         </div>
                     </div>
                     <div class="step-scroll__step">
-                        <div class="step-scroll__round">
+                    <div class="step-scroll__round" data-text="ahojahojahoj" data-name="HUEHUE9">
 
-                        </div>
-                        <div class="step-scroll__hint">
-                            <div class="step-scroll__textbox">
-                                Programování
-                            </div>
-                        </div>
-                        <div class="step-scroll__border">
-
-                        </div>
-                    </div>
-                    <div class="step-scroll__step">
-                        <div class="step-scroll__round">
-
-                        </div>
+</div>
                         <div class="step-scroll__hint">
                             <div class="step-scroll__textbox">
                                 Programování

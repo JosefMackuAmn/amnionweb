@@ -648,8 +648,18 @@ a, a:visited, a:link {
     transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.02, calc( ((1.02 - 1) * 30 / 10) + 1));
     opacity: 1; } }
 
+@keyframes moveContainer {
+  0% {
+    transform: translateX(-25%); }
+  100% {
+    transform: translateY(-50%); } }
+
 .dev-process {
-  padding: 10rem 0; }
+  padding: 10rem 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100rem;
+  scrollbar-width: none; }
   .dev-process__heading {
     color: rgba(150, 141, 94, 0.2);
     text-transform: uppercase;
@@ -657,10 +667,16 @@ a, a:visited, a:link {
     letter-spacing: 2.5rem;
     font-weight: bold;
     margin-bottom: 10rem; }
+  .dev-process::after {
+    top: 200rem;
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+    display: block; }
 
 .step-card {
   width: 50rem;
-  margin: 0 auto;
   border: 2px solid rgba(150, 141, 94, 0.1);
   padding: 4rem;
   border-radius: 1rem; }
@@ -674,6 +690,13 @@ a, a:visited, a:link {
     letter-spacing: 0.25rem;
     color: #363636;
     font-size: 1.8rem; }
+
+.card-container {
+  display: flex;
+  position: relative;
+  width: 200vw;
+  justify-content: space-around;
+  transform: translateX(-25%); }
 
 .step-scroll {
   margin-top: 8rem;
@@ -693,9 +716,7 @@ a, a:visited, a:link {
     margin-right: 2rem;
     box-shadow: 0 2px 6px rgba(150, 141, 94, 0.25); }
     .step-scroll__round--selected {
-      border: 2px solid #968D5E;
-      width: 4rem;
-      height: 4rem; }
+      border: 2px solid #968D5E; }
   .step-scroll__hint {
     font-size: 2rem;
     font-family: "Eczar", serif;
