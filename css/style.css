@@ -655,11 +655,7 @@ a, a:visited, a:link {
     transform: translateY(-50%); } }
 
 .dev-process {
-  padding: 10rem 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  height: 100rem;
-  scrollbar-width: none; }
+  padding: 10rem 0; }
   .dev-process__heading {
     color: rgba(150, 141, 94, 0.2);
     text-transform: uppercase;
@@ -667,13 +663,6 @@ a, a:visited, a:link {
     letter-spacing: 2.5rem;
     font-weight: bold;
     margin-bottom: 10rem; }
-  .dev-process::after {
-    top: 200rem;
-    content: "";
-    height: 2rem;
-    width: 2rem;
-    position: relative;
-    display: block; }
 
 .step-card {
   width: 50rem;

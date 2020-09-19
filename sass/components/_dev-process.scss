@@ -53,19 +53,7 @@ $scaleYratio: calc(
     margin-bottom: 10rem;
   }
 
-  // For JS purposes
-  overflow-y : auto;
-  overflow-x: hidden;
-  height: 100rem;
-  &::after {
-    top: 200rem;
-    content: "";
-    height: 2rem;
-    width: 2rem;
-    position: relative;
-    display: block;
-  }
-  scrollbar-width: none;
+  
 }
 .step-card {
   width: 50rem;
