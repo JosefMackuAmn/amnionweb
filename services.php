@@ -60,13 +60,6 @@
                         </div>
                     </div>
                     <div class="app-types__slider__window">
-                        <div class="app-types__slider__title">API - Application programming interfaces</div>
-                        <div class="app-types__slider__content">
-                            <div class="app-types__slider__icon">Icon here</div>
-                            <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet.</div>                        
-                        </div>
-                    </div>
-                    <div class="app-types__slider__window">
                         <div class="app-types__slider__title">CMS - Content management systems</div>
                         <div class="app-types__slider__content">
                             <div class="app-types__slider__icon">Icon here</div>
@@ -105,7 +98,7 @@
                             Icon here
                         </div>
                         <div class="app-types__overview__card__content">
-                            <h4 class="heading-5 heading-5-vine">SPA</h4>
+                            <h4 class="heading-5 heading-5-vine">SPAs</h4>
                             <p class="paragraph-small">Reaktivní<br>jednostránkové<br>aplikace<br></p>
                         </div>
                     </div>
@@ -114,7 +107,7 @@
                             Icon here
                         </div>
                         <div class="app-types__overview__card__content">
-                            <h4 class="heading-5 heading-5-vine">PWA</h4>
+                            <h4 class="heading-5 heading-5-vine">PWAs</h4>
                             <p class="paragraph-small">Progresivní<br>webové<br>aplikace<br></p>
                         </div>
                     </div>
@@ -131,16 +124,7 @@
                             Icon here
                         </div>
                         <div class="app-types__overview__card__content">
-                            <h4 class="heading-5 heading-5-vine">API</h4>
-                            <p class="paragraph-small">Programovací<br>rozhraní<br></p>
-                        </div>
-                    </div>
-                    <div class="app-types__overview__card">
-                        <div class="app-types__overview__card__icon">
-                            Icon here
-                        </div>
-                        <div class="app-types__overview__card__content">
-                            <h4 class="heading-5 heading-5-vine">CMS</h4>
+                            <h4 class="heading-5 heading-5-vine">CMSs</h4>
                             <p class="paragraph-small">Systémy<br>správy<br>obsahu<br></p>
                         </div>
                     </div>

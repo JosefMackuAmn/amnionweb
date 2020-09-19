@@ -1,3 +1,6 @@
+/////////////////////
+// DEFINING FUNCTIONS
+
 // Define function for executing callback when DOM content loaded
 function ready(callbackFunc) {
     if (document.readyState !== 'loading') {
@@ -16,47 +19,27 @@ function ready(callbackFunc) {
     }
 }
 
-const state = {
-    curAppType: 0
-}
-
-ready(() => {
-
-    const slider = document.getElementById('app-types__slider');
-    const sliderPrev = slider.querySelector('.app-types__slider__btn--prev');
-    const sliderNext = slider.querySelector('.app-types__slider__btn--next');
-    const appTypeSlides = slider.querySelectorAll('.app-types__slider__window');
-    const appTypeCards = document.querySelectorAll('.app-types__overview__card');
-
-    sliderNext.addEventListener('click', () => switchAppType(state.curAppType + 1, appTypeSlides, appTypeCards));
-    sliderPrev.addEventListener('click', () => switchAppType(state.curAppType - 1, appTypeSlides, appTypeCards));
-    appTypeCards.forEach((card, idx) => {
-        card.addEventListener('click', () => {
-            switchAppType(idx, appTypeSlides, appTypeCards);
-        })
-    })
-})
-
+// Define function to switch app type in .app-types section
 const switchAppType = (index, appTypeSlides, appTypeCards) => {
+    // Check for index exceeding number of slides
     if (index >= appTypeCards.length) {
         index = 0;
     } else if (index < 0) {
         index = appTypeCards.length - 1;
     }
 
+    // Add active class to selected slide
     appTypeSlides.forEach((slide, idx) => {
-        if (idx === state.curAppType && idx !== index) {
-            slide.classList.remove('active');
-        } else {
-            slide.classList.remove('active');
-        }
+        slide.classList.remove('active');
         if (idx === index) {
-            slide.style.animation = "appTypesSlideIn .2s";
+            slide.style.animation = "appTypesSlideIn .2s ease-out";
             const title = slide.querySelector('.app-types__slider__title');
-            title.style.animation = "appTypesTitleIn .4s forwards";
+            title.style.animation = "appTypesTitleIn .3s forwards ease-out";
             slide.classList.add('active');
         }
     })
+
+    // Add active class to selected card
     appTypeCards.forEach((card, idx) => {
         card.classList.remove('active');
         if (idx === index) {
@@ -66,6 +49,33 @@ const switchAppType = (index, appTypeSlides, appTypeCards) => {
 
     state.curAppType = index;
 }
+
+// Define state
+const state = {
+    // Current selected app type in the .app-types section
+    curAppType: 0
+}
+
+// Calling ready function
+ready(() => {
+
+    // Selecting important els in the .app-types section
+    const slider = document.getElementById('app-types__slider');
+    const sliderPrev = slider.querySelector('.app-types__slider__btn--prev');
+    const sliderNext = slider.querySelector('.app-types__slider__btn--next');
+    const appTypeSlides = slider.querySelectorAll('.app-types__slider__window');
+    const appTypeCards = document.querySelectorAll('.app-types__overview__card');
+
+    // Adding listeners to prev & next buttons to move .app-types slider
+    sliderNext.addEventListener('click', () => switchAppType(state.curAppType + 1, appTypeSlides, appTypeCards));
+    sliderPrev.addEventListener('click', () => switchAppType(state.curAppType - 1, appTypeSlides, appTypeCards));
+    // Adding listeners to cards inside of .app-types section
+    appTypeCards.forEach((card, idx) => {
+        card.addEventListener('click', () => {
+            switchAppType(idx, appTypeSlides, appTypeCards);
+        })
+    })
+})
 
 //zaridimevsechno-section
 const zaridemevsechnoHook = document.querySelector('.zaridimevsechno');
