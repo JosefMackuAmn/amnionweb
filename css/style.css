@@ -642,10 +642,10 @@ a, a:visited, a:link {
 
 @keyframes moveInBorder {
   0% {
-    transform: translateX(calc(-50% + 1.5rem)) translateY(10%) scale(1.02, calc( ((1.02 - 1) * 30 / 10) + 1));
+    transform: translateX(calc(-50% + 1.5rem)) translateY(10%) scale(1.02, calc( ((1.02 - 1) * 30 / 10) + 1));
     opacity: 0; }
   100% {
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.02, calc( ((1.02 - 1) * 30 / 10) + 1));
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.02, calc( ((1.02 - 1) * 30 / 10) + 1));
     opacity: 1; } }
 
 .dev-process {
@@ -710,7 +710,7 @@ a, a:visited, a:link {
   .stepscroll__border {
     content: "";
     background-color: rgba(150, 141, 94, 0.1);
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.02, calc( ((1.02 - 1) * 30 / 10) + 1));
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.02, calc( ((1.02 - 1) * 30 / 10) + 1));
     animation: moveInBorder; }
   .stepscroll__hint, .stepscroll__border {
     text-transform: uppercase;
@@ -735,7 +735,7 @@ a, a:visited, a:link {
     transform: translateX(calc(-50% + 1.5rem)) translateY(0%); }
   .stepscroll__round:hover ~ .stepscroll__border {
     display: block;
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.02, calc( ((1.02 - 1) * 30 / 10) + 1)); }
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.02, calc( ((1.02 - 1) * 30 / 10) + 1)); }
 
 .feature-box {
   width: 70%;
@@ -1254,7 +1254,6 @@ a, a:visited, a:link {
     justify-content: space-between;
     flex-direction: column; }
   .pyramid__desc-item {
-    font-family: 'Eczar', serif;
     color: #968D5E;
     font-size: 2.9rem;
     line-height: 135%;
@@ -1268,7 +1267,8 @@ a, a:visited, a:link {
     background-color: black;
     color: #A8A38B;
     text-align: center;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    letter-spacing: 2px; }
 
 .review {
   width: 45rem;
