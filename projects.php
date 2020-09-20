@@ -19,7 +19,8 @@
                     <div class="project__content__text">
                         <p class="project__about">"Fantasy muzeum a galerie je bla bla, první na Moravě, bla bla bla, random text na vyplnění citace a tak dál hurá lemra Fantasy muzeum a galerie je bla bla, první na Moravě, bla bla bla, random text na vyplnění citace a tak dál hurá lemra."</p>
                         <div class="project__review">"Web je moc pěkný, bla bla, jsme rádi, že toto a támmhleto, jen bychom vytkli že ee a tak dále. Fantasy muzeum a galerie je bla bla, první na Moravě, bla bla bla, random text na vyplnění citace a tak dál hurá lemra"</div>
-                        <div class="cta-text"><a href="/blog/1">Celý rozhovor -></a></div>
+                        <!-- Blog and interviews are comming soon! -->
+                        <!-- <div class="cta-text"><a href="/blog/1">Celý rozhovor -></a></div> -->
                         <div class="project__outer-link project__outer-link--desktop"><a href="https://www.fantasymuzeum.cz">www.fantasymuzeum.cz</a></div>
                     </div>
                     <div class="project__outer-link project__outer-link--mobile"><a href="https://www.fantasymuzeum.cz">www.fantasymuzeum.cz</a></div>

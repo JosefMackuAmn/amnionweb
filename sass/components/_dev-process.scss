@@ -7,31 +7,38 @@ $scaleYratio: calc(
   ((#{$scaleXratio} - 1) * #{$hint-width} / #{$hint-height}) + 1
 );
 
-
-//ANIMATIONS 
+//ANIMATIONS
 @keyframes moveInHint {
-    0% {
-        transform: translateX(calc(-50% + 1.5rem)) translateY(10%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(calc(-50% + 1.5rem)) translateY(0%);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(calc(-50% + 1.5rem)) translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%);
+    opacity: 1;
+  }
 }
 @keyframes moveInBorder {
-    0% {
-        transform: translateX(calc(-50% + 1.5rem)) translateY(10%)
-    scale($scaleXratio, $scaleYratio); 
+  0% {
+    transform: translateX(calc(-50% + 1.5rem)) translateY(10%)
+      scale($scaleXratio, $scaleYratio);
     opacity: 0;
-    }
-    100% {
-        transform: translateX(calc(-50% + 1.5rem)) translateY(0%)
-    scale($scaleXratio, $scaleYratio); 
+  }
+  100% {
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%)
+      scale($scaleXratio, $scaleYratio);
     opacity: 1;
-    }
+  }
 }
+@keyframes moveContainer {
+  0% {
+  transform: translateX(-25%);
 
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
 
 //
 
@@ -39,30 +46,28 @@ $scaleYratio: calc(
   padding: 10rem 0;
   &__heading {
     color: rgba($color-gold, 0.2);
-    letter-spacing: 2.5rem;
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: 2.5rem;
     font-weight: bold;
-    font-size: 6rem;
-
     margin-bottom: 10rem;
   }
+
+  
 }
-.stepcard {
+.step-card {
   width: 50rem;
-  margin: 0 auto;
+  
   border: 2px solid rgba($color-gold, 0.1);
   padding: 4rem;
   border-radius: 1rem;
 
   &__heading {
-    text-transform: uppercase;
-    color: $color-gold;
+     text-transform: uppercase;
+     color: $color-gold;
     margin-bottom: 2rem;
-
-    font-size: 2.5rem;
-    font-family: "Eczar", serif;
-    letter-spacing: 0.5rem;
+     font-family: "Eczar", serif;
+     letter-spacing: 0.5rem;
   }
   &__text {
     letter-spacing: 0.25rem;
@@ -70,7 +75,18 @@ $scaleYratio: calc(
     font-size: 1.8rem;
   }
 }
-.stepscroll {
+
+.card-container {
+  display: flex;
+  position: relative;
+  width: 200vw;
+  justify-content: space-around;
+  transform: translateX(-25%);
+ 
+  
+ 
+}
+.step-scroll {
   margin-top: 8rem;
   margin-bottom: 8rem;
   width: 90rem;
@@ -86,8 +102,7 @@ $scaleYratio: calc(
     cursor: pointer;
     &--selected {
       border: 2px solid $color-gold;
-      width: 4rem;
-      height: 4rem;
+      
     }
     margin-right: 2rem;
     box-shadow: 0 2px 6px rgba($color-gold, 0.25);
@@ -98,25 +113,19 @@ $scaleYratio: calc(
     font-size: 2rem;
     font-family: "Eczar", serif;
     letter-spacing: 0.5rem;
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%); // calc funkce centruje hint s ohledem na poloměr roundu
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%); 
 
     text-align: center;
     background-color: white;
     z-index: 1;
     animation: moveInHint;
-   
-    
   }
   &__border {
     content: "";
     background-color: rgba($color-gold, 0.1);
     transform: translateX(calc(-50% + 1.5rem)) translateY(0%)
-      scale($scaleXratio, $scaleYratio); 
+      scale($scaleXratio, $scaleYratio);
     animation: moveInBorder;
-    
-    
-    
-    
   }
   &__hint,
   &__border {
@@ -137,8 +146,7 @@ $scaleYratio: calc(
       100% 100%,
       0 100%
     );
-    animation-duration: .25s;
-    
+    animation-duration: 0.25s;
   }
   &__textbox {
     width: 100%;
@@ -147,7 +155,7 @@ $scaleYratio: calc(
     flex-direction: column;
     justify-content: center;
   }
- 
+
   &__round:hover ~ &__hint {
     display: flex;
     flex-direction: column;
@@ -157,7 +165,6 @@ $scaleYratio: calc(
   &__round:hover ~ &__border {
     display: block;
     transform: translateX(calc(-50% + 1.5rem)) translateY(0%)
-    scale($scaleXratio, $scaleYratio); 
-    
+      scale($scaleXratio, $scaleYratio);
   }
 }

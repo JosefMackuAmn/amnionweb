@@ -83,9 +83,9 @@
                     <li><a href="o-nas">O nás</a></li>
                     <li><a href="portfolio">Portfolio</a></li>
                     <li><a href="sluzby">Služby</a></li>
-                    <li><a href="cenik">Ceník</a></li>
+                    <!-- <li><a href="cenik">Ceník</a></li> -->
                     <li><a href="kontakt">Kontakt</a></li>
-                    <li><a href="blog">Blog</a></li>
+                    <!-- <li><a href="blog">Blog</a></li> -->
                 </ul>
                 <ul class="menu__list--mobile">
                     <li>
@@ -102,9 +102,9 @@
                     <li><a href="o-nas">O nás</a></li>
                     <li><a href="portfolio">Portfolio</a></li>
                     <li><a href="sluzby">Služby</a></li>
-                    <li><a href="cenik">Ceník</a></li>
+                    <!-- <li><a href="cenik">Ceník</a></li> -->
                     <li><a href="kontakt">Kontakt</a></li>
-                    <li><a href="blog">Blog</a></li>
+                    <!-- <li><a href="blog">Blog</a></li> -->
                 </ul>
             </div>
             <div id="fb-root"></div>

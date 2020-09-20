@@ -1,5 +1,5 @@
-const CACHE_STATIC_NAME = "static-v1.0.1"
-const CACHE_DYNAMIC_NAME = "dynamic-v1.0.3"
+const CACHE_STATIC_NAME = "static-v1.0.11"
+const CACHE_DYNAMIC_NAME = "dynamic-v1.0.13"
 
 const STATIC_PATHS = [
     '/',
@@ -15,7 +15,13 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(CACHE_STATIC_NAME)
             .then(cache => {
-                cache.addAll(STATIC_PATHS);
+                return Promise.all(STATIC_PATHS.map(url => {
+                    return fetch(`${url}?${Math.random()}`)
+                        .then(response => {
+                            if (!response.ok) throw Error('Not ok');
+                            return cache.put(url, response);
+                        })
+                }));
             })
     )
 })
@@ -27,7 +33,7 @@ self.addEventListener('activate', event => {
             .then(keyList => {
                 return Promise.all(keyList.map(key => {
                     if (key !== CACHE_STATIC_NAME && key !== CACHE_DYNAMIC_NAME) {
-                        caches.delete(key);
+                        return caches.delete(key);
                     }
                 }))
             })
@@ -47,7 +53,7 @@ self.addEventListener('fetch', event => {
                     .then(res => {
                         return caches.open(CACHE_DYNAMIC_NAME)
                             .then(cache => {
-                                if (res.type !== 'opaque') {
+                                if (res.type !== 'opaque' && res.ok) {
                                     cache.put(event.request.url, res.clone());
                                 }
                                 return res;
