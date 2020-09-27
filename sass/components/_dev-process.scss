@@ -6,6 +6,7 @@ $scaleXratio: 1.01;
 $scaleYratio: calc(
   ((#{$scaleXratio} - 1) * #{$hint-width} / #{$hint-height}) + 1
 );
+$bp-dev-process-mobile: 750px;
 //ANIMATIONS
 @keyframes moveInHint {
   0% {
@@ -31,8 +32,7 @@ $scaleYratio: calc(
 }
 @keyframes moveContainer {
   0% {
-  transform: translateX(-25%);
-
+    transform: translateX(-25%);
   }
   100% {
     transform: translateY(-50%);
@@ -48,6 +48,13 @@ $scaleYratio: calc(
     letter-spacing: 2.5rem;
     font-weight: bold;
     margin-bottom: 10rem;
+    @media only screen and (max-width: 900px) {
+      font-size: 4.5rem;
+      line-height: 6rem;
+      padding-left: 20%;
+      padding-right: 20%;
+      letter-spacing: 1.4rem;
+    }
   }
 }
 .step-card {
@@ -56,20 +63,29 @@ $scaleYratio: calc(
   padding: 4rem;
   border-radius: 1rem;
   position: relative;
+  @media only screen and (max-width: $bp-dev-process-mobile) {
+    width: 40rem;
+    height: 35rem;
+  }
+  @media only screen and (max-width: 450px) {
+    padding: 2rem;
+  }
+  @media only screen and (max-width: 400px) {
+    width: 35rem;
+  }
   &__heading {
-     text-transform: uppercase;
-     color: $color-gold;
+    text-transform: uppercase;
+    color: $color-gold;
     margin-bottom: 2rem;
-     font-family: "Eczar", serif;
-     letter-spacing: 0.5rem;
+    font-family: "Eczar", serif;
+    letter-spacing: 0.5rem;
   }
   &__text {
     letter-spacing: 0.25rem;
     color: $color-grey-dark;
     font-size: 1.8rem;
   }
-  
-  
+
   &__button {
     width: 10rem;
     height: 10rem;
@@ -79,18 +95,23 @@ $scaleYratio: calc(
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    @media only screen and (max-width: $bp-dev-process-mobile) {
+      top: 110%;
+      height: 5rem;
+      width: auto;
+    }
 
     cursor: pointer;
     border: none;
     &::-moz-focus-inner {
       border: 0;
-    
-  }
+    }
+
     &::before {
       width: 2rem;
-    height: 4rem;
-    transition: all .2s;
-     
+      height: 4rem;
+      transition: all 0.2s;
+
       background-color: $color-gold;
       content: "";
       clip-path: polygon(0 0, 40% 0, 100% 50%, 40% 100%, 0% 100%, 60% 50%);
@@ -98,33 +119,44 @@ $scaleYratio: calc(
       position: absolute;
       top: 50%;
       left: 50%;
+      @media only screen and (max-width: $bp-dev-process-mobile) {
+        display: none;
+      }
     }
 
     &--left {
       left: -25%;
-    &::before {
-      transform: translateY(-50%) rotate(180deg) translateX(50%);
-      
-    }
-    &:hover::before {
-      transform: translateY(-50%) rotate(180deg) translateX(80%);
-    }
+      @media only screen and (max-width: $bp-dev-process-mobile) {
+        left: 0;
+      }
+      &::before {
+        transform: translateY(-50%) rotate(180deg) translateX(50%);
+      }
+      &:hover::before {
+        transform: translateY(-50%) rotate(180deg) translateX(80%);
+      }
     }
     &--right {
-      
       right: -25%;
+      @media only screen and (max-width: $bp-dev-process-mobile) {
+        right: 0;
+      }
       &::before {
         transform: translateY(-50%) translateX(-50%);
       }
       &:hover::before {
-        transform: translateY(-50%)  translateX(-30%);
+        transform: translateY(-50%) translateX(-30%);
       }
     }
-    
   }
-  
- 
-  
+  &__button-text {
+    display: none;
+    color: $color-gold;
+    font-size: 1.8rem;
+    @media only screen and (max-width: $bp-dev-process-mobile) {
+      display: block;
+    }
+  }
 }
 .card-container {
   display: flex;
@@ -133,6 +165,9 @@ $scaleYratio: calc(
   justify-content: space-around;
   transform: translateX(-25%);
   height: 30rem;
+  @media only screen and (max-width: $bp-dev-process-mobile) {
+    height: auto;
+  }
 }
 .step-scroll {
   margin-top: 8rem;
@@ -143,22 +178,40 @@ $scaleYratio: calc(
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media only screen and (max-width: $bp-dev-process-mobile) {
+    width: 80%;
+  }
   &__round {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
+
     cursor: pointer;
+
+    box-shadow: 0 2px 6px rgba($color-gold, 0.25);
+    @media only screen and (max-width: $bp-dev-process-mobile) {
+      box-shadow: none;
+      background-color: rgba($color-gold, 0.2);
+      width: 5rem;
+      border-radius: 0;
+    }
+    @media only screen and (max-width: 500px) {
+      width: 3.5rem;
+    }
     &--selected {
       border: 2px solid $color-gold;
+      @media only screen and (max-width: $bp-dev-process-mobile) {
+        border: none;
+        background-color: rgba($color-gold, 0.7);
+      }
     }
-    box-shadow: 0 2px 6px rgba($color-gold, 0.25);
   }
   position: relative;
   &__hint {
     font-size: 2rem;
     font-family: "Eczar", serif;
     letter-spacing: 0.5rem;
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%); 
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%);
     text-align: center;
     background-color: white;
     z-index: 1;
@@ -200,12 +253,18 @@ $scaleYratio: calc(
   }
   &__round:hover ~ &__hint {
     display: flex;
+    @media only screen and (max-width: $bp-dev-process-mobile) {
+      display: none;
+    }
     flex-direction: column;
     justify-content: flex-end;
     transform: translateX(calc(-50% + 1.5rem)) translateY(0%);
   }
   &__round:hover ~ &__border {
     display: block;
+    @media only screen and (max-width: $bp-dev-process-mobile) {
+      display: none;
+    }
     transform: translateX(calc(-50% + 1.5rem)) translateY(0%)
       scale($scaleXratio, $scaleYratio);
   }

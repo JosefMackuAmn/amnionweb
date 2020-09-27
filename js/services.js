@@ -48,7 +48,43 @@ const switchAppType = (index, appTypeSlides, appTypeCards) => {
   });
 
   state.curAppType = index;
+  
+ 
+
 };
+// Handling logic for show-more and show-less button for mobile-phone users on App-Types section
+const showLessCardsBtnHandler = (event) => {
+  document.documentElement.scrollTo(0, -state.lastScrollPos);
+  const cards = document.querySelectorAll('.app-types__overview__card');
+  [...cards].forEach( (card, id) => {
+    if (id > 2) {
+      card.classList.add('app-types__overview__card--hidden');
+    }
+  })
+  const showMoreCardsBtn = event.target.cloneNode(true);
+  event.target.after(showMoreCardsBtn);
+  event.target.remove();
+  showMoreCardsBtn.textContent = "Zobrazit další produkty ->";
+  showMoreCardsBtn.addEventListener('click', showMoreCardsBtnHandler);
+  state.lastScrollPos = document.documentElement.getBoundingClientRect().y;
+}
+
+const showMoreCardsBtnHandler = (event) => {
+  
+  const cards = document.querySelectorAll('.app-types__overview__card');
+  [...cards].forEach( (card, id) => {
+    if (id > 2) {
+      card.classList.remove('app-types__overview__card--hidden');
+    }
+  })
+  const showLessCardsBtn = event.target.cloneNode(true);
+  event.target.after(showLessCardsBtn);
+  event.target.remove();
+  showLessCardsBtn.textContent = "Zobrazit méně produktů";
+  showLessCardsBtn.addEventListener('click', showLessCardsBtnHandler);
+  state.lastScrollPos = document.documentElement.getBoundingClientRect().y;
+  
+}
 
 // Define state
 const state = {
@@ -57,6 +93,7 @@ const state = {
   // Current and last selected button in the dev-process section
   devProcessLastClickedBtnId: 0,
   devProcessClickedBtnId: 0,
+  lastScrollPos: 0
 };
 
 //SERVICES-FEATURES SECTION
@@ -68,9 +105,18 @@ const removeSelectedClass = buttons => {
 };
 
 const btnClickHandler = (hook, buttons, event) => {
-  const desc = hook.querySelector(".services-features__item-info");
+  
+  if(document.documentElement.clientWidth > 750) { // executing this code only for non-mobile sized viewports
+    const desc = hook.querySelector(".services-features__item-info");
+    console.log(document.documentElement.clientWidth);
   desc.firstElementChild.textContent = event.target.dataset.name;
   desc.lastElementChild.textContent = event.target.dataset.text;
+  } else {
+    const label = hook.querySelector('p');
+    label.textContent = event.target.dataset.text;
+    event.target.after(label);
+  }
+  
   removeSelectedClass(buttons);
   event.target.classList.add("services-features__button--selected");
 };
@@ -105,10 +151,21 @@ const refreshSelectedButton = (buttons) => {
   for (const btn of buttons) {
     btn.classList.remove("step-scroll__round--selected");
   }
+  if(document.documentElement.clientWidth > 750) {
+    buttons[state.devProcessClickedBtnId].classList.add(
+      "step-scroll__round--selected"
+    );
+  } else {
+    buttons.forEach( (button, id) => {
+      if (id <= state.devProcessClickedBtnId) {
+       button.classList.add(
+          "step-scroll__round--selected"
+        );
+      }
 
-  buttons[state.devProcessClickedBtnId].classList.add(
-    "step-scroll__round--selected"
-  );
+    })
+  }
+  
 };
 const moveContainer = (direction, length, hook) => {
   const container = hook.querySelector(".card-container");
@@ -206,15 +263,23 @@ const addPrevAndNextListeners = (card, hook, buttons) => {
   }
 };
 
+
+
 prevButtonClickHandler = (hook, buttons) => {
   state.devProcessClickedBtnId = state.devProcessClickedBtnId - 1;
   refreshSelectedButton(buttons);
   performTransition(hook, buttons);
+  /* if (document.documentElement.clientWidth <= 750) {
+    refreshProgressBar(hook);
+  }  */
 };
 nextButtonClickHandler = (hook, buttons) => {
   state.devProcessClickedBtnId = state.devProcessClickedBtnId + 1;
   refreshSelectedButton(buttons);
   performTransition(hook, buttons);
+  /* if(document.documentElement.clientWidth <= 750) {
+    refreshProgressBar(hook);
+  } */
 };
 const removeCards = () => {
   cardList.forEach((card) => {
@@ -280,6 +345,8 @@ ready(() => {
   const sliderNext = slider.querySelector(".app-types__slider__btn--next");
   const appTypeSlides = slider.querySelectorAll(".app-types__slider__window");
   const appTypeCards = document.querySelectorAll(".app-types__overview__card");
+  const showMoreCardsBtn = document.querySelector('.app-types__display-more--mobile');
+
 
   // Adding listeners to prev & next buttons to move .app-types slider
   sliderNext.addEventListener("click", () =>
@@ -294,6 +361,8 @@ ready(() => {
       switchAppType(idx, appTypeSlides, appTypeCards);
     });
   });
+  //Adding listener to "Show more button" for mobile users
+  showMoreCardsBtn.addEventListener('click', showMoreCardsBtnHandler);
 
   // Services-features
 

@@ -88,6 +88,9 @@
                     </div>
                     <div class="app-types__slider__btn app-types__slider__btn--next"></div>
         </container>
+        <container class="app-types__mobile">
+            <h3 class="heading-3 app-types__heading--mobile">Specializujeme <br>se na</h3>
+        </container>
         <container class="app-types__overview">
             <div class="app-types__overview__card active">
                 <div class="app-types__overview__card__icon">
@@ -105,7 +108,7 @@
                     <h5 class="heading-5 heading-5-vine">Webové<br>aplikace</h5>
                 </div>
             </div>
-            <div class="app-types__overview__card">
+            <div class="app-types__overview__card app-types__overview__card--hidden">
                 <div class="app-types__overview__card__icon">
                     Icon here
                 </div>
@@ -113,7 +116,7 @@
                     <h5 class="heading-5 heading-5-vine">E-shopy</h5>
                 </div>
             </div>
-            <div class="app-types__overview__card">
+            <div class="app-types__overview__card app-types__overview__card--hidden">
                 <div class="app-types__overview__card__icon">
                     Icon here
                 </div>
@@ -122,7 +125,7 @@
                     <p class="paragraph-small">Reaktivní<br>jednostránkové<br>aplikace<br></p>
                 </div>
             </div>
-            <div class="app-types__overview__card">
+            <div class="app-types__overview__card app-types__overview__card--hidden">
                 <div class="app-types__overview__card__icon">
                     Icon here
                 </div>
@@ -131,7 +134,7 @@
                     <p class="paragraph-small">Progresivní<br>webové<br>aplikace<br></p>
                 </div>
             </div>
-            <div class="app-types__overview__card">
+            <div class="app-types__overview__card app-types__overview__card--hidden">
                 <div class="app-types__overview__card__icon">
                     Icon here
                 </div>
@@ -139,7 +142,7 @@
                     <h5 class="heading-5 heading-5-vine">Mobilní<br>aplikace</h5>
                 </div>
             </div>
-            <div class="app-types__overview__card">
+            <div class="app-types__overview__card app-types__overview__card--hidden">
                 <div class="app-types__overview__card__icon">
                     Icon here
                 </div>
@@ -148,7 +151,12 @@
                     <p class="paragraph-small">Systémy<br>správy<br>obsahu<br></p>
                 </div>
             </div>
+            
         </container>
+        <container class="app-types__mobile">
+            <button class="heading-5 heading-5-vine app-types__display-more--mobile">Zobrazit další produkty -></button>
+        </container>
+        
     </section>
     <script src="js/services.js" defer></script>
 
@@ -202,7 +210,7 @@
         </container>
         <template>
             
-        <button class="step-card__button--left step-card__button"></button>
+        <button class="step-card__button--left step-card__button"><span class="step-card__button-text"> <- Předchozí krok</span></button>
 
             <h5 class="step-card__heading heading-5">
                 
@@ -212,7 +220,7 @@
             <p class="step-card__text">
                 
             </p>
-            <button class="step-card__button--right step-card__button"></button>
+            <button class="step-card__button--right step-card__button"> <span class="step-card__button-text">Další krok -></span></button>
 
            
 
@@ -328,7 +336,7 @@
         </div>
 
     </section>
-    <!-- PRINCIPLES -->i
+    <!-- PRINCIPLES -->
     <section class="principles">
         <h1 class="principles__heading heading-1">
             Bez toho ani klik
@@ -365,6 +373,9 @@
             <button class="services-features__button" data-text="blA" data-name="Údržba">
                 Údržbu
             </button>
+            <p class="services-features__mobile-text">
+
+            </p>
             <button class="services-features__button" data-text="blB" data-name="Google Analytics">
                 Google Analytics
             </button>
