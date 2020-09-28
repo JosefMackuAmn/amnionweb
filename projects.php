@@ -17,13 +17,13 @@
                         <img src="images/project_fantasymuzeum.png" alt="Fantasy muzeum & galerie" class="project__img">
                     </div>
                     <div class="project__content__text">
-                        <p class="project__about">"Fantasy muzeum a galerie je bla bla, první na Moravě, bla bla bla, random text na vyplnění citace a tak dál hurá lemra Fantasy muzeum a galerie je bla bla, první na Moravě, bla bla bla, random text na vyplnění citace a tak dál hurá lemra."</p>
-                        <div class="project__review">"Web je moc pěkný, bla bla, jsme rádi, že toto a támmhleto, jen bychom vytkli že ee a tak dále. Fantasy muzeum a galerie je bla bla, první na Moravě, bla bla bla, random text na vyplnění citace a tak dál hurá lemra"</div>
+                        <p class="project__about">"Fantasy muzeum je muzeum a galerie vystavující fantasy díla s volnou inspirací díly Julese Verna a režiséra Karla Zemana."</p>
+                        <div class="project__review">"Spolupráce s AmnioN týmem nás mile překvapila. Pánové jsou mladí, plní moderních nápadů, které dodají šmrnc každému webu. Komunikují rychle a vyřeší za klienta vše potřebné. Web nám vznikl rychle a bez starostí. Tenhle tým budeme určitě doporučovat dál, a i my, v případě potřeby, se na AmnioN tým opět rádi obrátíme."</div>
                         <!-- Blog and interviews are comming soon! -->
                         <!-- <div class="cta-text"><a href="/blog/1">Celý rozhovor -></a></div> -->
-                        <div class="project__outer-link project__outer-link--desktop"><a href="https://www.fantasymuzeum.cz">www.fantasymuzeum.cz</a></div>
+                        <div class="project__outer-link project__outer-link--desktop"><a target="_blank" rel="noopener" href="https://www.fantasymuzeum.cz">www.fantasymuzeum.cz</a></div>
                     </div>
-                    <div class="project__outer-link project__outer-link--mobile"><a href="https://www.fantasymuzeum.cz">www.fantasymuzeum.cz</a></div>
+                    <div class="project__outer-link project__outer-link--mobile"><a target="_blank" rel="noopener" href="https://www.fantasymuzeum.cz">www.fantasymuzeum.cz</a></div>
                 </container>
             </section>
         </main>

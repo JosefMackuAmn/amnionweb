@@ -1,11 +1,11 @@
 .projects {
     &__header {
         &__background {
-            background-image: url('../images/threeInside-1920.jpg');
+            background-image: url('../images/threeOutside-1920.jpg');
             background-position-y: 30%;
 
             &.animBackground {
-                background-image: linear-gradient(to right bottom, $color-blue-overlay-dark-2, $color-blue-overlay-dark), url('../images/threeInside-1920.jpg');
+                background-image: linear-gradient(to right bottom, $color-blue-overlay-dark-2, $color-blue-overlay-dark), url('../images/threeOutside-1920.jpg');
             }
             &.animBackgroundBack {
                 animation: headerBackgroundBack30 1.5s forwards;

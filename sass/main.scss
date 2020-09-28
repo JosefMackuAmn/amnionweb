@@ -15,19 +15,19 @@
 @import 'base/typography';
 @import 'base/utilities';
 
-@import 'components/app-types';
+//@import 'components/app-types';
 @import 'components/cta';
-@import 'components/dev-process';
+//@import 'components/dev-process';
 @import 'components/feature-box';
 @import 'components/form';
 @import 'components/person-card';
 @import 'components/post';
 @import 'components/pricing-card';
 @import 'components/project';
-@import 'components/pyramid';
+//@import 'components/pyramid';
 @import 'components/review';
-@import 'components/services-features';
-@import 'components/principles';
+//@import 'components/services-features';
+//@import 'components/principles';
 
 
 @import 'layout/footer';
@@ -40,4 +40,5 @@
 @import 'pages/index';
 @import 'pages/pricing';
 @import 'pages/projects';
+@import 'pages/OLD_services';
 @import 'pages/services';
