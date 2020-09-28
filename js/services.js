@@ -49,12 +49,14 @@ const switchAppType = (index, appTypeSlides, appTypeCards) => {
 
   state.curAppType = index;
 };
+
 const removeCurrentAppTypeDesc = () => {
   if( document.querySelector('.app-types__mobile-desc')) {
     document.querySelector('.app-types__mobile-desc').remove();
   }
-  
 }
+
+// Removes current app-type description and creates a new one, then appends it after the clicked card
 const showAppTypeDesc = (idx, appTypeSlides, appTypeCards) => {
   removeCurrentAppTypeDesc();
  const desc = document.createElement('p');
@@ -65,6 +67,7 @@ const showAppTypeDesc = (idx, appTypeSlides, appTypeCards) => {
  desc.style.animation = 'appTypesMobileDescIn .3s forwards ease-in';
 }
 
+// Hides the description if window is larger than 750px
 const resizeWindowAppTypesHandler = () => {
   if (state.curWindowSize > 750 && state.lastWindowSize <= 750) {
     removeCurrentAppTypeDesc();
@@ -73,7 +76,10 @@ const resizeWindowAppTypesHandler = () => {
 
 // Handling logic for show-more and show-less button for mobile-phone users on App-Types section
 const showLessCardsBtnHandler = (event) => {
+  // Scroll to where the user has been before he clicked the 'show more' button
   document.documentElement.scrollTo(0, -state.lastScrollPos);
+
+  //Hiding cards except the first two
   const cards = document.querySelectorAll('.app-types__overview__card');
   [...cards].forEach( (card, id) => {
     if (id > 2) {
@@ -81,20 +87,23 @@ const showLessCardsBtnHandler = (event) => {
       
     }
   })
+
+  // Replacing the 'show less cards' button with 'show more cards' button
   const showMoreCardsBtn = event.target.cloneNode(true);
   event.target.after(showMoreCardsBtn);
   event.target.remove();
   showMoreCardsBtn.textContent = "Zobrazit další produkty ->";
   showMoreCardsBtn.addEventListener('click', showMoreCardsBtnHandler);
   
+  // Removing the description if it was triggered on a card, that is going to hide
   if(document.querySelector('.app-types__mobile-desc').getAttribute('num') > 1) {
     removeCurrentAppTypeDesc();
   }
-  state.lastScrollPos = document.documentElement.getBoundingClientRect().y;
 }
 
 const showMoreCardsBtnHandler = (event) => {
   
+  //Showing cards except the first two that are already shown
   const cards = document.querySelectorAll('.app-types__overview__card');
   [...cards].forEach( (card, id) => {
     if (id > 2) {
@@ -102,14 +111,16 @@ const showMoreCardsBtnHandler = (event) => {
       card.style.animation = 'appTypesMobileCardIn .5s forwards ease-in';
     }
   })
+
+  //Replacing the 'show more cards' button with 'show less cards' button
   const showLessCardsBtn = event.target.cloneNode(true);
   event.target.after(showLessCardsBtn);
   event.target.remove();
   showLessCardsBtn.textContent = "Zobrazit méně produktů";
   showLessCardsBtn.addEventListener('click', showLessCardsBtnHandler);
 
+  // Setting the last scrolled position in order to be able to return the user back wt 'show less cards' button
   state.lastScrollPos = document.documentElement.getBoundingClientRect().y;
-  
 }
 
 // Define state
@@ -128,7 +139,7 @@ const state = {
   curWindowSize: document.documentElement.clientWidth
 };
 
-//SERVICES-FEATURES SECTION
+//SERVICES-FEATURES SECTION/////////////////////////////////////////////////////////////////////////////////////úú
 
 const removeSelectedClass = buttons => {
   for (const btn of buttons) {
@@ -137,22 +148,25 @@ const removeSelectedClass = buttons => {
 };
 
 const btnClickHandler = (hook, buttons, event) => {
-  
-  if(document.documentElement.clientWidth > 600) { // executing this code only for non-mobile sized viewports
+
+  // If viewport is larger than 600px, item description is going to appear under the bar
+  if(document.documentElement.clientWidth > 600) { 
     const desc = hook.querySelector(".services-features__item-info");
   desc.firstElementChild.textContent = event.target.dataset.name;
   desc.lastElementChild.textContent = event.target.dataset.text;
+  // If viewport is smaller than 600px, item description is going to appear between the items
   } else {
     const label = hook.querySelector('p');
     label.textContent = event.target.dataset.text;
     event.target.after(label);
   }
   
+  //Adding selected class to the correct button
   removeSelectedClass(buttons);
   event.target.classList.add("services-features__button--selected");
 };
 
-//DEV-PROCESS SECTION
+//DEV-PROCESS SECTION////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const renderCards = (renderedCards, hook, buttons) => {
   for (const i of renderedCards) {
@@ -399,7 +413,6 @@ const resizeWindowDevProcessHandler = (hook, getButtons) => {
 
 const init = (hook, getButtons) => {
   addButtonListeners(hook, getButtons);
-  
   stabilizeContainer(hook);
   renderCards([0], hook, getButtons());
   reRenderPrevAndNextButton(hook, getButtons);

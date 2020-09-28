@@ -159,12 +159,8 @@ $bp-app-types-mobile: 750px;
       &__icon {
         width: 30%;
         margin-right: 3rem;
-        margin-left: 5rem;
+        margin-left: 1rem;
 
-        
-        @media only screen and (max-width: 1300px) {
-          margin-left: 1rem;
-        }
         @media only screen and (max-width: $bp-app-types-mobile) {
           margin-left: 20%;
         }
