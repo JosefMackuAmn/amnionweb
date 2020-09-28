@@ -1,7 +1,7 @@
 //VARIABLES
 
 $hint-height: 10;
-$hint-width: 35;
+$hint-width: 25;
 $scaleXratio: 1.01;
 $scaleYratio: calc(
   ((#{$scaleXratio} - 1) * #{$hint-width} / #{$hint-height}) + 1
@@ -42,6 +42,107 @@ $bp-dev-process-mobile: 750px;
 .dev-process {
   padding: 10rem 0;
 
+  &__buttons {
+    height: 2rem;
+    width: 40rem;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+
+  }
+  &__button {
+    width: 10rem;
+    height: 10rem;
+    background-color: transparent;
+    outline: none; cursor: pointer;
+    border: none;
+    cursor: pointer;
+    border: none;
+
+    display: inline-block;
+    
+    position: absolute;
+    top: -15rem;
+    transform: translateY(-50%);
+
+    @media only screen and (max-width: $bp-dev-process-mobile) {
+      top: 110%;
+      height: 5rem;
+      width: auto;
+    }
+
+    &--left {
+      left: -15rem;
+
+      @media only screen and (max-width: $bp-dev-process-mobile) {
+        left: 0;
+      }
+      @media only screen and (max-width: 450px) {
+        left: 5%;
+      }
+
+      &::before {
+        transform: translateY(-50%) rotate(180deg) translateX(50%);
+      }
+      &:hover::before {
+        transform: translateY(-50%) rotate(180deg) translateX(80%);
+      }
+    }
+    &--right {
+      right: -15rem;
+
+      @media only screen and (max-width: $bp-dev-process-mobile) {
+        right: 0;
+      }
+      @media only screen and (max-width: 450px) {
+        right: 5%;
+      } 
+
+      &::before {
+        transform: translateY(-50%) translateX(-50%);
+      }
+      &:hover::before {
+        transform: translateY(-50%) translateX(-30%);
+      }
+    }
+
+    &::-moz-focus-inner {
+      border: 0;
+    }
+
+    &::before {
+      content: "";
+
+      width: 2rem;
+      height: 4rem;
+      transition: all 0.2s;
+      background-color: $color-gold;
+      clip-path: polygon(0 0, 40% 0, 100% 50%, 40% 100%, 0% 100%, 60% 50%);
+     
+      display: block;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      @media only screen and (max-width: $bp-dev-process-mobile) {
+        display: none;
+      }
+    }
+  }
+  &__button-text {
+    color: $color-gold;
+    font-size: 1.8rem;
+
+    display: none;
+    
+    @media only screen and (max-width: $bp-dev-process-mobile) {
+      display: block;
+    }
+  }
   &__heading {
     margin-bottom: 10rem;
 
@@ -93,91 +194,6 @@ $bp-dev-process-mobile: 750px;
     color: $color-grey-dark;
     font-size: 1.8rem;
   }
-  &__button {
-    width: 10rem;
-    height: 10rem;
-    background-color: transparent;
-    outline: none; cursor: pointer;
-    border: none;
-    cursor: pointer;
-    border: none;
-
-    display: inline-block;
-    
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-
-    @media only screen and (max-width: $bp-dev-process-mobile) {
-      top: 110%;
-      height: 5rem;
-      width: auto;
-    }
-
-    &--left {
-      left: -25%;
-
-      @media only screen and (max-width: $bp-dev-process-mobile) {
-        left: 0;
-      }
-
-      &::before {
-        transform: translateY(-50%) rotate(180deg) translateX(50%);
-      }
-      &:hover::before {
-        transform: translateY(-50%) rotate(180deg) translateX(80%);
-      }
-    }
-    &--right {
-      right: -25%;
-
-      @media only screen and (max-width: $bp-dev-process-mobile) {
-        right: 0;
-      }
-      &::before {
-        transform: translateY(-50%) translateX(-50%);
-      }
-      &:hover::before {
-        transform: translateY(-50%) translateX(-30%);
-      }
-    }
-
-    &::-moz-focus-inner {
-      border: 0;
-    }
-
-    &::before {
-      content: "";
-
-      width: 2rem;
-      height: 4rem;
-      transition: all 0.2s;
-      background-color: $color-gold;
-      clip-path: polygon(0 0, 40% 0, 100% 50%, 40% 100%, 0% 100%, 60% 50%);
-     
-      display: block;
-
-      position: absolute;
-      top: 50%;
-      left: 50%;
-
-      @media only screen and (max-width: $bp-dev-process-mobile) {
-        display: none;
-      }
-    }
-
-    
-  }
-  &__button-text {
-    color: $color-gold;
-    font-size: 1.8rem;
-
-    display: none;
-    
-    @media only screen and (max-width: $bp-dev-process-mobile) {
-      display: block;
-    }
-  }
 }
 .card-container {
   width: 200vw;
@@ -192,11 +208,12 @@ $bp-dev-process-mobile: 750px;
   @media only screen and (max-width: $bp-dev-process-mobile) {
     height: auto;
   }
+  
 }
 .step-scroll {
-  margin-top: 8rem;
+  margin-top: 4rem;
   margin-bottom: 8rem;
-  width: 70rem;
+  width: 65rem;
   margin-left: auto;
   margin-right: auto;
 
@@ -205,10 +222,15 @@ $bp-dev-process-mobile: 750px;
   justify-content: space-between;
 
   position: relative;
-  
+
+
+  @media only screen and (max-width: 1000px) {
+    width: 50rem;
+  }
   @media only screen and (max-width: $bp-dev-process-mobile) {
     width: 80%;
   }
+
   &__round {
     width: 3rem;
     height: 3rem;
@@ -247,6 +269,11 @@ $bp-dev-process-mobile: 750px;
     z-index: 1;
 
     animation: moveInHint;
+
+
+  @media only screen and (max-width: 1000px) {
+    font-size: 1.7rem;
+  }
   }
   &__border {
     background-color: rgba($color-gold, 0.1);

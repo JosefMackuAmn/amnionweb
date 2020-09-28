@@ -108,6 +108,7 @@
                     <h5 class="heading-5 heading-5-vine">Webové<br>aplikace</h5>
                 </div>
             </div>
+            
             <div class="app-types__overview__card app-types__overview__card--hidden">
                 <div class="app-types__overview__card__icon">
                     Icon here
@@ -206,12 +207,12 @@
         <h1 class="dev-process__heading heading-1">
             Cesta k webu
         </h1>
+        
         <container class="card-container">
+           
         </container>
         <template>
             
-        <button class="step-card__button--left step-card__button"><span class="step-card__button-text"> <- Předchozí krok</span></button>
-
             <h5 class="step-card__heading heading-5">
                 
             </h5>
@@ -220,11 +221,13 @@
             <p class="step-card__text">
                 
             </p>
-            <button class="step-card__button--right step-card__button"> <span class="step-card__button-text">Další krok -></span></button>
-
-           
 
         </template>
+        <div class="dev-process__buttons">
+        <button class="dev-process__button--right dev-process__button"> <span class="dev-process__button-text">Další krok -></span></button>
+            <button class="dev-process__button--left dev-process__button"><span class="dev-process__button-text"> <- Předchozí krok</span></button>
+
+        </div>
         </div>
         <div class="step-scroll">
             <div class="step-scroll__step">
@@ -234,7 +237,7 @@
                 </div>
                 <div class="step-scroll__hint">
                     <div class="step-scroll__textbox">
-                        První konzultace
+                        První <br> konzultace
                     </div>
                 </div>
                 <div class="step-scroll__border">
@@ -247,7 +250,7 @@
                 </div>
                 <div class="step-scroll__hint">
                     <div class="step-scroll__textbox">
-                       Kompletace obsahu
+                       Kompletace <br> obsahu
                     </div>
                 </div>
                 <div class="step-scroll__border">
@@ -260,7 +263,7 @@
                 </div>
                 <div class="step-scroll__hint">
                     <div class="step-scroll__textbox">
-                        Průzkum trhu
+                        Průzkum <br> trhu
                     </div>
                 </div>
                 <div class="step-scroll__border">
@@ -273,7 +276,7 @@
                 </div>
                 <div class="step-scroll__hint">
                     <div class="step-scroll__textbox">
-                        Přizpůsobení obsahu
+                        Přizpůsobení <br> obsahu
                     </div>
                 </div>
                 <div class="step-scroll__border">
@@ -299,7 +302,7 @@
                 </div>
                 <div class="step-scroll__hint">
                     <div class="step-scroll__textbox">
-                        Designový návrh
+                        Designový <br> návrh
                     </div>
                 </div>
                 <div class="step-scroll__border">

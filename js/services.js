@@ -48,10 +48,29 @@ const switchAppType = (index, appTypeSlides, appTypeCards) => {
   });
 
   state.curAppType = index;
-  
- 
-
 };
+const removeCurrentAppTypeDesc = () => {
+  if( document.querySelector('.app-types__mobile-desc')) {
+    document.querySelector('.app-types__mobile-desc').remove();
+  }
+  
+}
+const showAppTypeDesc = (idx, appTypeSlides, appTypeCards) => {
+  removeCurrentAppTypeDesc();
+ const desc = document.createElement('p');
+ desc.textContent = appTypeSlides[idx].querySelector('.app-types__slider__text').textContent;
+ desc.classList.add('app-types__mobile-desc');
+ desc.setAttribute('num', idx)
+ appTypeCards[idx].after(desc);
+ desc.style.animation = 'appTypesMobileDescIn .3s forwards ease-in';
+}
+
+const resizeWindowAppTypesHandler = () => {
+  if (state.curWindowSize > 750 && state.lastWindowSize <= 750) {
+    removeCurrentAppTypeDesc();
+  }
+}
+
 // Handling logic for show-more and show-less button for mobile-phone users on App-Types section
 const showLessCardsBtnHandler = (event) => {
   document.documentElement.scrollTo(0, -state.lastScrollPos);
@@ -59,6 +78,7 @@ const showLessCardsBtnHandler = (event) => {
   [...cards].forEach( (card, id) => {
     if (id > 2) {
       card.classList.add('app-types__overview__card--hidden');
+      
     }
   })
   const showMoreCardsBtn = event.target.cloneNode(true);
@@ -66,6 +86,10 @@ const showLessCardsBtnHandler = (event) => {
   event.target.remove();
   showMoreCardsBtn.textContent = "Zobrazit další produkty ->";
   showMoreCardsBtn.addEventListener('click', showMoreCardsBtnHandler);
+  
+  if(document.querySelector('.app-types__mobile-desc').getAttribute('num') > 1) {
+    removeCurrentAppTypeDesc();
+  }
   state.lastScrollPos = document.documentElement.getBoundingClientRect().y;
 }
 
@@ -75,6 +99,7 @@ const showMoreCardsBtnHandler = (event) => {
   [...cards].forEach( (card, id) => {
     if (id > 2) {
       card.classList.remove('app-types__overview__card--hidden');
+      card.style.animation = 'appTypesMobileCardIn .5s forwards ease-in';
     }
   })
   const showLessCardsBtn = event.target.cloneNode(true);
@@ -82,6 +107,7 @@ const showMoreCardsBtnHandler = (event) => {
   event.target.remove();
   showLessCardsBtn.textContent = "Zobrazit méně produktů";
   showLessCardsBtn.addEventListener('click', showLessCardsBtnHandler);
+
   state.lastScrollPos = document.documentElement.getBoundingClientRect().y;
   
 }
@@ -93,7 +119,13 @@ const state = {
   // Current and last selected button in the dev-process section
   devProcessLastClickedBtnId: 0,
   devProcessClickedBtnId: 0,
-  lastScrollPos: 0
+  //Capturing last scrolled position in order to return the user back when 'show less products' button is clicked in the dev-process section
+  lastScrollPos: 0,
+  // Defining an array which manages a list of active cards in the dev-process section
+  cardList: [],
+  // Used for switching to progress-bar mode in the dev-process sections
+  lastWindowSize: document.documentElement.clientWidth,
+  curWindowSize: document.documentElement.clientWidth
 };
 
 //SERVICES-FEATURES SECTION
@@ -106,9 +138,8 @@ const removeSelectedClass = buttons => {
 
 const btnClickHandler = (hook, buttons, event) => {
   
-  if(document.documentElement.clientWidth > 750) { // executing this code only for non-mobile sized viewports
+  if(document.documentElement.clientWidth > 600) { // executing this code only for non-mobile sized viewports
     const desc = hook.querySelector(".services-features__item-info");
-    console.log(document.documentElement.clientWidth);
   desc.firstElementChild.textContent = event.target.dataset.name;
   desc.lastElementChild.textContent = event.target.dataset.text;
   } else {
@@ -127,18 +158,7 @@ const renderCards = (renderedCards, hook, buttons) => {
   for (const i of renderedCards) {
     renderNewCard(buttons[i], hook);
   }
-  if (
-    state.devProcessClickedBtnId === 0 ||
-    state.devProcessLastClickedBtnId === 0
-  ) {
-    cardList[0].querySelector("button:first-of-type").remove();
-  }
-  if (
-    state.devProcessClickedBtnId === buttons.length - 1 ||
-    state.devProcessLastClickedBtnId === buttons.length - 1
-  ) {
-    cardList[cardList.length - 1].querySelector("button:last-of-type").remove();
-  }
+ 
 };
 const stabilizeContainer = (hook) => {
   const container = hook.querySelector(".card-container");
@@ -203,11 +223,11 @@ const getMoveProps = (lastClickedBtnId, clickedBtnId) => {
 const performTransition = (hook, buttons) => {
  
   // getMoveProps() returns information about the transition that will occur. It firstly returns  the direction, secondly an array of id´s for buttons that are related to cards that are going to appear on screen during the transition.
-  console.log(state.devProcessClickedBtnId, state.devProcessLastClickedBtnId);
   const [direction, renderedCards] = getMoveProps(
     state.devProcessLastClickedBtnId,
     state.devProcessClickedBtnId
   );
+  
 
   // setting up the container so it´s default position is that the original card is shown and the rest of the container is overflowing
   setupContainer(renderedCards.length, direction, hook);
@@ -229,7 +249,10 @@ const roundBtnClickHandler = (hook, getButtons, event) => {
   
   // getting  index of the clicked button
   state.devProcessClickedBtnId = Array.from(getButtons()).indexOf(event.target);
+  if(state.devProcessLastClickedBtnId === state.devProcessClickedBtnId) {return;};
   reRenderStepScroll(hook);
+  
+  reRenderPrevAndNextButton(hook, getButtons);
   refreshSelectedButton(getButtons());
    // removing button listeners in order to prevent the user from broking the transition
   
@@ -254,10 +277,33 @@ const reRenderStepScroll = (hook) => {
   stepScroll.remove();
   hook.append(newStepScroll);
 };
-const addPrevAndNextListeners = (card, hook, getButtons) => {
-  const prevBtn = card.querySelector(".step-card__button--left");
-  const nextBtn = card.querySelector(".step-card__button--right");
+
+const reRenderPrevAndNextButton = (hook, getButtons) => {
+ for(const btn of hook.querySelectorAll('button')) {
+  const newBtn = btn.cloneNode(true);
+  hook.querySelector('.dev-process__buttons').prepend(newBtn);
+  btn.remove();
+  newBtn.style.display = 'block';
+ }
+  if (
+    state.devProcessClickedBtnId === 0 
+    
+  ) {
+   hook.querySelector(".dev-process__button--left").style.display = 'none';
+  }
+  if (
+    state.devProcessClickedBtnId === getButtons().length - 1 
+    
+  ) {
+    hook.querySelector(".dev-process__button--right").style.display = 'none';
+  }
+
+};
+const addPrevAndNextListeners = (hook, getButtons) => {
+  const prevBtn = hook.querySelector(".dev-process__button--left");
+  const nextBtn = hook.querySelector(".dev-process__button--right");
   if (prevBtn) {
+    
     prevBtn.addEventListener(
       "click",
       prevButtonClickHandler.bind(null, hook, getButtons)
@@ -276,6 +322,7 @@ const addPrevAndNextListeners = (card, hook, getButtons) => {
 prevButtonClickHandler = (hook, getButtons) => {
   state.devProcessClickedBtnId = state.devProcessClickedBtnId - 1;
   reRenderStepScroll(hook);
+  reRenderPrevAndNextButton(hook, getButtons);
   refreshSelectedButton(getButtons());
   performTransition(hook, getButtons());
   
@@ -283,15 +330,16 @@ prevButtonClickHandler = (hook, getButtons) => {
 nextButtonClickHandler = (hook, getButtons) => {
   state.devProcessClickedBtnId = state.devProcessClickedBtnId + 1;
   reRenderStepScroll(hook);
+  reRenderPrevAndNextButton(hook, getButtons);
   refreshSelectedButton(getButtons());
   performTransition(hook, getButtons());
  
 };
 const removeCards = () => {
-  cardList.forEach((card) => {
+  state.cardList.forEach((card) => {
     card.remove();
   });
-  cardList = [];
+  state.cardList = [];
 };
 
 const renderNewCard = (btn, hook) => {
@@ -305,7 +353,7 @@ const renderNewCard = (btn, hook) => {
 
   card.querySelector(".step-card__heading").textContent = btn.dataset.name;
   card.querySelector("p").textContent = btn.dataset.text;
-  cardList.push(card);
+  state.cardList.push(card);
 };
 
 const animationEndHandler = (hook, getButtons, event) => {
@@ -321,26 +369,51 @@ const animationEndHandler = (hook, getButtons, event) => {
   // rendering card, which the currently selected button refers to
   renderCards([state.devProcessClickedBtnId], hook, getButtons());
   // adding back all button listeners
+  addPrevAndNextListeners(hook, getButtons);
   addButtonListeners(hook, getButtons);
-  addPrevAndNextListeners(cardList[0], hook, getButtons);
+  
 };
+const resizeWindowHandler = (hook, getButtons) => {
+  state.curWindowSize = document.documentElement.clientWidth;
+  resizeWindowDevProcessHandler(hook, getButtons);
+  resizeWindowAppTypesHandler();
+  state.lastWindowSize = state.curWindowSize;
+}
+const resizeWindowDevProcessHandler = (hook, getButtons) => {
+  
+  if (state.curWindowSize <= 750 && state.lastWindowSize > 750) {
+    getButtons().forEach((btn,id) => {
+      if(id < state.devProcessClickedBtnId) {
+        btn.classList.add('step-scroll__round--selected')
+      }
+    })
+  }
+  if (state.curWindowSize > 750 && state.lastWindowSize <= 750) {
+    getButtons().forEach((btn,id) => {
+      if(id < state.devProcessClickedBtnId) {
+        btn.classList.remove('step-scroll__round--selected')
+      }
+    })
+  }
+}
 
 const init = (hook, getButtons) => {
   addButtonListeners(hook, getButtons);
+  
   stabilizeContainer(hook);
   renderCards([0], hook, getButtons());
-  addPrevAndNextListeners(cardList[0], hook, getButtons);
+  reRenderPrevAndNextButton(hook, getButtons);
+  addPrevAndNextListeners(hook, getButtons);
   hook
     .querySelector(".card-container")
     .addEventListener(
       "transitionend",
       animationEndHandler.bind(this, hook, getButtons)
     );
+  window.addEventListener('resize', resizeWindowHandler.bind(this, hook, getButtons));
 };
 
-let cardList = []; // Defining an array which manages a list of active cards
-let devProcessLastClickedBtnId = 0; // Important for the 'click' handling phase
-let devProcessClickedBtnId = 0; // Important for the 'click' handling phase
+
 
 /////////////////////
 // CALLING READY FUNCTION
@@ -365,6 +438,9 @@ ready(() => {
   appTypeCards.forEach((card, idx) => {
     card.addEventListener("click", () => {
       switchAppType(idx, appTypeSlides, appTypeCards);
+      if(state.curWindowSize < 750) {
+        showAppTypeDesc(idx, appTypeSlides, appTypeCards);
+      }
     });
   });
   //Adding listener to "Show more button" for mobile users
