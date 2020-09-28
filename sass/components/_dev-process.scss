@@ -41,18 +41,22 @@ $bp-dev-process-mobile: 750px;
 //
 .dev-process {
   padding: 10rem 0;
+
   &__heading {
+    margin-bottom: 10rem;
+
     color: rgba($color-gold, 0.2);
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2.5rem;
     font-weight: bold;
-    margin-bottom: 10rem;
+    
     @media only screen and (max-width: 900px) {
-      font-size: 4.5rem;
-      line-height: 6rem;
       padding-left: 20%;
       padding-right: 20%;
+
+      font-size: 4.5rem;
+      line-height: 6rem;
       letter-spacing: 1.4rem;
     }
   }
@@ -62,7 +66,9 @@ $bp-dev-process-mobile: 750px;
   border: 2px solid rgba($color-gold, 0.1);
   padding: 4rem;
   border-radius: 1rem;
+
   position: relative;
+
   @media only screen and (max-width: $bp-dev-process-mobile) {
     width: 40rem;
     height: 35rem;
@@ -73,10 +79,12 @@ $bp-dev-process-mobile: 750px;
   @media only screen and (max-width: 400px) {
     width: 35rem;
   }
+
   &__heading {
+    margin-bottom: 2rem;
+
     text-transform: uppercase;
     color: $color-gold;
-    margin-bottom: 2rem;
     font-family: "Eczar", serif;
     letter-spacing: 0.5rem;
   }
@@ -85,50 +93,34 @@ $bp-dev-process-mobile: 750px;
     color: $color-grey-dark;
     font-size: 1.8rem;
   }
-
   &__button {
     width: 10rem;
     height: 10rem;
-    display: inline-block;
     background-color: transparent;
-    outline: none;
+    outline: none; cursor: pointer;
+    border: none;
+    cursor: pointer;
+    border: none;
+
+    display: inline-block;
+    
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+
     @media only screen and (max-width: $bp-dev-process-mobile) {
       top: 110%;
       height: 5rem;
       width: auto;
     }
 
-    cursor: pointer;
-    border: none;
-    &::-moz-focus-inner {
-      border: 0;
-    }
-
-    &::before {
-      width: 2rem;
-      height: 4rem;
-      transition: all 0.2s;
-
-      background-color: $color-gold;
-      content: "";
-      clip-path: polygon(0 0, 40% 0, 100% 50%, 40% 100%, 0% 100%, 60% 50%);
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      @media only screen and (max-width: $bp-dev-process-mobile) {
-        display: none;
-      }
-    }
-
     &--left {
       left: -25%;
+
       @media only screen and (max-width: $bp-dev-process-mobile) {
         left: 0;
       }
+
       &::before {
         transform: translateY(-50%) rotate(180deg) translateX(50%);
       }
@@ -138,6 +130,7 @@ $bp-dev-process-mobile: 750px;
     }
     &--right {
       right: -25%;
+
       @media only screen and (max-width: $bp-dev-process-mobile) {
         right: 0;
       }
@@ -148,23 +141,54 @@ $bp-dev-process-mobile: 750px;
         transform: translateY(-50%) translateX(-30%);
       }
     }
+
+    &::-moz-focus-inner {
+      border: 0;
+    }
+
+    &::before {
+      content: "";
+
+      width: 2rem;
+      height: 4rem;
+      transition: all 0.2s;
+      background-color: $color-gold;
+      clip-path: polygon(0 0, 40% 0, 100% 50%, 40% 100%, 0% 100%, 60% 50%);
+     
+      display: block;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      @media only screen and (max-width: $bp-dev-process-mobile) {
+        display: none;
+      }
+    }
+
+    
   }
   &__button-text {
-    display: none;
     color: $color-gold;
     font-size: 1.8rem;
+
+    display: none;
+    
     @media only screen and (max-width: $bp-dev-process-mobile) {
       display: block;
     }
   }
 }
 .card-container {
-  display: flex;
-  position: relative;
   width: 200vw;
-  justify-content: space-around;
-  transform: translateX(-25%);
   height: 30rem;
+
+  display: flex;
+  justify-content: space-around;
+
+  position: relative;
+  transform: translateX(-25%);
+  
   @media only screen and (max-width: $bp-dev-process-mobile) {
     height: auto;
   }
@@ -175,9 +199,13 @@ $bp-dev-process-mobile: 750px;
   width: 70rem;
   margin-left: auto;
   margin-right: auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  position: relative;
+  
   @media only screen and (max-width: $bp-dev-process-mobile) {
     width: 80%;
   }
@@ -185,10 +213,9 @@ $bp-dev-process-mobile: 750px;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-
     cursor: pointer;
-
     box-shadow: 0 2px 6px rgba($color-gold, 0.25);
+
     @media only screen and (max-width: $bp-dev-process-mobile) {
       box-shadow: none;
       background-color: rgba($color-gold, 0.2);
@@ -200,39 +227,40 @@ $bp-dev-process-mobile: 750px;
     }
     &--selected {
       border: 2px solid $color-gold;
+
       @media only screen and (max-width: $bp-dev-process-mobile) {
         border: none;
         background-color: rgba($color-gold, 0.7);
       }
     }
   }
-  position: relative;
+  
   &__hint {
+    background-color: white;
+
     font-size: 2rem;
     font-family: "Eczar", serif;
     letter-spacing: 0.5rem;
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%);
     text-align: center;
-    background-color: white;
+
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%);
     z-index: 1;
+
     animation: moveInHint;
   }
   &__border {
-    content: "";
     background-color: rgba($color-gold, 0.1);
+
     transform: translateX(calc(-50% + 1.5rem)) translateY(0%)
       scale($scaleXratio, $scaleYratio);
+
     animation: moveInBorder;
   }
   &__hint,
   &__border {
-    text-transform: uppercase;
-    color: $color-gold;
     width: calc(#{$hint-width} * 1rem);
     height: calc(#{$hint-height} * 1rem);
-    position: absolute;
     margin-top: 2rem;
-    display: none;
     clip-path: polygon(
       0 10%,
       45% 10%,
@@ -242,30 +270,43 @@ $bp-dev-process-mobile: 750px;
       100% 100%,
       0 100%
     );
+
+    text-transform: uppercase;
+    color: $color-gold;
+    
+    display: none;
+
+    position: absolute;
+    
     animation-duration: 0.25s;
   }
   &__textbox {
     width: 100%;
     height: 90%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   &__round:hover ~ &__hint {
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%);
+
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
     @media only screen and (max-width: $bp-dev-process-mobile) {
       display: none;
     }
-    flex-direction: column;
-    justify-content: flex-end;
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%);
   }
   &__round:hover ~ &__border {
     display: block;
+
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%)
+    scale($scaleXratio, $scaleYratio);
+
     @media only screen and (max-width: $bp-dev-process-mobile) {
       display: none;
     }
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%)
-      scale($scaleXratio, $scaleYratio);
   }
 }

@@ -31,8 +31,10 @@ $bp-app-types-mobile: 750px;
     @media only screen and (max-width: $bp-app-types-mobile) {
       display: none;
     }
+
     &__btn {
       cursor: pointer;
+
       &--prev {
       }
       &--next {
@@ -40,9 +42,6 @@ $bp-app-types-mobile: 750px;
     }
     &__window {
       width: 80%;
-      @media only screen and (max-width: 780px) {
-        width: 100%;
-      }
 
       height: 30rem;
       background-color: $color-white;
@@ -59,6 +58,10 @@ $bp-app-types-mobile: 750px;
       display: none;
 
       animation: appTypesSlideIn 0.2s;
+
+      @media only screen and (max-width: 780px) {
+        width: 100%;
+      }
 
       &.active {
         display: block;
@@ -102,14 +105,15 @@ $bp-app-types-mobile: 750px;
   &__overview {
     width: 100%;
     margin-top: 6rem;
-    @media only screen and (max-width: 1024px) {
-      margin-top: 4rem;
-    }
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-rows: 15rem;
     gap: 3rem;
+   
+    @media only screen and (max-width: 1024px) {
+      margin-top: 4rem;
+    }
     @media only screen and (max-width: 950px) {
       gap: 2rem;
     }
@@ -121,18 +125,27 @@ $bp-app-types-mobile: 750px;
       padding: 2rem;
       background-color: $color-white-overlay-light;
       border-radius: 5px;
-      @media only screen and (max-width: 1024px) {
-        padding: 1rem 2rem;
-      }
-      @media only screen and (max-width: $bp-app-types-mobile) {
-        padding: 6rem 4rem;
-      }
 
       display: flex;
       align-items: center;
       justify-content: flex-start;
 
       transition: all 0.1s ease-in;
+
+      @media only screen and (max-width: 1024px) {
+        padding: 1rem 2rem;
+      }
+      @media only screen and (max-width: $bp-app-types-mobile) {
+        padding: 6rem 4rem;
+        box-shadow: none;
+        border-radius: 0;
+      }
+
+      &--hidden {
+        @media only screen and (max-width: $bp-app-types-mobile) {
+          display: none;
+        }
+      }
 
       &:hover,
       &.active {
@@ -144,6 +157,7 @@ $bp-app-types-mobile: 750px;
       &__icon {
         width: 30%;
         margin-right: 3rem;
+        
         @media only screen and (max-width: 1024px) {
           margin-right: 2rem;
         }
@@ -155,6 +169,7 @@ $bp-app-types-mobile: 750px;
         & .heading-5 {
           font-size: $font-regular;
           font-weight: 500;
+          
           @media only screen and (max-width: $bp-app-types-mobile) {
             color: $color-blue-dark-1;
           }
@@ -166,46 +181,41 @@ $bp-app-types-mobile: 750px;
           line-height: 135%;
         }
       }
-      @media only screen and (max-width: $bp-app-types-mobile) {
-        box-shadow: none;
-        border-radius: 0;
-      }
-      &--hidden {
-        @media only screen and (max-width: $bp-app-types-mobile) {
-          display: none;
-        }
-      }
     }
   }
-
   &__mobile {
+    text-align: center;
+
     display: none;
+
     @media only screen and (max-width: $bp-app-types-mobile) {
       display: block;
     }
-    text-align: center;
   }
   &__heading--mobile {
+    padding-left: 10%;
+    padding-right: 10%;
+
     font-weight: 500;
     font-size: 3rem;
     text-align: center;
     color: $color-blue-dark-1;
     text-transform: uppercase;
     line-height: 4rem;
-    padding-left: 10%;
-    padding-right: 10%;
     letter-spacing: 0.5rem;
   }
   &__display-more--mobile {
-    text-align: center;
     margin-top: 5rem;
     background-color: transparent;
     border: none;
-    &::-moz-focus-inner {
-      border: 0;
-    }
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
+    
+    text-align: center;
+    
+    &::-moz-focus-inner {
+      border: 0;
+    }
   }
 }

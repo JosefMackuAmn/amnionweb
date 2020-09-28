@@ -201,7 +201,9 @@ const getMoveProps = (lastClickedBtnId, clickedBtnId) => {
   return [direction, renderedCards];
 };
 const performTransition = (hook, buttons) => {
+ 
   // getMoveProps() returns information about the transition that will occur. It firstly returns  the direction, secondly an array of id´s for buttons that are related to cards that are going to appear on screen during the transition.
+  console.log(state.devProcessClickedBtnId, state.devProcessLastClickedBtnId);
   const [direction, renderedCards] = getMoveProps(
     state.devProcessLastClickedBtnId,
     state.devProcessClickedBtnId
@@ -212,32 +214,38 @@ const performTransition = (hook, buttons) => {
   //removing cards
   removeCards();
   //rendering all cards that will appear during the transition to the container (container has display: flex and justify-content: space-around so the space between cards is even)
+  
   renderCards(renderedCards, hook, buttons);
   // applying transition to the container, so the selected card will remain in  center of the screen at the end of the transition
   moveContainer(direction, renderedCards.length, hook);
   // refreshing state.devProcessClickedBtnId
   state.devProcessLastClickedBtnId = state.devProcessClickedBtnId;
-  // removing button listeners in order to prevent the user from broking the transition
-  removeButtonListeners(hook);
+  
 
   // The end of the transition is handled on animationEndHandler(), which is triggered by 'transitionend' eventListener on container
 };
-const roundBtnClickHandler = (hook, buttons, event) => {
+const roundBtnClickHandler = (hook, getButtons, event) => {
+  
+  
   // getting  index of the clicked button
-  state.devProcessClickedBtnId = Array.from(buttons).indexOf(event.target);
-  refreshSelectedButton(buttons);
-  performTransition(hook, buttons);
+  state.devProcessClickedBtnId = Array.from(getButtons()).indexOf(event.target);
+  reRenderStepScroll(hook);
+  refreshSelectedButton(getButtons());
+   // removing button listeners in order to prevent the user from broking the transition
+  
+  performTransition(hook, getButtons());
+  
 };
 
-const addButtonListeners = (hook, buttons) => {
-  for (const btn of buttons) {
+const addButtonListeners = (hook, getButtons) => {
+  for (const btn of getButtons()) {
     btn.addEventListener(
       "click",
-      roundBtnClickHandler.bind(null, hook, buttons)
+      roundBtnClickHandler.bind(null, hook, getButtons)
     );
   }
 };
-const removeButtonListeners = (hook) => {
+const reRenderStepScroll = (hook) => {
   const stepScroll = hook.querySelector(".step-scroll");
   stepScrollHTML = stepScroll.innerHTML;
   const newStepScroll = document.createElement("div");
@@ -246,40 +254,38 @@ const removeButtonListeners = (hook) => {
   stepScroll.remove();
   hook.append(newStepScroll);
 };
-const addPrevAndNextListeners = (card, hook, buttons) => {
+const addPrevAndNextListeners = (card, hook, getButtons) => {
   const prevBtn = card.querySelector(".step-card__button--left");
   const nextBtn = card.querySelector(".step-card__button--right");
   if (prevBtn) {
     prevBtn.addEventListener(
       "click",
-      prevButtonClickHandler.bind(null, hook, buttons)
+      prevButtonClickHandler.bind(null, hook, getButtons)
     );
   }
   if (nextBtn) {
     nextBtn.addEventListener(
       "click",
-      nextButtonClickHandler.bind(null, hook, buttons)
+      nextButtonClickHandler.bind(null, hook, getButtons)
     );
   }
 };
 
 
 
-prevButtonClickHandler = (hook, buttons) => {
+prevButtonClickHandler = (hook, getButtons) => {
   state.devProcessClickedBtnId = state.devProcessClickedBtnId - 1;
-  refreshSelectedButton(buttons);
-  performTransition(hook, buttons);
-  /* if (document.documentElement.clientWidth <= 750) {
-    refreshProgressBar(hook);
-  }  */
+  reRenderStepScroll(hook);
+  refreshSelectedButton(getButtons());
+  performTransition(hook, getButtons());
+  
 };
-nextButtonClickHandler = (hook, buttons) => {
+nextButtonClickHandler = (hook, getButtons) => {
   state.devProcessClickedBtnId = state.devProcessClickedBtnId + 1;
-  refreshSelectedButton(buttons);
-  performTransition(hook, buttons);
-  /* if(document.documentElement.clientWidth <= 750) {
-    refreshProgressBar(hook);
-  } */
+  reRenderStepScroll(hook);
+  refreshSelectedButton(getButtons());
+  performTransition(hook, getButtons());
+ 
 };
 const removeCards = () => {
   cardList.forEach((card) => {
@@ -315,15 +321,15 @@ const animationEndHandler = (hook, getButtons, event) => {
   // rendering card, which the currently selected button refers to
   renderCards([state.devProcessClickedBtnId], hook, getButtons());
   // adding back all button listeners
-  addButtonListeners(hook, getButtons());
-  addPrevAndNextListeners(cardList[0], hook, getButtons());
+  addButtonListeners(hook, getButtons);
+  addPrevAndNextListeners(cardList[0], hook, getButtons);
 };
 
 const init = (hook, getButtons) => {
-  addButtonListeners(hook, getButtons());
+  addButtonListeners(hook, getButtons);
   stabilizeContainer(hook);
   renderCards([0], hook, getButtons());
-  addPrevAndNextListeners(cardList[0], hook, getButtons());
+  addPrevAndNextListeners(cardList[0], hook, getButtons);
   hook
     .querySelector(".card-container")
     .addEventListener(
