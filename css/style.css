@@ -717,10 +717,10 @@ a:link {
 
 @keyframes moveInBorder {
   0% {
-    transform: translateX(calc(-50% + 1.5rem)) translateY(10%) scale(1.01, calc( ((1.01 - 1) * 35 / 10) + 1));
+    transform: translateX(calc(-50% + 1.5rem)) translateY(10%) scale(1.01, calc( ((1.01 - 1) * 35 / 10) + 1));
     opacity: 0; }
   100% {
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 35 / 10) + 1));
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 35 / 10) + 1));
     opacity: 1; } }
 
 @keyframes moveContainer {
@@ -887,7 +887,7 @@ a:link {
   .step-scroll__border {
     content: "";
     background-color: rgba(150, 141, 94, 0.1);
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 35 / 10) + 1));
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 35 / 10) + 1));
     animation: moveInBorder; }
   .step-scroll__hint, .step-scroll__border {
     text-transform: uppercase;
@@ -915,7 +915,7 @@ a:link {
         display: none; } }
   .step-scroll__round:hover ~ .step-scroll__border {
     display: block;
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 35 / 10) + 1)); }
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 35 / 10) + 1)); }
     @media only screen and (max-width: 750px) {
       .step-scroll__round:hover ~ .step-scroll__border {
         display: none; } }
@@ -1843,7 +1843,7 @@ a:link {
     width: 42rem;
     height: 42rem;
     text-align: center;
-    background-image: url("../img/AmnionLogo-white.svg");
+    background-image: url("../img/AmnionLogo-white.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -3063,10 +3063,10 @@ a:link {
       min-height: 130rem; } }
 
 .projects__header__background {
-  background-image: url("../images/threeInside-1920.jpg");
+  background-image: url("../images/threeOutside-1920.jpg");
   background-position-y: 30%; }
   .projects__header__background.animBackground {
-    background-image: linear-gradient(to right bottom, rgba(1, 13, 52, 0.6), rgba(6, 19, 62, 0.33)), url("../images/threeInside-1920.jpg"); }
+    background-image: linear-gradient(to right bottom, rgba(1, 13, 52, 0.6), rgba(6, 19, 62, 0.33)), url("../images/threeOutside-1920.jpg"); }
   .projects__header__background.animBackgroundBack {
     animation: headerBackgroundBack30 1.5s forwards; }
 
