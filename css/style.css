@@ -752,17 +752,10 @@ a:link {
 
 @keyframes moveInBorder {
   0% {
-<<<<<<< HEAD
-    transform: translateX(calc(-50% + 1.5rem)) translateY(10%) scale(1.01, calc( ((1.01 - 1) * 35 / 10) + 1));
+    transform: translateX(calc(-50% + 1.5rem)) translateY(10%) scale(1.01, calc( ((1.01 - 1) * 25 / 10) + 1));
     opacity: 0; }
   100% {
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 35 / 10) + 1));
-=======
-    transform: translateX(calc(-50% + 1.5rem)) translateY(10%) scale(1.01, calc( ((1.01 - 1) * 25 / 10) + 1));
-    opacity: 0; }
-  100% {
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 25 / 10) + 1));
->>>>>>> origin/ove
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 25 / 10) + 1));
     opacity: 1; } }
 
 @keyframes moveContainer {
@@ -772,7 +765,20 @@ a:link {
     transform: translateY(-50%); } }
 
 .dev-process {
-  padding: 10rem 0; }
+  padding: 20rem 0; }
+  .dev-process__heading {
+    margin-bottom: 12rem;
+    font-size: 5.9rem;
+    color: rgba(150, 141, 94, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2rem; }
+    @media only screen and (max-width: 900px) {
+      .dev-process__heading {
+        padding-left: 20%;
+        padding-right: 20%;
+        font-size: 4.5rem;
+        line-height: 6rem;
+        letter-spacing: 1.4rem; } }
   .dev-process__buttons {
     height: 2rem;
     width: 40rem;
@@ -799,7 +805,7 @@ a:link {
         height: 5rem;
         width: auto; } }
     .dev-process__button--left {
-      left: -15rem; }
+      left: -25rem; }
       @media only screen and (max-width: 750px) {
         .dev-process__button--left {
           left: 0; } }
@@ -811,7 +817,7 @@ a:link {
       .dev-process__button--left:hover::before {
         transform: translateY(-50%) rotate(180deg) translateX(80%); }
     .dev-process__button--right {
-      right: -15rem; }
+      right: -25rem; }
       @media only screen and (max-width: 750px) {
         .dev-process__button--right {
           right: 0; } }
@@ -845,26 +851,14 @@ a:link {
     @media only screen and (max-width: 750px) {
       .dev-process__button-text {
         display: block; } }
-  .dev-process__heading {
-    margin-bottom: 10rem;
-    color: rgba(150, 141, 94, 0.2);
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 2.5rem;
-    font-weight: bold; }
-    @media only screen and (max-width: 900px) {
-      .dev-process__heading {
-        padding-left: 20%;
-        padding-right: 20%;
-        font-size: 4.5rem;
-        line-height: 6rem;
-        letter-spacing: 1.4rem; } }
 
 .step-card {
-  width: 50rem;
-  border: 2px solid rgba(150, 141, 94, 0.1);
-  padding: 4rem;
+  width: 60rem;
+  padding: 4rem 6rem;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative; }
   @media only screen and (max-width: 750px) {
     .step-card {
@@ -877,15 +871,19 @@ a:link {
     .step-card {
       width: 35rem; } }
   .step-card__heading {
-    margin-bottom: 2rem;
-    text-transform: uppercase;
     color: #968D5E;
-    font-family: "Eczar", serif;
-    letter-spacing: 0.5rem; }
+    font-size: 2.9rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    text-transform: uppercase; }
   .step-card__text {
+    margin: auto 0;
     letter-spacing: 0.25rem;
     color: #363636;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    line-height: 135%;
+    text-align: center; }
 
 .card-container {
   width: 200vw;
@@ -919,7 +917,7 @@ a:link {
     height: 3rem;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0 2px 6px rgba(150, 141, 94, 0.25); }
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3) inset; }
     @media only screen and (max-width: 750px) {
       .step-scroll__round {
         box-shadow: none;
@@ -930,7 +928,8 @@ a:link {
       .step-scroll__round {
         width: 3.5rem; } }
     .step-scroll__round--selected {
-      border: 2px solid #968D5E; }
+      border: 2px solid #968D5E;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); }
       @media only screen and (max-width: 750px) {
         .step-scroll__round--selected {
           border: none;
@@ -938,7 +937,6 @@ a:link {
   .step-scroll__hint {
     background-color: white;
     font-size: 2rem;
-    font-family: "Eczar", serif;
     letter-spacing: 0.5rem;
     text-align: center;
     transform: translateX(calc(-50% + 1.5rem)) translateY(0%);
@@ -949,11 +947,7 @@ a:link {
         font-size: 1.7rem; } }
   .step-scroll__border {
     background-color: rgba(150, 141, 94, 0.1);
-<<<<<<< HEAD
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 35 / 10) + 1));
-=======
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 25 / 10) + 1));
->>>>>>> origin/ove
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 25 / 10) + 1));
     animation: moveInBorder; }
   .step-scroll__hint, .step-scroll__border {
     width: calc(25 * 1rem);
@@ -981,11 +975,7 @@ a:link {
         display: none; } }
   .step-scroll__round:hover ~ .step-scroll__border {
     display: block;
-<<<<<<< HEAD
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 35 / 10) + 1)); }
-=======
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 25 / 10) + 1)); }
->>>>>>> origin/ove
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 25 / 10) + 1)); }
     @media only screen and (max-width: 750px) {
       .step-scroll__round:hover ~ .step-scroll__border {
         display: none; } }
@@ -1657,8 +1647,8 @@ a:link {
     align-items: center;
     justify-content: center; }
   .services-features__heading {
+    margin-bottom: 0;
     text-transform: uppercase;
-    text-align: center;
     font-size: 3rem;
     color: rgba(150, 141, 94, 0.6);
     letter-spacing: 1rem;
@@ -1770,29 +1760,15 @@ a:link {
         display: block; } }
 
 .principles {
-  background-color: #e6f0fc;
-  padding-top: 20rem; }
+  background-color: #E6F0FC;
+  padding-top: 30rem; }
   @media only screen and (max-width: 1200px) {
     .principles {
       padding-top: 15rem; } }
-  .principles__heading {
-    text-align: center;
-    font-size: 3rem;
-    color: #001641;
-    letter-spacing: 1rem;
-    text-transform: uppercase;
-    font-weight: 500; }
-    @media only screen and (max-width: 800px) {
-      .principles__heading {
-        padding-left: 20%;
-        padding-right: 20%;
-        line-height: 4rem;
-        letter-spacing: 0.5rem; } }
-  .principles__p {
-    letter-spacing: 0.3rem; }
+  .principles__paragraph {
+    letter-spacing: 0.2rem; }
   .principles__container {
-    margin-top: 20rem;
-    padding-bottom: 20rem;
+    padding-bottom: 30rem;
     display: flex;
     justify-content: center; }
     @media only screen and (max-width: 1200px) {
@@ -1808,8 +1784,8 @@ a:link {
         padding-bottom: 15rem; } }
   .principles__box {
     background-color: white;
-    padding: 8rem 4rem;
-    width: 30rem;
+    padding: 8rem 6rem 6rem 6rem;
+    width: 42rem;
     position: relative; }
     @media only screen and (max-width: 750px) {
       .principles__box {
@@ -1817,13 +1793,13 @@ a:link {
         .principles__box:not(:last-child) {
           margin-bottom: 10rem; } }
     .principles__box--left {
-      margin-right: 8rem; }
+      margin-right: 12rem; }
       @media only screen and (max-width: 900px) {
         .principles__box--left {
           margin-right: 2rem; } }
   .principles__box-name {
     background-color: #001641;
-    padding: 2rem;
+    padding: 2rem 4rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5rem;

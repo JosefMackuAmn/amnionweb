@@ -366,7 +366,7 @@ const renderNewCard = (btn, hook) => {
   hook.querySelector(".card-container").append(card);
 
   card.querySelector(".step-card__heading").textContent = btn.dataset.name;
-  card.querySelector("p").textContent = btn.dataset.text;
+  card.querySelector("p").innerHTML = btn.dataset.text;
   state.cardList.push(card);
 };
 
