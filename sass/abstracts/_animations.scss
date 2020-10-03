@@ -309,3 +309,21 @@
         left: 6rem;
     }
 }
+@keyframes appTypesMobileCardIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes appTypesMobileDescIn {
+    0% {
+        transform: translateY(-15rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
