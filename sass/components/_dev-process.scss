@@ -51,12 +51,16 @@ $bp-dev-process-mobile: 750px;
     letter-spacing: 2rem;
     
     @media only screen and (max-width: 900px) {
-      padding-left: 20%;
-      padding-right: 20%;
+      padding-left: 5rem;
+      padding-right: 5rem;
 
       font-size: 4.5rem;
       line-height: 6rem;
       letter-spacing: 1.4rem;
+    }
+    @media only screen and (max-width: 500px) {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
   &__buttons {
@@ -94,6 +98,9 @@ $bp-dev-process-mobile: 750px;
     &--left {
       left: -25rem;
 
+      @media only screen and (max-width: 1000px) {
+        left: -15rem;
+      }
       @media only screen and (max-width: $bp-dev-process-mobile) {
         left: 0;
       }
@@ -111,6 +118,9 @@ $bp-dev-process-mobile: 750px;
     &--right {
       right: -25rem;
 
+      @media only screen and (max-width: 1000px) {
+        right: -15rem;
+      }
       @media only screen and (max-width: $bp-dev-process-mobile) {
         right: 0;
       }

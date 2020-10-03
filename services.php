@@ -343,17 +343,17 @@
     <section class="principles">
         <container class="principles__container">
             <div class="principles__box principles__box--left">
-                <p class="paragraph-big paragraph-big-dark principles__paragraph">
+                <p class="paragraph-small principles__paragraph">
                     <strong>Nejde jen o vzhled</strong>, ale i o uspořádání informací, intuitivitu a celkový zážitek z webu.
                 </p>
-                <h3 class="heading-3 principles__box-name principles__box-name--left">UX/UI Design</h3>
+                <h5 class="heading-5 principles__box-name principles__box-name--left">UX/UI Design</h5>
             </div>
             <div class="principles__box principles__box--right">
-                <p class="paragraph-big paragraph-big-dark principles__paragraph">
+                <p class="paragraph-small principles__paragraph">
                     Můžeme se v něm tak lépe a rychleji orientovat a kdokoli rychle pochopí, <strong>k čemu je ta zapeklitá
                     funkce</strong>.
                 </p>
-                <h3 class="heading-3 principles__box-name principles__box-name--right">Kvalitní kód</h3>
+                <h5 class="heading-5 principles__box-name principles__box-name--right">Kvalitní kód</h5>
             </div>
         </container>
 

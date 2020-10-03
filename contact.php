@@ -26,6 +26,7 @@
                     <div class="form__message">
                         <label for="message">Vaše zpráva:</label>
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Vaše zpráva..."></textarea>
+                        <p class="form__gdpr">Odesláním souhlasíte se <a target="_blank" href="gdpr">zpracováním osobních údajů</a>.</p>
                     </div>
                     <input name="submit" type="submit" class="cta-submit" value="Odeslat">
                 </form>
