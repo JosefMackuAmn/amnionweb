@@ -1,5 +1,5 @@
-const CACHE_STATIC_NAME = "static-v1.0.11"
-const CACHE_DYNAMIC_NAME = "dynamic-v1.0.13"
+const CACHE_STATIC_NAME = "static-v1.1.6";
+const CACHE_DYNAMIC_NAME = "dynamic-v1.1.7";
 
 const STATIC_PATHS = [
     '/',

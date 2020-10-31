@@ -22,9 +22,9 @@
                         <li>+420 735 044 114</li>
                     </ul>              
                 </div>
-                <p class="paragraph-little footer__copy--desktop">&copy;2020 - AmnioN, všechna práva vyhrazena.<br><a class="footer--link" href="#">Obchodní podmínky</a> a <a class="footer--link" href="#">zásady ochrany osobních údajů</a>. </p>
+                <p class="paragraph-little footer__copy--desktop">&copy;2020 - AmnioN, všechna práva vyhrazena.</p>
             </div>
-            <p class="paragraph-little footer__copy--mobile">&copy;2020 - AmnioN, všechna práva vyhrazena.<br><a class="footer--link" href="#">Obchodní podmínky</a> a <a class="footer--link" href="#">zásady ochrany osobních údajů</a>. </p>
+            <p class="paragraph-little footer__copy--mobile">&copy;2020 - AmnioN, všechna práva vyhrazena.</p>
         </container>
     </footer>
 

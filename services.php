@@ -204,9 +204,9 @@
 
     <!-- DEVELOPMENT PROCESS -->
     <section class="dev-process">
-        <h1 class="dev-process__heading heading-1">
-            Cesta k webu
-        </h1>
+        <h2 class="dev-process__heading heading-2">
+            Cesta k&nbsp;webu
+        </h2>
         
         <container class="card-container">
            
@@ -231,7 +231,7 @@
         </div>
         <div class="step-scroll">
             <div class="step-scroll__step">
-                <div class="step-scroll__round step-scroll__round--selected" data-text="Ujasníme si, co stavíme, jak má výsledný produkt vypadat, fungovat, kdo je cílová skupina a další nezbytné informace. Nakonec vám řekneme náše návrhy a doporučení."
+                <div class="step-scroll__round step-scroll__round--selected" data-text="Ujasníme si, <strong>co stavíme</strong>, jak má výsledný produkt vypadat, fungovat, kdo je <strong>cílová skupina</strong> a další nezbytné informace. Nakonec vám řekneme náše <strong>návrhy a doporučení</strong>."
                     data-name="První konzultace">
 
                 </div>
@@ -245,7 +245,7 @@
                 </div>
             </div>
             <div class="step-scroll__step">
-                <div class="step-scroll__round" data-text="Shromáždíme veškeré informace, které se budou na výsledné stránce zobrazovat a uspořádáme je do základní kostry, kterou se budeme dále řídit." data-name="Kompletace obsahu">
+                <div class="step-scroll__round" data-text="<strong>Shromáždíme veškeré informace</strong>, které se budou na výsledné stránce zobrazovat. <strong>Uspořádáme je</strong> do základní kostry, kterou se budeme dále řídit." data-name="Kompletace obsahu">
 
                 </div>
                 <div class="step-scroll__hint">
@@ -258,7 +258,7 @@
                 </div>
             </div>
             <div class="step-scroll__step">
-                <div class="step-scroll__round" data-text="Zhodnotíme Vaši konkurenci, v případě Vašeho zájmu i vyrazíme do ulic, abychom se dozvěděli co nejvíce o zákaznících a mohli stránky adaptovat jejich reálným potřebám." data-name="Průzkum trhu">
+                <div class="step-scroll__round" data-text="<strong>Zhodnotíme vaši konkurenci</strong>, v případě vašeho zájmu i vyrazíme do ulic, abychom se dozvěděli <strong>co nejvíce o zákaznících</strong> a mohli stránky adaptovat jejich reálným potřebám." data-name="Průzkum trhu">
 
                 </div>
                 <div class="step-scroll__hint">
@@ -284,7 +284,7 @@
                 </div>
             </div>
             <div class="step-scroll__step">
-                <div class="step-scroll__round" data-text="Předložíme vám návrh informační architektury a základního layoutu webu. Pevně se dohodneme na konrétních stránkách, uspořádání jejich obsahu, interních odkazech a struktuře navigace." data-name="Wireframe">
+                <div class="step-scroll__round" data-text="Předložíme vám <strong>návrh informační architektury</strong> a základního <strong>layoutu webu</strong>. Pevně se dohodneme na konrétních stránkách, uspořádání jejich obsahu, interních odkazech a struktuře navigace." data-name="Wireframe">
 
                 </div>
                 <div class="step-scroll__hint">
@@ -297,7 +297,7 @@
                 </div>
             </div>
             <div class="step-scroll__step">
-                <div class="step-scroll__round" data-text="Konečně uvidíte, jak váš web bude vypadat a bude možné dělat poslední úpravy ve vzhledu webu." data-name="Designový návrh">
+                <div class="step-scroll__round" data-text="Konečně uvidíte, <strong>jak váš web bude vypadat</strong>. Bude možné dělat poslední úpravy ve vzhledu webu." data-name="Designový návrh">
 
                 </div>
                 <div class="step-scroll__hint">
@@ -310,7 +310,7 @@
                 </div>
             </div>
             <div class="step-scroll__step">
-                <div class="step-scroll__round" data-text="Dohodnuté naprogramujeme a spustíme" data-name="Programování">
+                <div class="step-scroll__round" data-text="Dohodnuté naprogramujeme a spustíme." data-name="Programování">
 
                 </div>
                 <div class="step-scroll__hint">
@@ -323,7 +323,7 @@
                 </div>
             </div>
             <div class="step-scroll__step">
-                <div class="step-scroll__round" data-text="Otestujeme kompatibilitu na zařízeních užívaných primárně cílovou skupinou a vychytáme chyby v kódu." data-name="Testování">
+                <div class="step-scroll__round" data-text="Otestujeme <strong>kompatibilitu</strong> na zařízeních užívaných primárně cílovou skupinou a <strong>vychytáme chyby</strong> v kódu." data-name="Testování">
 
                 </div>
                 <div class="step-scroll__hint">
@@ -341,26 +341,19 @@
     </section>
     <!-- PRINCIPLES -->
     <section class="principles">
-        <h1 class="principles__heading heading-1">
-            Bez toho ani klik
-        </h1>
         <container class="principles__container">
             <div class="principles__box principles__box--left">
-                <p class="principles__p">
-                    Nejde jen o vzhled, ale i o uspořádání informací, intuitivitu a celkový zážitek z webu
+                <p class="paragraph-small principles__paragraph">
+                    <strong>Nejde jen o vzhled</strong>, ale i o uspořádání informací, intuitivitu a celkový zážitek z webu.
                 </p>
-                <p class="principles__box-name principles__box-name--left">
-                    UX / UI Design
-                </p>
+                <h5 class="heading-5 principles__box-name principles__box-name--left">UX/UI Design</h5>
             </div>
             <div class="principles__box principles__box--right">
-                <p class="principles__p">
-                    Můžeme se v něm tak lépe a rychleji orientovat a kdokoli rychle pochopí, k čemu je ta zapeklitá
-                    funkce
+                <p class="paragraph-small principles__paragraph">
+                    Můžeme se v něm tak lépe a rychleji orientovat a kdokoli rychle pochopí, <strong>k čemu je ta zapeklitá
+                    funkce</strong>.
                 </p>
-                <p class="principles__box-name principles__box-name--right">
-                    Kvalitní kód
-                </p>
+                <h5 class="heading-5 principles__box-name principles__box-name--right">Kvalitní kód</h5>
             </div>
         </container>
 
@@ -368,25 +361,25 @@
     <!-- FEATURES -->
     <section class="services-features">
         <div class="services-features__heading-box">
-            <h1 class="services-features__heading heading-1">
+            <h2 class="services-features__heading heading-2">
                 Zařídíme všechno
-            </h1>
+            </h2>
         </div>
         <div class="services-features__bar">
-            <button class="services-features__button" data-text="blA" data-name="Údržba">
-                Údržbu
+            <button class="services-features__button" data-text="Idk text" data-name="Údržba">
+                Údržba
             </button>
             <p class="services-features__mobile-text">
 
             </p>
-            <button class="services-features__button" data-text="blB" data-name="Google Analytics">
+            <button class="services-features__button" data-text="Pomocí Google Analytics budete mít přehled o návštěvnosti vašeho webu." data-name="Google Analytics">
                 Google Analytics
             </button>
-            <button class="services-features__button services-features__button--selected" data-text="blC"
+            <button class="services-features__button services-features__button--selected" data-text="V procesu tvorby webu dbáme na to, aby vaši stránku bylo možné jednoduše najít"
                 data-name="SEO">
-                Seo
+                SEO
             </button>
-            <button class="services-features__button" data-text="blD" data-name="Marketing">
+            <button class="services-features__button" data-text="Cíleným marketingem získáte příliv nových návštěvníků i zákazníků" data-name="Marketing">
                 Marketing
             </button>
 

@@ -40,8 +40,29 @@ $bp-dev-process-mobile: 750px;
 }
 //
 .dev-process {
-  padding: 10rem 0;
+  padding: 20rem 0;
 
+  &__heading {
+    margin-bottom: 12rem;
+
+    font-size: $font-largest;
+    color: rgba($color-gold, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    
+    @media only screen and (max-width: 900px) {
+      padding-left: 5rem;
+      padding-right: 5rem;
+
+      font-size: 4.5rem;
+      line-height: 6rem;
+      letter-spacing: 1.4rem;
+    }
+    @media only screen and (max-width: 500px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
   &__buttons {
     height: 2rem;
     width: 40rem;
@@ -75,8 +96,11 @@ $bp-dev-process-mobile: 750px;
     }
 
     &--left {
-      left: -15rem;
+      left: -25rem;
 
+      @media only screen and (max-width: 1000px) {
+        left: -15rem;
+      }
       @media only screen and (max-width: $bp-dev-process-mobile) {
         left: 0;
       }
@@ -92,8 +116,11 @@ $bp-dev-process-mobile: 750px;
       }
     }
     &--right {
-      right: -15rem;
+      right: -25rem;
 
+      @media only screen and (max-width: 1000px) {
+        right: -15rem;
+      }
       @media only screen and (max-width: $bp-dev-process-mobile) {
         right: 0;
       }
@@ -143,30 +170,16 @@ $bp-dev-process-mobile: 750px;
       display: block;
     }
   }
-  &__heading {
-    margin-bottom: 10rem;
-
-    color: rgba($color-gold, 0.2);
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 2.5rem;
-    font-weight: bold;
-    
-    @media only screen and (max-width: 900px) {
-      padding-left: 20%;
-      padding-right: 20%;
-
-      font-size: 4.5rem;
-      line-height: 6rem;
-      letter-spacing: 1.4rem;
-    }
-  }
 }
 .step-card {
-  width: 50rem;
-  border: 2px solid rgba($color-gold, 0.1);
-  padding: 4rem;
+  width: 60rem;
+  //box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  padding: 4rem 6rem;
   border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   position: relative;
 
@@ -182,17 +195,21 @@ $bp-dev-process-mobile: 750px;
   }
 
   &__heading {
-    margin-bottom: 2rem;
-
-    text-transform: uppercase;
     color: $color-gold;
-    font-family: "Eczar", serif;
+    font-size: $font-bigger;
+    font-weight: 500;
     letter-spacing: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
   }
   &__text {
+    margin: auto 0;
+
     letter-spacing: 0.25rem;
     color: $color-grey-dark;
     font-size: 1.8rem;
+    line-height: 135%;
+    text-align: center;
   }
 }
 .card-container {
@@ -236,7 +253,7 @@ $bp-dev-process-mobile: 750px;
     height: 3rem;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0 2px 6px rgba($color-gold, 0.25);
+    box-shadow: 0 0px 5px rgba($color-black, 0.3) inset;
 
     @media only screen and (max-width: $bp-dev-process-mobile) {
       box-shadow: none;
@@ -249,6 +266,7 @@ $bp-dev-process-mobile: 750px;
     }
     &--selected {
       border: 2px solid $color-gold;
+      box-shadow: 0 2px 5px rgba($color-black, 0.15);
 
       @media only screen and (max-width: $bp-dev-process-mobile) {
         border: none;
@@ -261,7 +279,6 @@ $bp-dev-process-mobile: 750px;
     background-color: white;
 
     font-size: 2rem;
-    font-family: "Eczar", serif;
     letter-spacing: 0.5rem;
     text-align: center;
 
@@ -269,7 +286,6 @@ $bp-dev-process-mobile: 750px;
     z-index: 1;
 
     animation: moveInHint;
-
 
   @media only screen and (max-width: 1000px) {
     font-size: 1.7rem;
