@@ -5,6 +5,7 @@ if(isset($_POST['submit'])) {
     $name = $_POST['full-name'];
     $email = $_POST['email'];
     $message = nl2br($_POST['message']);
+    $interest = $_POST['interest'];
 
     if ($name && filter_var($email, FILTER_VALIDATE_EMAIL) && $message) {
     
@@ -17,7 +18,7 @@ if(isset($_POST['submit'])) {
             'Content-Type' => 'text/html; charset=UTF-8'
         );
     
-        $message = $message . "<br /><br />" . $email . "<br />" . $name;
+        $message = $message . "<br /><br />" . $email . "<br />" . $name . "<br />Zájem:" . $interest;
     
        mail($mailTo, $subject, $message, $headers);
 

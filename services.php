@@ -16,7 +16,7 @@
             <div class="app-types__slider__btn app-types__slider__btn--prev">
                 </div>
                     <div class="app-types__slider__window active">
-                        <div class="app-types__slider__title">Produktové prezentace</div>
+                        <div class="app-types__slider__title">Webová prezentace</div>
                         <div class="app-types__slider__content">
                             <div class="app-types__slider__icon">Icon here</div>
                             <div class="app-types__slider__text">
@@ -393,6 +393,8 @@
             </p>
         </div>
     </section>
+
+    <?php includeWithVariables('includes/contact.php', array('margintop' => 'false')); ?>
 
 </main>
 <?php

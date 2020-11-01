@@ -26,6 +26,9 @@
                     <div class="project__outer-link project__outer-link--mobile"><a target="_blank" rel="noopener" href="https://www.fantasymuzeum.cz">www.fantasymuzeum.cz</a></div>
                 </container>
             </section>
+
+            <?php includeWithVariables('includes/contact.php', array('margintop' => 'false')); ?>
+
         </main>
 <?php
     include('./includes/footer.php')

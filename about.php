@@ -14,16 +14,22 @@
             <section class="about__people">
                 <container class="about__people__container">
                     <div class="person-card">
-                        <div class="person-card__photo" style="background-image: url('./images/josef-640.jpg'); background-size: cover; background-position-y: 47%;"></div>
-                        <h3 class="person-card__name">Josef Macků</h3>
-                        <p class="person-card__specification">Programátor,</p>
-                        <p class="person-card__specification">projektový manager</p>
+                        <div class="person-card__photo" style="background-image: url('./images/patrik-640.jpg'); background-size: 160%; background-position: 33% 33%;"></div>
+                        <h3 class="person-card__name">Patrik Daniel</h3>
+                        <p class="person-card__specification">Kodér,</p>
+                        <p class="person-card__specification">designer</p>
                     </div>
                     <div class="person-card">
                         <div class="person-card__photo" style="background-image: url('./images/jirka-640.jpg'); background-size: cover; background-position-y: 15%;"></div>
                         <h3 class="person-card__name">Jiří Fligl</h3>
                         <p class="person-card__specification">Designer,</p>
-                        <p class="person-card__specification">marketingový specialista</p>
+                        <p class="person-card__specification">marketing, SEO</p>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-card__photo" style="background-image: url('./images/josef-640.jpg'); background-size: cover; background-position-y: 47%;"></div>
+                        <h3 class="person-card__name">Josef Macků</h3>
+                        <p class="person-card__specification">Programátor,</p>
+                        <p class="person-card__specification">manager</p>
                     </div>
                     <div class="person-card">
                         <div class="person-card__photo" style="background-image: url('./images/ondrej-640.jpg'); background-size: cover;"></div>
@@ -32,9 +38,9 @@
                         <p class="person-card__specification">kodér</p>
                     </div>
                     <div class="person-card">
-                        <div class="person-card__photo" style="background-image: url('./images/patrik-640.jpg'); background-size: 160%; background-position: 33% 33%;"></div>
-                        <h3 class="person-card__name">Patrik Daniel</h3>
-                        <p class="person-card__specification">Kodér,</p>
+                        <div class="person-card__photo" style="background-image: url('./images/kryštof.jpg'); background-size: 160%; background-position: 68% 100%;"></div>
+                        <h3 class="person-card__name">Kryštof Zabadal</h3>
+                        <p class="person-card__specification">Grafik,</p>
                         <p class="person-card__specification">designer</p>
                     </div>
                 </container>
@@ -84,6 +90,8 @@
                     </div>
                 </div>
             </section>
+
+            <?php includeWithVariables('includes/contact.php', array('margintop' => 'true')); ?>
 
         </main>
 
