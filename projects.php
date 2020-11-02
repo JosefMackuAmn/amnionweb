@@ -20,9 +20,9 @@
                     <div class="project__content__text">
                         <p class="project__about">"Fantasy muzeum je muzeum a galerie vystavující fantasy díla s volnou inspirací díly Julese Verna a režiséra Karla Zemana."</p>
                         <div class="project__review">"Spolupráce s AmnioN týmem nás mile překvapila. Pánové jsou mladí, plní moderních nápadů, které dodají šmrnc každému webu. Komunikují rychle a vyřeší za klienta vše potřebné. Web nám vznikl rychle a bez starostí. Tenhle tým budeme určitě doporučovat dál, a i my, v případě potřeby, se na AmnioN tým opět rádi obrátíme."</div>
-                        <div class="project__outer-link project__outer-link--desktop"><a target="_blank" rel="noopener" href="https://www.fantasymuzeum.cz">www.fantasymuzeum.cz</a></div>
+                        <div class="project__outer-link project__outer-link--desktop"><a target="_blank" rel="noopener" href="https://www.keramika-rosice.cz">www.keramika-rosice.cz</a></div>
                     </div>
-                    <div class="project__outer-link project__outer-link--mobile"><a target="_blank" rel="noopener" href="https://www.fantasymuzeum.cz">www.keramika-rosice.cz</a></div>
+                    <div class="project__outer-link project__outer-link--mobile"><a target="_blank" rel="noopener" href="https://www.keramika-rosice.cz">www.keramika-rosice.cz</a></div>
                 </container>
             </section>
 
