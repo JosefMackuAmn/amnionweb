@@ -752,10 +752,12 @@ a:link {
 
 @keyframes moveInBorder {
   0% {
-    transform: translateX(calc(-50% + 1.5rem)) translateY(10%) scale(1.01, calc( ((1.01 - 1) * 25 / 10) + 1));
+    transform: translateX(calc(-50% + 1.5rem)) translateY(10%) scale(1.01, calc(
+ ((1.01 - 1) * 25 / 10) + 1));
     opacity: 0; }
   100% {
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 25 / 10) + 1));
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc(
+ ((1.01 - 1) * 25 / 10) + 1));
     opacity: 1; } }
 
 @keyframes moveContainer {
@@ -957,7 +959,8 @@ a:link {
         font-size: 1.7rem; } }
   .step-scroll__border {
     background-color: rgba(150, 141, 94, 0.1);
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 25 / 10) + 1));
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc(
+ ((1.01 - 1) * 25 / 10) + 1));
     animation: moveInBorder; }
   .step-scroll__hint, .step-scroll__border {
     width: calc(25 * 1rem);
@@ -985,7 +988,8 @@ a:link {
         display: none; } }
   .step-scroll__round:hover ~ .step-scroll__border {
     display: block;
-    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc( ((1.01 - 1) * 25 / 10) + 1)); }
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%) scale(1.01, calc(
+ ((1.01 - 1) * 25 / 10) + 1)); }
     @media only screen and (max-width: 750px) {
       .step-scroll__round:hover ~ .step-scroll__border {
         display: none; } }
