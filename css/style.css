@@ -2391,6 +2391,72 @@ a:link {
         bottom: 13px; }
 
 .about {
+  /*&__technology {
+            width: 100%;
+            margin-bottom: 15rem;
+
+            display: flex;
+            align-items: center;
+            
+            @media only screen and (max-width: 700px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            & > p {
+                width: 60%;
+
+                @media only screen and (max-width: 850px) {
+                    font-size: 2.2rem;
+                }
+                @media only screen and (max-width: 750px) {
+                    font-size: 2rem;
+                }
+                @media only screen and (max-width: 700px) {
+                    text-align: center;
+                    font-size: 2.5rem;
+                }
+                @media only screen and (max-width: 550px) {
+                    font-size: 2rem;
+                }
+            }
+
+            &:nth-child(2) {
+                flex-direction: row-reverse;
+                
+                @media only screen and (max-width: 700px) {
+                    flex-direction: column;
+                }
+
+                & .about__tech__image {
+                    margin-left: 10rem;
+                    margin-right: 0;
+                    
+                    @media only screen and (min-width: 1400px) {
+                        margin-left: 20rem;
+                    }
+                    @media only screen and (max-width: 700px) {
+                        margin-left: 0;
+                        margin-bottom: 5rem;
+                    }
+                }
+            }
+        }
+
+        &__image {
+            width: 35%;
+            margin-right: 10rem;
+
+            @media only screen and (min-width: 1400px) {
+                margin-right: 20rem;
+            }
+            @media only screen and (max-width: 700px) {
+                width: 60%;
+                margin-right: 0;
+                margin-bottom: 5rem;
+            }
+        }
+    }*/
   /* &__people {
         margin-top: -12rem;
         height: 120rem;
@@ -2730,56 +2796,6 @@ a:link {
       @media only screen and (max-width: 390px) {
         .about__tech h2 {
           font-size: 3.5rem; } }
-    .about__tech__technology {
-      width: 100%;
-      margin-bottom: 15rem;
-      display: flex;
-      align-items: center; }
-      @media only screen and (max-width: 700px) {
-        .about__tech__technology {
-          flex-direction: column;
-          align-items: center; } }
-      .about__tech__technology > p {
-        width: 60%; }
-        @media only screen and (max-width: 850px) {
-          .about__tech__technology > p {
-            font-size: 2.2rem; } }
-        @media only screen and (max-width: 750px) {
-          .about__tech__technology > p {
-            font-size: 2rem; } }
-        @media only screen and (max-width: 700px) {
-          .about__tech__technology > p {
-            text-align: center;
-            font-size: 2.5rem; } }
-        @media only screen and (max-width: 550px) {
-          .about__tech__technology > p {
-            font-size: 2rem; } }
-      .about__tech__technology:nth-child(2) {
-        flex-direction: row-reverse; }
-        @media only screen and (max-width: 700px) {
-          .about__tech__technology:nth-child(2) {
-            flex-direction: column; } }
-        .about__tech__technology:nth-child(2) .about__tech__image {
-          margin-left: 10rem;
-          margin-right: 0; }
-          @media only screen and (min-width: 1400px) {
-            .about__tech__technology:nth-child(2) .about__tech__image {
-              margin-left: 20rem; } }
-          @media only screen and (max-width: 700px) {
-            .about__tech__technology:nth-child(2) .about__tech__image {
-              margin-left: 0;
-              margin-bottom: 5rem; } }
-    .about__tech__image {
-      width: 35%;
-      margin-right: 10rem; }
-      @media only screen and (min-width: 1400px) {
-        .about__tech__image {
-          margin-right: 20rem; } }
-      @media only screen and (max-width: 700px) {
-        .about__tech__image {
-          width: 60%;
-          margin-right: 0;
-          margin-bottom: 5rem; } }
 
 .blog {
   width: 100%;
