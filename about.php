@@ -96,7 +96,7 @@
                         <img src="./images/MongoDB-Logo.png" alt="mongoDB" class="about__tech__content__mongo__photo">
                     </div>
                     <div class="about__tech__content__gs">
-                        <img src="./images/" alt="GreenSock" class="about__tech__content__gs__photo">
+                        <img src="./images/gsap.svg" alt="GreenSock" class="about__tech__content__gs__photo">
                     </div>
                     <div class="about__tech__content__mysql">
                         <img src="./images/mysql-7.svg" alt="MySQL" class="about__tech__content__mysql__photo">
@@ -105,7 +105,7 @@
                         <img src="./images/sass.svg" alt="Sass" class="about__tech__content__sass__photo">
                     </div>
                     <div class="about__tech__content__jquery">
-                        <img src="./images/" alt="jQuery" class="about__tech__content__jquery__photo">
+                        <img src="./images/jquery.png" alt="jQuery" class="about__tech__content__jquery__photo">
                     </div>
                     <div class="about__tech__content__php">
                         <img src="./images/php.png" alt="php" class="about__tech__content__php__photo">
