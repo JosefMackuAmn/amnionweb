@@ -74,6 +74,7 @@
 
             <!-- TECHNOLOGIES -->
             <section class="about__tech">
+            
                 <h2 class="heading-2">TECHNOLOGIE</h2>
                 <div class="about__tech__content">
                     <div class="about__tech__content__figma">
@@ -119,6 +120,7 @@
                         <img src="./images/expo.png" alt="Expo" class="about__tech__content__expo__photo">
                     </div>
                 </div>
+
             </section>
 
             <?php includeWithVariables('includes/contact.php', array('margintop' => 'true')); ?>
