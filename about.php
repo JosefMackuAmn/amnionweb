@@ -74,6 +74,7 @@
 
             <!-- TECHNOLOGIES -->
             <section class="about__tech">
+            
                 <h2 class="heading-2">TECHNOLOGIE</h2>
                 <div class="about__tech__content">
                     <div class="about__tech__technology">
@@ -89,6 +90,7 @@
                         <p class="paragraph-big paragraph-big-dark">Nejmenší prezentační weby si bohatě vystačí se zažitou <strong>PHP</strong> technologií, na níž funguje asi 80% veškerých webových stránek. Podobně jako Node.js se jedná o na serveru běžící kód, s nímž lze jednoduše zabezpečit citlivá data v <strong>MySQL</strong> databázi a “servírovat” potřebné údaje návštěvníkům webu.</p>
                     </div>
                 </div>
+
             </section>
 
             <?php includeWithVariables('includes/contact.php', array('margintop' => 'true')); ?>

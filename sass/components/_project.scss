@@ -244,4 +244,25 @@
             color: $color-project-fantasy-muzeum-gold !important;
         }
     }
+
+    // Keramika Rosice
+    &--keramika-rosice {
+        background-color: $color-keramika-rosice-white;
+
+        .heading-project {
+            color: $color-keramika-rosice-black;
+        }
+
+        & .project {
+            &__about, &__review {
+                color: $color-keramika-rosice-brown;
+            }
+            &__outer-link {
+                color: $color-keramika-rosice-brown;
+            }
+        }
+        & .cta-text {
+            color: $color-keramika-rosice-muzeum-gold !important;
+        }
+    }
 }
