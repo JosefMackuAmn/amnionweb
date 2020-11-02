@@ -3,13 +3,29 @@
     flex-direction: column;
     align-items: center;
     
+    @media only screen and (max-width: 1400px) {
+        margin: 0 1.5rem;
+
+        &:nth-child(1) {
+            order: 1;
+        }
+        &:nth-child(5) {
+            order: 2;
+        }
+    }
     @media only screen and (max-width: 800px) {
         flex-basis: 40%;
-        margin-bottom: 10rem;
+    }
+    @media only screen and (max-width: 730px) {
+        &:nth-child(3) {
+            order: -1;
+        }
+        &:last-child {
+            margin-bottom: 5rem;
+        }
     }
     @media only screen and (max-width: 600px) {
         flex-basis: 100%;
-        margin-bottom: 10rem;
     }
 
     &__photo {
@@ -24,10 +40,20 @@
         font-size: 3rem;
         font-weight: 200;
         margin-bottom: 1rem;
+
+        @media only screen and (max-width: 800px) {
+            font-size: $font-regular;
+        }
     }
 
     &__specification {
         font-size: 1.8rem;
         font-weight: 500;
+
+        @media only screen and (max-width: 1400px) {
+            &:last-child {
+                margin-bottom: 5rem;
+            }
+        }
     }
 }

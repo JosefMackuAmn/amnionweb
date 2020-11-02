@@ -72,7 +72,7 @@
       <div class="fb-customerchat" attribution=setup_tool page_id="108782017523781" greeting_dialog_display="hide" logged_in_greeting="Zdravíme! Nyní nás můžete kontaktovat i přes messenger." logged_out_greeting="Zdravíme! Nyní nás můžete kontaktovat i přes messenger."></div>
 
         <!-- HEADER -->
-        <header class="header <?php if ($title === "Blog") echo "blog__header" ?>" id="header" style="<?php if ($title === "Offline" || $title === "Blog") echo "height: 20rem" ?>">
+        <header class="header <?php if ($title === "Blog") echo "blog__header" ?>" id="header" style="<?php if ($title === "Offline" || $title === "Blog" || $title === "GDPR") echo "height: 20rem" ?>">
             <div class="menu">
                 <ul class="menu__list" id="menu">
                     <li>
@@ -83,9 +83,9 @@
                     <li><a href="o-nas">O nás</a></li>
                     <li><a href="portfolio">Portfolio</a></li>
                     <li><a href="sluzby">Služby</a></li>
-                    <li><a href="cenik">Ceník</a></li>
+                    <!-- <li><a href="cenik">Ceník</a></li> -->
                     <li><a href="kontakt">Kontakt</a></li>
-                    <li><a href="blog">Blog</a></li>
+                    <!-- <li><a href="blog">Blog</a></li> -->
                 </ul>
                 <ul class="menu__list--mobile">
                     <li>
@@ -102,9 +102,9 @@
                     <li><a href="o-nas">O nás</a></li>
                     <li><a href="portfolio">Portfolio</a></li>
                     <li><a href="sluzby">Služby</a></li>
-                    <li><a href="cenik">Ceník</a></li>
+                    <!-- <li><a href="cenik">Ceník</a></li> -->
                     <li><a href="kontakt">Kontakt</a></li>
-                    <li><a href="blog">Blog</a></li>
+                    <!-- <li><a href="blog">Blog</a></li> -->
                 </ul>
             </div>
             <div id="fb-root"></div>

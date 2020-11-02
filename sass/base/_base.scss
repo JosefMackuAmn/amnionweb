@@ -1,43 +1,53 @@
-*, *::after, *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
-    font-family: 'Raleway', 'sans-serif';
-    box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Raleway", "sans-serif";
+  box-sizing: border-box;
 
-    overflow-y: auto;
-    overflow-x: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 
-    @media only screen and (min-width: 2000px) {
-        font-size: 75%;
-    }
-    @media only screen and (max-width: 1100px) {
-        font-size: 50%;
-    }
+  @media only screen and (min-width: 2000px) {
+    font-size: 75%;
+  }
+  @media only screen and (max-width: 1100px) {
+    font-size: 60%;
+  }
+  @media only screen and (max-width: 650px) {
+    font-size: 55%;
+  }
+  @media only screen and (max-width: 390px) {
+    font-size: 50%;
+  }
 }
 
 body {
-    font-size: 1.6rem;
-    overflow-x: hidden;
+  font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
-a, a:visited, a:link {
-    text-decoration: none;
-    color: inherit;
+a,
+a:visited,
+a:link {
+  text-decoration: none;
+  color: inherit;
 }
 
 *::selection {
-    color: $color-cyan-text;
-    background-color: $color-blue-dark-1;
+  color: $color-cyan-text;
+  background-color: $color-blue-dark-1;
 }
 
 *::placeholder {
-    color: $color-blue-dark-3;
-    opacity: .3;
+  color: $color-blue-dark-3;
+  opacity: 0.3;
 }
 
 /* *::-webkit-scrollbar {

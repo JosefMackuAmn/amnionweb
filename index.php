@@ -41,12 +41,12 @@
 
         <!-- PROJECTS -->
         <section class="index__about-us">
-            <a href="o-nas">
-                <div class="cta-btn">
-                    <div class="cta-btn--background"></div>    
-                    <span class="cta-btn--text">Zjistěte více o nás</span>
-                </div>
-            </a>
+            <h2 class="heading-2">tvoříme startupům weby a webové aplikace na míru.</h2>
+            <div class="index__about-us__photo">
+                <img src="images/we-1600.jpg" alt="AmnioN Team">
+                <a class="index__about-us__link" href="/o-nas">- o nás -</a>
+            </div>
+            <a class="index__about-us__link" href="/sluzby">- naše služby -</a>
         </section>
         
         <!-- FEATURES -->
@@ -82,6 +82,8 @@
             </div>          
             <div class="cta-text"><a href="sluzby">Projít služby -></a></div>
         </section>
+
+        <?php includeWithVariables('includes/contact.php', array('margintop' => 'true')); ?>
 
     </main>
 

@@ -7,8 +7,9 @@
                 <ul class="footer__menu--list footer--ul">
                     <li><a href="/">Domů</a></li>
                     <li><a href="/o-nas">O nás</a></li>
+                    <li><a href="portfolio">Portfolio</a></li>
                     <li><a href="/sluzby">Služby</a></li>
-                    <li><a href="/cenik">Ceník</a></li>
+                    <!-- <li><a href="/cenik">Ceník</a></li> -->
                     <li><a href="/kontakt">Kontakt</a></li>
                 </ul>
             </div>
@@ -21,9 +22,9 @@
                         <li>+420 735 044 114</li>
                     </ul>              
                 </div>
-                <p class="paragraph-little footer__copy--desktop">&copy;2020 - AmnioN, všechna práva vyhrazena.<br><a class="footer--link" href="#">Obchodní podmínky</a> a <a class="footer--link" href="#">zásady ochrany osobních údajů</a>. </p>
+                <p class="paragraph-little footer__copy--desktop">&copy;2020 - AmnioN, všechna práva vyhrazena.</p>
             </div>
-            <p class="paragraph-little footer__copy--mobile">&copy;2020 - AmnioN, všechna práva vyhrazena.<br><a class="footer--link" href="#">Obchodní podmínky</a> a <a class="footer--link" href="#">zásady ochrany osobních údajů</a>. </p>
+            <p class="paragraph-little footer__copy--mobile">&copy;2020 - AmnioN, všechna práva vyhrazena.</p>
         </container>
     </footer>
 

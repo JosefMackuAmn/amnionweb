@@ -1,3 +1,355 @@
+//VARIABLES
+
+$hint-height: 10;
+$hint-width: 25;
+$scaleXratio: 1.01;
+$scaleYratio: calc(
+  ((#{$scaleXratio} - 1) * #{$hint-width} / #{$hint-height}) + 1
+);
+$bp-dev-process-mobile: 750px;
+//ANIMATIONS
+@keyframes moveInHint {
+  0% {
+    transform: translateX(calc(-50% + 1.5rem)) translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes moveInBorder {
+  0% {
+    transform: translateX(calc(-50% + 1.5rem)) translateY(10%)
+      scale($scaleXratio, $scaleYratio);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%)
+      scale($scaleXratio, $scaleYratio);
+    opacity: 1;
+  }
+}
+@keyframes moveContainer {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+//
 .dev-process {
+  padding: 20rem 0;
+
+  &__heading {
+    margin-bottom: 12rem;
+
+    font-size: $font-largest;
+    color: rgba($color-gold, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2rem;
     
+    @media only screen and (max-width: 900px) {
+      padding-left: 5rem;
+      padding-right: 5rem;
+
+      font-size: 4.5rem;
+      line-height: 6rem;
+      letter-spacing: 1.4rem;
+    }
+    @media only screen and (max-width: 500px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  &__buttons {
+    height: 2rem;
+    width: 40rem;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+
+  }
+  &__button {
+    width: 10rem;
+    height: 10rem;
+    background-color: transparent;
+    outline: none; cursor: pointer;
+    border: none;
+    cursor: pointer;
+    border: none;
+
+    display: inline-block;
+    
+    position: absolute;
+    top: -15rem;
+    transform: translateY(-50%);
+
+    @media only screen and (max-width: $bp-dev-process-mobile) {
+      top: 110%;
+      height: 5rem;
+      width: auto;
+    }
+
+    &--left {
+      left: -25rem;
+
+      @media only screen and (max-width: 1000px) {
+        left: -15rem;
+      }
+      @media only screen and (max-width: $bp-dev-process-mobile) {
+        left: 0;
+      }
+      @media only screen and (max-width: 450px) {
+        left: 5%;
+      }
+
+      &::before {
+        transform: translateY(-50%) rotate(180deg) translateX(50%);
+      }
+      &:hover::before {
+        transform: translateY(-50%) rotate(180deg) translateX(80%);
+      }
+    }
+    &--right {
+      right: -25rem;
+
+      @media only screen and (max-width: 1000px) {
+        right: -15rem;
+      }
+      @media only screen and (max-width: $bp-dev-process-mobile) {
+        right: 0;
+      }
+      @media only screen and (max-width: 450px) {
+        right: 5%;
+      } 
+
+      &::before {
+        transform: translateY(-50%) translateX(-50%);
+      }
+      &:hover::before {
+        transform: translateY(-50%) translateX(-30%);
+      }
+    }
+
+    &::-moz-focus-inner {
+      border: 0;
+    }
+
+    &::before {
+      content: "";
+
+      width: 2rem;
+      height: 4rem;
+      transition: all 0.2s;
+      background-color: $color-gold;
+      clip-path: polygon(0 0, 40% 0, 100% 50%, 40% 100%, 0% 100%, 60% 50%);
+     
+      display: block;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      @media only screen and (max-width: $bp-dev-process-mobile) {
+        display: none;
+      }
+    }
+  }
+  &__button-text {
+    color: $color-gold;
+    font-size: 1.8rem;
+
+    display: none;
+    
+    @media only screen and (max-width: $bp-dev-process-mobile) {
+      display: block;
+    }
+  }
+}
+.step-card {
+  width: 60rem;
+  //box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  padding: 4rem 6rem;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+
+  @media only screen and (max-width: $bp-dev-process-mobile) {
+    width: 40rem;
+    height: 35rem;
+  }
+  @media only screen and (max-width: 450px) {
+    padding: 2rem;
+  }
+  @media only screen and (max-width: 400px) {
+    width: 35rem;
+  }
+
+  &__heading {
+    color: $color-gold;
+    font-size: $font-bigger;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__text {
+    margin: auto 0;
+
+    letter-spacing: 0.25rem;
+    color: $color-grey-dark;
+    font-size: 1.8rem;
+    line-height: 135%;
+    text-align: center;
+  }
+}
+.card-container {
+  width: 200vw;
+  height: 30rem;
+
+  display: flex;
+  justify-content: space-around;
+
+  position: relative;
+  transform: translateX(-25%);
+  
+  @media only screen and (max-width: $bp-dev-process-mobile) {
+    height: auto;
+  }
+  
+}
+.step-scroll {
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+  width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+
+
+  @media only screen and (max-width: 1000px) {
+    width: 50rem;
+  }
+  @media only screen and (max-width: $bp-dev-process-mobile) {
+    width: 80%;
+  }
+
+  &__round {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0px 5px rgba($color-black, 0.3) inset;
+
+    @media only screen and (max-width: $bp-dev-process-mobile) {
+      box-shadow: none;
+      background-color: rgba($color-gold, 0.2);
+      width: 5rem;
+      border-radius: 0;
+    }
+    @media only screen and (max-width: 500px) {
+      width: 3.5rem;
+    }
+    &--selected {
+      border: 2px solid $color-gold;
+      box-shadow: 0 2px 5px rgba($color-black, 0.15);
+
+      @media only screen and (max-width: $bp-dev-process-mobile) {
+        border: none;
+        background-color: rgba($color-gold, 0.7);
+      }
+    }
+  }
+  
+  &__hint {
+    background-color: white;
+
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%);
+    z-index: 1;
+
+    animation: moveInHint;
+
+  @media only screen and (max-width: 1000px) {
+    font-size: 1.7rem;
+  }
+  }
+  &__border {
+    background-color: rgba($color-gold, 0.1);
+
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%)
+      scale($scaleXratio, $scaleYratio);
+
+    animation: moveInBorder;
+  }
+  &__hint,
+  &__border {
+    width: calc(#{$hint-width} * 1rem);
+    height: calc(#{$hint-height} * 1rem);
+    margin-top: 2rem;
+    clip-path: polygon(
+      0 10%,
+      45% 10%,
+      50% 0%,
+      55% 10%,
+      100% 10%,
+      100% 100%,
+      0 100%
+    );
+
+    text-transform: uppercase;
+    color: $color-gold;
+    
+    display: none;
+
+    position: absolute;
+    
+    animation-duration: 0.25s;
+  }
+  &__textbox {
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__round:hover ~ &__hint {
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    @media only screen and (max-width: $bp-dev-process-mobile) {
+      display: none;
+    }
+  }
+  &__round:hover ~ &__border {
+    display: block;
+
+    transform: translateX(calc(-50% + 1.5rem)) translateY(0%)
+    scale($scaleXratio, $scaleYratio);
+
+    @media only screen and (max-width: $bp-dev-process-mobile) {
+      display: none;
+    }
+  }
 }

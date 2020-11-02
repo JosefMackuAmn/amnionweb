@@ -5,7 +5,7 @@
         <!-- <div class="contact__header__background header__background animBackgroundBack">&nbsp;</div>
         <div class="contact__header__background header__background animBackground">&nbsp;</div> -->
         <!-- <div class="offline__header__title header__title">Offline</div> -->
-    </header style="background-color: red">
+    </header>
 
     <!-- MAIN -->
     <main class="main">

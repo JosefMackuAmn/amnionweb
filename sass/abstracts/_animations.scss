@@ -287,3 +287,43 @@
         transform: translateX(0);
     }
 }
+
+@keyframes appTypesSlideIn {
+    from {
+        opacity: .8;
+        left: 45%;
+    }
+    to {
+        opacity: 1;
+        left: 50%;
+    }
+}
+
+@keyframes appTypesTitleIn {
+    from {
+        opacity: .8;
+        left: 3rem;
+    }
+    to {
+        opacity: 1;
+        left: 6rem;
+    }
+}
+@keyframes appTypesMobileCardIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes appTypesMobileDescIn {
+    0% {
+        transform: translateY(-15rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

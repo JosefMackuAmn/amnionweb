@@ -26,6 +26,9 @@
 @import 'components/project';
 @import 'components/pyramid';
 @import 'components/review';
+@import 'components/services-features';
+@import 'components/principles';
+
 
 @import 'layout/footer';
 @import 'layout/header';
@@ -34,7 +37,9 @@
 @import 'pages/about';
 @import 'pages/blog';
 @import 'pages/contact';
+@import 'pages/gdpr';
 @import 'pages/index';
 @import 'pages/pricing';
 @import 'pages/projects';
+//@import 'pages/OLD_services';
 @import 'pages/services';
