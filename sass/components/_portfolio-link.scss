@@ -1,0 +1,151 @@
+/////
+// Local variables
+/////
+$card-width: 25rem;
+
+.portfolio-link {
+    width: 100%;
+    height: 90rem;
+    background-color: $color-grey-light;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+
+    @media only screen and (max-width: 1400px) {
+        height: 70rem;
+    }
+
+    &__background {
+        width: 100%;
+        height: 100%;
+        margin-bottom: -2px;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        &__image {
+            width: 100%;
+            object-position: top;
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            @media only screen and (max-width: 1400px) {
+                transform: scaleY(1.5);
+            }
+            @media only screen and (max-width: 550px) {
+                transform: scaleY(2);
+            }
+
+            &:first-child {
+                transform: scaleX(-1);
+
+                @media only screen and (max-width: 1400px) {
+                    transform: scaleY(1.5) scaleX(-1);
+                }
+                @media only screen and (max-width: 550px) {
+                    transform: scaleY(2) scaleX(-1);
+                }
+            }
+        }
+    }
+
+    &__content {
+        width: 100%;
+        perspective: 1000px;
+
+        position: relative;
+    }
+    & a {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 27.5rem;
+        left: 50%;
+
+        @media only screen and (max-height: 900px) {
+            top: 25.5rem;
+        }
+    }
+    &__cards {
+        width: $card-width;
+        height: $card-width;
+        margin: 5rem auto;
+
+        transform-style: preserve-3d;
+        transform: rotateY(60deg);
+        // perspective-origin: center center;
+
+        /* display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column; */
+
+        position: relative;
+        top: 0;
+
+        animation: rotatePortfolioLink 35s linear infinite;
+    }
+    &__card {
+        width: $card-width;
+        height: 51rem;
+        backface-visibility: hidden;
+        
+        position: absolute;
+
+        @media only screen and (max-height: 900px) {
+            height: 43rem;
+        }
+
+        &#portfolioLinkCard_1 {
+            transform: translateZ($card-width);
+        }
+        &#portfolioLinkCard_2 {
+            transform: rotateY(60deg) translateZ($card-width);
+        }
+        &#portfolioLinkCard_3 {
+            transform: rotateY(120deg) translateZ($card-width);
+        }
+        &#portfolioLinkCard_4 {
+            transform: rotateY(180deg) translateZ($card-width);
+        }
+        &#portfolioLinkCard_5 {
+            transform: rotateY(240deg) translateZ($card-width);
+        }
+        &#portfolioLinkCard_6 {
+            transform: rotateY(300deg) translateZ($card-width);
+        }
+
+        &__header {
+            width: 100%;
+            height: 20rem;
+            margin-bottom: 1rem;
+            background-color: $color-black;
+
+            color: $color-white;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @media only screen and (max-height: 900px) {
+                height: 18rem;
+            }
+        }
+        &__body {
+            width: 100%;
+            height: 30rem;
+            background-color: $color-red;
+
+            @media only screen and (max-height: 900px) {
+                height: 25rem;
+            }
+        }
+    }
+}

@@ -13,142 +13,127 @@
     <!-- TYPES OF APPLICATIONS -->
     <section class="app-types">
         <container class="app-types__slider" id="app-types__slider">
-            <div class="app-types__slider__btn app-types__slider__btn--prev">
+            <div class="app-types__slider__btn app-types__slider__btn--prev"><</div>
+                <div class="app-types__slider__window active">
+                    <div class="app-types__slider__title">Webové prezentace</div>
+                    <div class="app-types__slider__content">
+                        <img class="app-types__slider__icon" src="images/icon_proto.png" alt="Icon">
+                        <div class="app-types__slider__text">
+                            Máte produkt či službu a chcete jej prezentovat cílové skupině?<br><br>
+                            Všechno spolu prokonzultujeme a promítneme jeho osobnost do podoby originálních webových
+                            stránek!
+                        </div>
+                    </div>
                 </div>
-                    <div class="app-types__slider__window active">
-                        <div class="app-types__slider__title">Webová prezentace</div>
-                        <div class="app-types__slider__content">
-                            <div class="app-types__slider__icon">Icon here</div>
-                            <div class="app-types__slider__text">
-                                Máte produkt či službu a chcete jej prezentovat cílové skupině?<br><br>
-                                Všechno spolu prokonzultujeme a promítneme jeho osobnost do podoby originálních webových
-                                stránek!
-                            </div>
-                        </div>
+                <div class="app-types__slider__window">
+                    <div class="app-types__slider__title">Webové aplikace</div>
+                    <div class="app-types__slider__content">
+                        <img class="app-types__slider__icon" src="images/icon_proto.png" alt="Icon">
+                        <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na
+                            mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme
+                            obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních
+                            aplikacích si dáváme obzvlášť záležet.</div>
                     </div>
-                    <div class="app-types__slider__window">
-                        <div class="app-types__slider__title">Webové aplikace</div>
-                        <div class="app-types__slider__content">
-                            <div class="app-types__slider__icon">Icon here</div>
-                            <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na
-                                mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme
-                                obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních
-                                aplikacích si dáváme obzvlášť záležet.</div>
-                        </div>
+                </div>
+                <div class="app-types__slider__window">
+                    <div class="app-types__slider__title">E-shopy</div>
+                    <div class="app-types__slider__content">
+                        <img class="app-types__slider__icon" src="images/icon_proto.png" alt="Icon">
+                        <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na
+                            mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme
+                            obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních
+                            aplikacích si dáváme obzvlášť záležet.</div>
                     </div>
-                    <div class="app-types__slider__window">
-                        <div class="app-types__slider__title">E-shopy</div>
-                        <div class="app-types__slider__content">
-                            <div class="app-types__slider__icon">Icon here</div>
-                            <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na
-                                mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme
-                                obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních
-                                aplikacích si dáváme obzvlášť záležet.</div>
-                        </div>
+                </div>
+                <div class="app-types__slider__window">
+                    <div class="app-types__slider__title">SPA - Single page applications</div>
+                    <div class="app-types__slider__content">
+                        <img class="app-types__slider__icon" src="images/icon_proto.png" alt="Icon">
+                        <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na
+                            mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme
+                            obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních
+                            aplikacích si dáváme obzvlášť záležet.</div>
                     </div>
-                    <div class="app-types__slider__window">
-                        <div class="app-types__slider__title">SPA - Single page applications</div>
-                        <div class="app-types__slider__content">
-                            <div class="app-types__slider__icon">Icon here</div>
-                            <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na
-                                mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme
-                                obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních
-                                aplikacích si dáváme obzvlášť záležet.</div>
-                        </div>
+                </div>
+                <div class="app-types__slider__window">
+                    <div class="app-types__slider__title">PWA - Progressive web apps</div>
+                    <div class="app-types__slider__content">
+                        <img class="app-types__slider__icon" src="images/icon_proto.png" alt="Icon">
+                        <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na
+                            mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme
+                            obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních
+                            aplikacích si dáváme obzvlášť záležet.</div>
                     </div>
-                    <div class="app-types__slider__window">
-                        <div class="app-types__slider__title">PWA - Progressive web apps</div>
-                        <div class="app-types__slider__content">
-                            <div class="app-types__slider__icon">Icon here</div>
-                            <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na
-                                mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme
-                                obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních
-                                aplikacích si dáváme obzvlášť záležet.</div>
-                        </div>
+                </div>
+                <div class="app-types__slider__window">
+                    <div class="app-types__slider__title">Mobilní aplikace</div>
+                    <div class="app-types__slider__content">
+                        <img class="app-types__slider__icon" src="images/icon_proto.png" alt="Icon">
+                        <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na
+                            mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme
+                            obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních
+                            aplikacích si dáváme obzvlášť záležet.</div>
                     </div>
-                    <div class="app-types__slider__window">
-                        <div class="app-types__slider__title">Mobilní aplikace</div>
-                        <div class="app-types__slider__content">
-                            <div class="app-types__slider__icon">Icon here</div>
-                            <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na
-                                mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme
-                                obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních
-                                aplikacích si dáváme obzvlášť záležet.</div>
-                        </div>
+                </div>
+                <div class="app-types__slider__window">
+                    <div class="app-types__slider__title">CMS - Content management systems</div>
+                    <div class="app-types__slider__content">
+                        <img class="app-types__slider__icon" src="images/icon_proto.png" alt="Icon">
+                        <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na
+                            mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme
+                            obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních
+                            aplikacích si dáváme obzvlášť záležet.</div>
                     </div>
-                    <div class="app-types__slider__window">
-                        <div class="app-types__slider__title">CMS - Content management systems</div>
-                        <div class="app-types__slider__content">
-                            <div class="app-types__slider__icon">Icon here</div>
-                            <div class="app-types__slider__text">Na mobilních aplikacích si dáváme obzvlášť záležet. Na
-                                mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních aplikacích si dáváme
-                                obzvlášť záležet. Na mobilních aplikacích si dáváme obzvlášť záležet. Na mobilních
-                                aplikacích si dáváme obzvlášť záležet.</div>
-                        </div>
-                    </div>
-                    <div class="app-types__slider__btn app-types__slider__btn--next"></div>
+                </div>
+            <div class="app-types__slider__btn app-types__slider__btn--next">></div>
         </container>
         <container class="app-types__mobile">
             <h3 class="heading-3 app-types__heading--mobile">Specializujeme <br>se na</h3>
         </container>
         <container class="app-types__overview">
             <div class="app-types__overview__card active">
-                <div class="app-types__overview__card__icon">
-                    Icon here
-                </div>
+                <img class="app-types__overview__card__icon" src="images/icon_proto.png" alt="Icon">
                 <div class="app-types__overview__card__content">
-                    <h5 class="heading-5 heading-5-vine">Produktové<br>prezentace</h5>
+                    <h5 class="heading-5 heading-5-blue">Webové<br>prezentace</h5>
                 </div>
             </div>
             <div class="app-types__overview__card">
-                <div class="app-types__overview__card__icon">
-                    Icon here
-                </div>
+                <img class="app-types__overview__card__icon" src="images/icon_proto.png" alt="Icon">
                 <div class="app-types__overview__card__content">
-                    <h5 class="heading-5 heading-5-vine">Webové<br>aplikace</h5>
+                    <h5 class="heading-5 heading-5-blue">Webové<br>aplikace</h5>
                 </div>
             </div>
             
             <div class="app-types__overview__card app-types__overview__card--hidden">
-                <div class="app-types__overview__card__icon">
-                    Icon here
-                </div>
+                <img class="app-types__overview__card__icon" src="images/icon_proto.png" alt="Icon">
                 <div class="app-types__overview__card__content">
-                    <h5 class="heading-5 heading-5-vine">E-shopy</h5>
+                    <h5 class="heading-5 heading-5-blue">E-shopy</h5>
                 </div>
             </div>
             <div class="app-types__overview__card app-types__overview__card--hidden">
-                <div class="app-types__overview__card__icon">
-                    Icon here
-                </div>
+                <img class="app-types__overview__card__icon" src="images/icon_proto.png" alt="Icon">
                 <div class="app-types__overview__card__content">
-                    <h5 class="heading-5 heading-5-vine">SPAs</h5>
+                    <h5 class="heading-5 heading-5-blue">SPAs</h5>
                     <p class="paragraph-small">Reaktivní<br>jednostránkové<br>aplikace<br></p>
                 </div>
             </div>
             <div class="app-types__overview__card app-types__overview__card--hidden">
-                <div class="app-types__overview__card__icon">
-                    Icon here
-                </div>
+                <img class="app-types__overview__card__icon" src="images/icon_proto.png" alt="Icon">
                 <div class="app-types__overview__card__content">
-                    <h5 class="heading-5 heading-5-vine">PWAs</h5>
+                    <h5 class="heading-5 heading-5-blue">PWAs</h5>
                     <p class="paragraph-small">Progresivní<br>webové<br>aplikace<br></p>
                 </div>
             </div>
             <div class="app-types__overview__card app-types__overview__card--hidden">
-                <div class="app-types__overview__card__icon">
-                    Icon here
-                </div>
+                <img class="app-types__overview__card__icon" src="images/icon_proto.png" alt="Icon">
                 <div class="app-types__overview__card__content">
-                    <h5 class="heading-5 heading-5-vine">Mobilní<br>aplikace</h5>
+                    <h5 class="heading-5 heading-5-blue">Mobilní<br>aplikace</h5>
                 </div>
             </div>
             <div class="app-types__overview__card app-types__overview__card--hidden">
-                <div class="app-types__overview__card__icon">
-                    Icon here
-                </div>
+                <img class="app-types__overview__card__icon" src="images/icon_proto.png" alt="Icon">
                 <div class="app-types__overview__card__content">
-                    <h5 class="heading-5 heading-5-vine">CMSs</h5>
+                    <h5 class="heading-5 heading-5-blue">CMSs</h5>
                     <p class="paragraph-small">Systémy<br>správy<br>obsahu<br></p>
                 </div>
             </div>

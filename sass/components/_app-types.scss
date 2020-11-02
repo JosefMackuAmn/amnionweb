@@ -88,12 +88,14 @@ $bp-app-types-mobile: 750px;
       left: 6rem;
     }
     &__content {
+      height: 100%;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
     &__icon {
-      width: 25%;
+      height: 100%;
     }
     &__text {
       width: 75%;

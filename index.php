@@ -39,7 +39,49 @@
             </div>         
         </section>
 
-        <!-- PROJECTS -->
+        <!-- PORTFOLIO -->
+        <section class="portfolio-link">
+            <div class="portfolio-link__background">
+                <img src="images/wave-portfolio-2.svg" alt="Portfolio wave" class="portfolio-link__background__image">
+                <img src="images/wave-portfolio-1.svg" alt="Portfolio wave" class="portfolio-link__background__image">
+            </div>
+            <div class="portfolio-link__content">
+                <div class="portfolio-link__cards">
+                    <div class="portfolio-link__card portfolioLinkCard_1" id="portfolioLinkCard_1">
+                        <div class="portfolio-link__card__header">1</div>
+                        <div class="portfolio-link__card__body"></div>
+                    </div>
+                    <div class="portfolio-link__card portfolioLinkCard_2" id="portfolioLinkCard_2">
+                        <div class="portfolio-link__card__header">2</div>
+                        <div class="portfolio-link__card__body"></div>
+                    </div>
+                    <div class="portfolio-link__card portfolioLinkCard_3" id="portfolioLinkCard_3">
+                        <div class="portfolio-link__card__header">3</div>
+                        <div class="portfolio-link__card__body"></div>
+                    </div>
+                    <div class="portfolio-link__card portfolioLinkCard_4" id="portfolioLinkCard_4">
+                        <div class="portfolio-link__card__header">4</div>
+                        <div class="portfolio-link__card__body"></div>
+                    </div>
+                    <div class="portfolio-link__card portfolioLinkCard_5" id="portfolioLinkCard_5">
+                        <div class="portfolio-link__card__header">5</div>
+                        <div class="portfolio-link__card__body"></div>
+                    </div>
+                    <div class="portfolio-link__card portfolioLinkCard_6" id="portfolioLinkCard_6">
+                        <div class="portfolio-link__card__header">6</div>
+                        <div class="portfolio-link__card__body"></div>
+                    </div>
+                </div>
+                <a href="portfolio">
+                    <div class="cta-btn">
+                        <div class="cta-btn--background"></div>    
+                        <span class="cta-btn--text">CELÉ PORTFOLIO</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ABOUT US -->
         <section class="index__about-us">
             <h2 class="heading-2">tvoříme startupům weby a webové aplikace na míru.</h2>
             <div class="index__about-us__photo">

@@ -1,5 +1,9 @@
 <!-- CONTACT FORM -->
 <section class="contact" <?php if ($margintop === 'false') { echo 'style="margin-top: 0;"'; } ?>>
+    <div class="contact__background">
+        <img src="images/wave-white.svg" alt="White SVG wave" class="contact__background__img">
+        <img src="images/wave-white.svg" alt="White SVG wave" class="contact__background__img">
+    </div>
     <div class="contact__heading">
         <h2 class="heading-2">Spojte se s námi!</h2>
     </div>
