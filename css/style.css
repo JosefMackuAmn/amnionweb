@@ -2717,10 +2717,10 @@ a:link {
           font-size: 2rem; } }
   .about__tech {
     padding: 27rem;
-    padding-bottom: 10rem;
     width: 100%;
     background-color: #E6F0FC;
-    margin-top: -12rem; }
+    margin-top: -12rem;
+    margin-bottom: -20rem; }
     @media only screen and (max-width: 1500px) {
       .about__tech {
         padding: 21rem 15rem; } }
@@ -2735,6 +2735,57 @@ a:link {
       @media only screen and (max-width: 390px) {
         .about__tech h2 {
           font-size: 3.5rem; } }
+    .about__tech__content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .about__tech__content__slot {
+        height: 5rem;
+        width: 10rem;
+        margin: 2rem; }
+        .about__tech__content__slot__figma {
+          height: 100%;
+          width: 100%; }
+        .about__tech__content__slot__node {
+          height: 100%;
+          width: 100%; }
+        .about__tech__content__slot__react {
+          height: 100%;
+          width: 100%; }
+        .about__tech__content__slot__git {
+          height: 100%;
+          width: 100%; }
+        .about__tech__content__slot__socket {
+          height: 100%;
+          width: 100%; }
+        .about__tech__content__slot__mongo {
+          height: 100%;
+          width: 100%; }
+        .about__tech__content__slot__gs {
+          height: 100%;
+          width: 100%; }
+        .about__tech__content__slot__mysql {
+          height: 100%;
+          width: 100%; }
+        .about__tech__content__slot__sass {
+          height: 100%;
+          width: 100%; }
+        .about__tech__content__slot__jquery {
+          height: 100%;
+          width: 100%; }
+        .about__tech__content__slot__php {
+          height: 100%;
+          width: 100%; }
+        .about__tech__content__slot__ga {
+          height: 100%;
+          width: 100%; }
+        .about__tech__content__slot__tf {
+          height: 100%;
+          width: 100%; }
+        .about__tech__content__slot__expo {
+          height: 100%;
+          width: 100%; }
 
 .blog {
   width: 100%;
