@@ -149,20 +149,20 @@
     <!-- TYPES OF APPLICATIONS MOBILE VIEW -->
     <!-- TO BE DESIGNED AND CODED -->
     <!-- <section class="app-types--mob">
-                <h2 class="heading-2">Specializujeme se&nbsp;na</h2>
-                <div class="app-types--mob__card">
-                    <div class="app-types--mob__icon">
-                        Icon here
-                    </div>
-                    <h5 class="heading-5">Produktové prezentace</h5>
-                </div>
-                <div class="app-types--mob__card">
-                    <div class="app-types--mob__icon">
-                        Icon here
-                    </div>
-                    <h5 class="heading-5">Webové aplikace</h5>
-                </div>
-            </section> -->
+        <h2 class="heading-2">Specializujeme se&nbsp;na</h2>
+        <div class="app-types--mob__card">
+            <div class="app-types--mob__icon">
+                Icon here
+            </div>
+            <h5 class="heading-5">Produktové prezentace</h5>
+        </div>
+        <div class="app-types--mob__card">
+            <div class="app-types--mob__icon">
+                Icon here
+            </div>
+            <h5 class="heading-5">Webové aplikace</h5>
+        </div>
+    </section> -->
 
     <!-- PYRAMID -->
     <section class="pyramid">
@@ -295,7 +295,7 @@
                 </div>
             </div>
             <div class="step-scroll__step">
-                <div class="step-scroll__round" data-text="Dohodnuté naprogramujeme a spustíme." data-name="Programování">
+                <div class="step-scroll__round" data-text="Dohodnuté <strong>naprogramujeme a spustíme</strong>. V průběhu s vámi budeme komunikovat, abyste měli přehled o progresu, nebo když se budeme potřebovat doptat na detaily." data-name="Programování">
 
                 </div>
                 <div class="step-scroll__hint">
@@ -324,6 +324,50 @@
         </div>
 
     </section>
+
+    <!-- ALL WE DO -->
+    <section class="all-we-do">
+        <container class="all-we-do__content">
+            <div class="all-we-do__card">
+                <div class="all-we-do__card__content">
+                    <h4 class="heading-4">Logo design</h4>
+                    <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
+                </div>
+            </div>
+            <div class="all-we-do__card">
+                <div class="all-we-do__card__content">
+                    <h4 class="heading-4">Logo design</h4>
+                    <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
+                </div>
+            </div>
+            <div class="all-we-do__card">
+                <div class="all-we-do__card__content">
+                    <h4 class="heading-4">Logo design</h4>
+                    <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
+                </div>
+            </div>
+            <div class="all-we-do__card">
+                <div class="all-we-do__card__content">
+                    <h4 class="heading-4">Logo design</h4>
+                    <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
+                </div>
+            </div>
+            <div class="all-we-do__card">
+                <div class="all-we-do__card__content">
+                    <h4 class="heading-4">Logo design</h4>
+                    <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
+                </div>
+            </div>
+            <div class="all-we-do__card">
+                <div class="all-we-do__card__content">
+                    <h4 class="heading-4">Logo design</h4>
+                    <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
+                </div>
+            </div>
+        </container>
+    </section>
+
+    
     <!-- PRINCIPLES -->
     <section class="principles">
         <container class="principles__container">
@@ -341,8 +385,8 @@
                 <h5 class="heading-5 principles__box-name principles__box-name--right">Kvalitní kód</h5>
             </div>
         </container>
-
     </section>
+
     <!-- FEATURES -->
     <section class="services-features">
         <div class="services-features__heading-box">

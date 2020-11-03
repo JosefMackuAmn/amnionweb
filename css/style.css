@@ -431,6 +431,51 @@ a:link {
 .u-invalid-input {
   background-color: #f8b0b0 !important; }
 
+.all-we-do {
+  width: 100%;
+  height: 100%;
+  background-color: #E6F0FC; }
+  .all-we-do__content {
+    width: 100%;
+    padding: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr); }
+  .all-we-do__card {
+    padding: 5rem;
+    background-color: white; }
+    .all-we-do__card:nth-child(1) {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+    .all-we-do__card:nth-child(2) {
+      grid-column-start: 4;
+      grid-column-end: 6;
+      grid-row-start: 1;
+      grid-row-end: 3; }
+    .all-we-do__card:nth-child(3) {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+    .all-we-do__card:nth-child(4) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4; }
+    .all-we-do__card:nth-child(5) {
+      grid-column-start: 3;
+      grid-column-end: 6;
+      grid-row-start: 3;
+      grid-row-end: 4; }
+    .all-we-do__card:nth-child(6) {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 4;
+      grid-row-end: 5; }
+
 .app-types {
   padding: 27rem;
   width: 100%;
