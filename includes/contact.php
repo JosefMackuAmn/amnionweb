@@ -1,5 +1,5 @@
 <!-- CONTACT FORM -->
-<section class="contact" <?php if ($margintop === 'false') { echo 'style="margin-top: 0;"'; } ?>>
+<section class="contact" <?php if ($margintop === 'false') { echo 'style="margin-top: 0; clip-path: none;"'; } ?>>
     <div class="contact__background">
         <img src="images/wave-white.svg" alt="White SVG wave" class="contact__background__img">
         <img src="images/wave-white.svg" alt="White SVG wave" class="contact__background__img">
@@ -25,6 +25,8 @@
                 <option value="web_prezentation">Webová prezentace</option>
                 <option value="web_application">Webová aplikace</option>
                 <option value="eshop">E-shop</option>
+                <option value="logo">Logo</option>
+                <option value="marketing">Marketing</option>
                 <option value="query">Něco jiného / chci se zeptat</option>
             </select>
         </div>

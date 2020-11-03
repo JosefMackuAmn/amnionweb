@@ -330,37 +330,37 @@
         <container class="all-we-do__content">
             <div class="all-we-do__card">
                 <div class="all-we-do__card__content">
-                    <h4 class="heading-4">Logo design</h4>
+                    <h4 class="heading-4">Loga</h4>
                     <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
                 </div>
             </div>
             <div class="all-we-do__card">
                 <div class="all-we-do__card__content">
-                    <h4 class="heading-4">Logo design</h4>
+                    <h4 class="heading-4">Marketing</h4>
                     <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
                 </div>
             </div>
             <div class="all-we-do__card">
                 <div class="all-we-do__card__content">
-                    <h4 class="heading-4">Logo design</h4>
+                    <h4 class="heading-4">Údržba</h4>
                     <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
                 </div>
             </div>
             <div class="all-we-do__card">
                 <div class="all-we-do__card__content">
-                    <h4 class="heading-4">Logo design</h4>
+                    <h4 class="heading-4">SEO</h4>
                     <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
                 </div>
             </div>
             <div class="all-we-do__card">
                 <div class="all-we-do__card__content">
-                    <h4 class="heading-4">Logo design</h4>
+                    <h4 class="heading-4">Analytics</h4>
                     <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
                 </div>
             </div>
             <div class="all-we-do__card">
                 <div class="all-we-do__card__content">
-                    <h4 class="heading-4">Logo design</h4>
+                    <h4 class="heading-4">A hlavně promyšlený design</h4>
                     <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
                 </div>
             </div>
@@ -369,7 +369,7 @@
 
     
     <!-- PRINCIPLES -->
-    <section class="principles">
+    <!-- <section class="principles">
         <container class="principles__container">
             <div class="principles__box principles__box--left">
                 <p class="paragraph-small principles__paragraph">
@@ -385,10 +385,10 @@
                 <h5 class="heading-5 principles__box-name principles__box-name--right">Kvalitní kód</h5>
             </div>
         </container>
-    </section>
+    </section> -->
 
     <!-- FEATURES -->
-    <section class="services-features">
+    <!-- <section class="services-features">
         <div class="services-features__heading-box">
             <h2 class="services-features__heading heading-2">
                 Zařídíme všechno
@@ -421,7 +421,7 @@
                 V procesu tvorby webu dbáme na to, aby vaši stránku bylo možné jednoduše najít
             </p>
         </div>
-    </section>
+    </section> -->
 
     <?php includeWithVariables('includes/contact.php', array('margintop' => 'false')); ?>
 

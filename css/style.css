@@ -437,14 +437,16 @@ a:link {
   background-color: #E6F0FC; }
   .all-we-do__content {
     width: 100%;
-    padding: 2rem;
+    padding: 3rem;
     display: grid;
-    gap: 5px;
+    gap: 2rem;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(5, 1fr); }
   .all-we-do__card {
     padding: 8rem;
-    background-color: white; }
+    background-color: white;
+    border: 1px solid #F3F3F3;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.05); }
     .all-we-do__card:nth-child(1) {
       grid-column-start: 1;
       grid-column-end: 4;
@@ -475,6 +477,8 @@ a:link {
       grid-column-end: 6;
       grid-row-start: 4;
       grid-row-end: 5; }
+      .all-we-do__card:nth-child(6) .all-we-do__card__content {
+        width: 70rem; }
     .all-we-do__card__content {
       height: 100%;
       width: 50rem; }
@@ -834,7 +838,7 @@ a:link {
   .dev-process__heading {
     margin-bottom: 12rem;
     font-size: 5.9rem;
-    color: rgba(150, 141, 94, 0.2);
+    color: rgba(150, 141, 94, 0.4);
     text-transform: uppercase;
     letter-spacing: 2rem; }
     @media only screen and (max-width: 900px) {
@@ -2838,7 +2842,8 @@ a:link {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative; }
+  position: relative;
+  z-index: 2; }
   .contact__header__background {
     background-image: url("../images/contact-1920.jpg");
     background-position-y: 65%; }
