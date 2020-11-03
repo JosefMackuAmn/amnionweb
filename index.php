@@ -47,29 +47,77 @@
             </div>
             <div class="portfolio-link__content">
                 <div class="portfolio-link__cards">
-                    <div class="portfolio-link__card portfolioLinkCard_1" id="portfolioLinkCard_1">
-                        <div class="portfolio-link__card__header">1</div>
-                        <div class="portfolio-link__card__body"></div>
+                    <!-- CARD 1 -->
+                    <div class="portfolio-link__card project--fantasy-muzeum portfolioLinkCard_1" id="portfolioLinkCard_1">
+                        <div class="portfolio-link__card__header">
+                            <img class="portfolio-link__card__header__logo" src="images/pr-logo_fantasy-muzeum.png" alt="Logo">
+                            <h6 class="heading-6">Fantasy muzeum &&nbsp;galerie</h6>
+                        </div>
+                        <div class="portfolio-link__card__body">
+                            <h6 class="heading-6">Tomáš Krištof</h6>
+                            <a href="https://www.fantasymuzeum.cz" target="_blank" rel="noopener" class="portfolio-link__card__link">www.fantasymuzeum.cz</a>
+                            <p class="portfolio-link__card__text">"Spolupráce s AmnioN týmem nás mile překvapila. Pánové jsou mladí, plní moderních nápadů, které dodají šmrnc každému webu. Komunikují rychle a vyřeší za klienta vše potřebné. Web nám vznikl rychle a bez starostí..."</p>
+                        </div>
                     </div>
-                    <div class="portfolio-link__card portfolioLinkCard_2" id="portfolioLinkCard_2">
-                        <div class="portfolio-link__card__header">2</div>
-                        <div class="portfolio-link__card__body"></div>
+                    <!-- CARD 2 -->
+                    <div class="portfolio-link__card project--fantasy-muzeum portfolioLinkCard_2" id="portfolioLinkCard_2">
+                        <div class="portfolio-link__card__header">
+                            <img class="portfolio-link__card__header__logo" src="images/pr-logo_fantasy-muzeum.png" alt="Logo">
+                            <h6 class="heading-6">Fantasy muzeum &&nbsp;galerie</h6>
+                        </div>
+                        <div class="portfolio-link__card__body">
+                            <h6 class="heading-6">Tomáš Krištof</h6>
+                            <a href="https://www.fantasymuzeum.cz" target="_blank" rel="noopener" class="portfolio-link__card__link">www.fantasymuzeum.cz</a>
+                            <p class="portfolio-link__card__text">"Spolupráce s AmnioN týmem nás mile překvapila. Pánové jsou mladí, plní moderních nápadů, které dodají šmrnc každému webu. Komunikují rychle a vyřeší za klienta vše potřebné. Web nám vznikl rychle a bez starostí..."</p>
+                        </div>
                     </div>
-                    <div class="portfolio-link__card portfolioLinkCard_3" id="portfolioLinkCard_3">
-                        <div class="portfolio-link__card__header">3</div>
-                        <div class="portfolio-link__card__body"></div>
+                    <!-- CARD 3 -->
+                    <div class="portfolio-link__card project--fantasy-muzeum portfolioLinkCard_3" id="portfolioLinkCard_3">
+                        <div class="portfolio-link__card__header">
+                            <img class="portfolio-link__card__header__logo" src="images/pr-logo_fantasy-muzeum.png" alt="Logo">
+                            <h6 class="heading-6">Fantasy muzeum &&nbsp;galerie</h6>
+                        </div>
+                        <div class="portfolio-link__card__body">
+                            <h6 class="heading-6">Tomáš Krištof</h6>
+                            <a href="https://www.fantasymuzeum.cz" target="_blank" rel="noopener" class="portfolio-link__card__link">www.fantasymuzeum.cz</a>
+                            <p class="portfolio-link__card__text">"Spolupráce s AmnioN týmem nás mile překvapila. Pánové jsou mladí, plní moderních nápadů, které dodají šmrnc každému webu. Komunikují rychle a vyřeší za klienta vše potřebné. Web nám vznikl rychle a bez starostí..."</p>
+                        </div>
                     </div>
-                    <div class="portfolio-link__card portfolioLinkCard_4" id="portfolioLinkCard_4">
-                        <div class="portfolio-link__card__header">4</div>
-                        <div class="portfolio-link__card__body"></div>
+                    <!-- CARD 4 -->
+                    <div class="portfolio-link__card project--fantasy-muzeum portfolioLinkCard_4" id="portfolioLinkCard_4">
+                        <div class="portfolio-link__card__header">
+                            <img class="portfolio-link__card__header__logo" src="images/pr-logo_fantasy-muzeum.png" alt="Logo">
+                            <h6 class="heading-6">Fantasy muzeum &&nbsp;galerie</h6>
+                        </div>
+                        <div class="portfolio-link__card__body">
+                            <h6 class="heading-6">Tomáš Krištof</h6>
+                            <a href="https://www.fantasymuzeum.cz" target="_blank" rel="noopener" class="portfolio-link__card__link">www.fantasymuzeum.cz</a>
+                            <p class="portfolio-link__card__text">"Spolupráce s AmnioN týmem nás mile překvapila. Pánové jsou mladí, plní moderních nápadů, které dodají šmrnc každému webu. Komunikují rychle a vyřeší za klienta vše potřebné. Web nám vznikl rychle a bez starostí..."</p>
+                        </div>
                     </div>
-                    <div class="portfolio-link__card portfolioLinkCard_5" id="portfolioLinkCard_5">
-                        <div class="portfolio-link__card__header">5</div>
-                        <div class="portfolio-link__card__body"></div>
+                    <!-- CARD 5 -->
+                    <div class="portfolio-link__card project--fantasy-muzeum portfolioLinkCard_5" id="portfolioLinkCard_5">
+                        <div class="portfolio-link__card__header">
+                            <img class="portfolio-link__card__header__logo" src="images/pr-logo_fantasy-muzeum.png" alt="Logo">
+                            <h6 class="heading-6">Fantasy muzeum &&nbsp;galerie</h6>
+                        </div>
+                        <div class="portfolio-link__card__body">
+                            <h6 class="heading-6">Tomáš Krištof</h6>
+                            <a href="https://www.fantasymuzeum.cz" target="_blank" rel="noopener" class="portfolio-link__card__link">www.fantasymuzeum.cz</a>
+                            <p class="portfolio-link__card__text">"Spolupráce s AmnioN týmem nás mile překvapila. Pánové jsou mladí, plní moderních nápadů, které dodají šmrnc každému webu. Komunikují rychle a vyřeší za klienta vše potřebné. Web nám vznikl rychle a bez starostí..."</p>
+                        </div>
                     </div>
-                    <div class="portfolio-link__card portfolioLinkCard_6" id="portfolioLinkCard_6">
-                        <div class="portfolio-link__card__header">6</div>
-                        <div class="portfolio-link__card__body"></div>
+                    <!-- CARD 6 -->
+                    <div class="portfolio-link__card project--fantasy-muzeum portfolioLinkCard_6" id="portfolioLinkCard_6">
+                        <div class="portfolio-link__card__header">
+                            <img class="portfolio-link__card__header__logo" src="images/pr-logo_fantasy-muzeum.png" alt="Logo">
+                            <h6 class="heading-6">Fantasy muzeum &&nbsp;galerie</h6>
+                        </div>
+                        <div class="portfolio-link__card__body">
+                            <h6 class="heading-6">Tomáš Krištof</h6>
+                            <a href="https://www.fantasymuzeum.cz" target="_blank" rel="noopener" class="portfolio-link__card__link">www.fantasymuzeum.cz</a>
+                            <p class="portfolio-link__card__text">"Spolupráce s AmnioN týmem nás mile překvapila. Pánové jsou mladí, plní moderních nápadů, které dodají šmrnc každému webu. Komunikují rychle a vyřeší za klienta vše potřebné. Web nám vznikl rychle a bez starostí..."</p>
+                        </div>
                     </div>
                 </div>
                 <a href="portfolio">
