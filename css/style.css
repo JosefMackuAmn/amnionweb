@@ -437,13 +437,13 @@ a:link {
   background-color: #E6F0FC; }
   .all-we-do__content {
     width: 100%;
-    padding: 3rem;
+    padding: 2rem;
     display: grid;
-    gap: 3rem;
+    gap: 5px;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(5, 1fr); }
   .all-we-do__card {
-    padding: 5rem;
+    padding: 8rem;
     background-color: white; }
     .all-we-do__card:nth-child(1) {
       grid-column-start: 1;
@@ -475,6 +475,17 @@ a:link {
       grid-column-end: 6;
       grid-row-start: 4;
       grid-row-end: 5; }
+    .all-we-do__card__content {
+      height: 100%;
+      width: 50rem; }
+      .all-we-do__card__content .heading-4 {
+        margin-bottom: 2rem;
+        color: #968D5E;
+        text-transform: uppercase;
+        font-weight: 500; }
+    .all-we-do__card__text {
+      line-height: 135%;
+      letter-spacing: 1px; }
 
 .app-types {
   padding: 27rem;
