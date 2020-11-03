@@ -77,47 +77,47 @@
             
                 <h2 class="heading-2">TECHNOLOGIE</h2>
                 <div class="about__tech__content">
-                    <div class="about__tech__content__figma">
-                        <img src="./images/figma.png" alt="figma" class="about__tech__content__figma__photo">
+                    <div class="about__tech__content__slot">
+                        <img src="./images/figma.png" alt="figma" class="about__tech__content__slot__figma">
                     </div>
-                    <div class="about__tech__content__node">
-                        <img src="./images/node.png" alt="nodejs" class="about__tech__content__node__photo">
+                    <div class="about__tech__content__slot">
+                        <img src="./images/node.png" alt="nodejs" class="about__tech__content__slot__node">
                     </div>
-                    <div class="about__tech__content__react">
-                        <img src="./images/react.png" alt="react" class="about__tech__content__react__photo">
+                    <div class="about__tech__content__slot">
+                        <img src="./images/react.png" alt="react" class="about__tech__content__slot__react">
                     </div>
-                    <div class="about__tech__content__git">
-                        <img src="./images/git-logo.svg.png" alt="github" class="about__tech__content__git__photo">
+                    <div class="about__tech__content__slot">
+                        <img src="./images/git-logo.svg.png" alt="github" class="about__tech__content__slot__git">
                     </div>
-                    <div class="about__tech__content__socket">
-                        <img src="./images/socket-io.png" alt="socket.io" class="about__tech__content__socket__photo">
+                    <div class="about__tech__content__slot">
+                        <img src="./images/socket-io.png" alt="socket.io" class="about__tech__content__slot__socket">
                     </div>
-                    <div class="about__tech__content__mongo">
-                        <img src="./images/MongoDB-Logo.png" alt="mongoDB" class="about__tech__content__mongo__photo">
+                    <div class="about__tech__content__slot">
+                        <img src="./images/MongoDB-Logo.png" alt="mongoDB" class="about__tech__content__slot__mongo">
                     </div>
-                    <div class="about__tech__content__gs">
-                        <img src="./images/gsap.svg" alt="GreenSock" class="about__tech__content__gs__photo">
+                    <div class="about__tech__content__slot">
+                        <img src="./images/gsap.svg" alt="GreenSock" class="about__tech__content__slot__gs">
                     </div>
-                    <div class="about__tech__content__mysql">
-                        <img src="./images/mysql-7.svg" alt="MySQL" class="about__tech__content__mysql__photo">
+                    <div class="about__tech__content__slot">
+                        <img src="./images/mysql-7.svg" alt="MySQL" class="about__tech__content__slot__mysql">
                     </div>
-                    <div class="about__tech__content__sass">
-                        <img src="./images/sass.svg" alt="Sass" class="about__tech__content__sass__photo">
+                    <div class="about__tech__content__slot">
+                        <img src="./images/sass.svg" alt="Sass" class="about__tech__content__slot__sass">
                     </div>
-                    <div class="about__tech__content__jquery">
-                        <img src="./images/jquery.png" alt="jQuery" class="about__tech__content__jquery__photo">
+                    <div class="about__tech__content__slot">
+                        <img src="./images/jquery.png" alt="jQuery" class="about__tech__content__slot__jquery">
                     </div>
-                    <div class="about__tech__content__php">
-                        <img src="./images/php.png" alt="php" class="about__tech__content__php__photo">
+                    <div class="about__tech__content__slot">
+                        <img src="./images/php.png" alt="php" class="about__tech__content__slot__php">
                     </div>
-                    <div class="about__tech__content__ga">
-                        <img src="./images/ga-logo.jpg" alt="Google Analytics" class="about__tech__content__ga__photo">
+                    <div class="about__tech__content__slot">
+                        <img src="./images/ga-logo.jpg" alt="Google Analytics" class="about__tech__content__slot__ga">
                     </div>
-                    <div class="about__tech__content__tf">
-                        <img src="./images/tensorflow.png" alt="TensorFlow" class="about__tech__content__tf__photo">
+                    <div class="about__tech__content__slot">
+                        <img src="./images/tensorflow.png" alt="TensorFlow" class="about__tech__content__slot__tf">
                     </div>
-                    <div class="about__tech__content__expo">
-                        <img src="./images/expo.png" alt="Expo" class="about__tech__content__expo__photo">
+                    <div class="about__tech__content__slot">
+                        <img src="./images/expo.png" alt="Expo" class="about__tech__content__slot__expo">
                     </div>
                 </div>
 

@@ -110,16 +110,85 @@
 
     &__tech {
         @include paddCube;
-        padding-bottom: 10rem;
         width: 100%;
         background-color: $color-blue-light;
         margin-top: -12rem;
+        margin-bottom: -20rem;
 
         & h2 {
             margin-bottom: 18rem;
 
             @media only screen and (max-width: 390px) {
                 font-size: 3.5rem;
+            }
+        }
+        &__content {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+
+            &__slot {
+                height: 5rem;
+                width: 10rem;
+                margin: 2rem;
+
+                &__figma {
+                    height: 100%;
+                    width: 100%;
+                }
+                &__node {
+                    height: 100%;
+                    width: 100%;
+                }
+                &__react {
+                    height: 100%;
+                    width: 100%;
+                }
+                &__git {
+                    height: 100%;
+                    width: 100%;
+                }
+                &__socket {
+                    height: 100%;
+                    width: 100%;
+                }
+                &__mongo {
+                    height: 100%;
+                    width: 100%;
+                }
+                &__gs {
+                    height: 100%;
+                    width: 100%;
+                }
+                &__mysql {
+                    height: 100%;
+                    width: 100%;
+                }
+                &__sass {
+                    height: 100%;
+                    width: 100%;
+                }
+                &__jquery {
+                    height: 100%;
+                    width: 100%;
+                }
+                &__php {
+                    height: 100%;
+                    width: 100%;
+                }
+                &__ga {
+                    height: 100%;
+                    width: 100%;
+                }
+                &__tf {
+                    height: 100%;
+                    width: 100%;
+                }
+                &__expo {
+                    height: 100%;
+                    width: 100%;
+                }
             }
         }
     }
