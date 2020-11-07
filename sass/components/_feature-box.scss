@@ -1,78 +1,254 @@
 .feature-box {
-    width: 70%;
-    margin-bottom: 7rem;
-    background-color: $color-white-overlay-light;
-    padding: 3rem;
-    border-radius: 1rem;
-    filter: drop-shadow(0 .2rem 1rem rgba($color-black, .1));
+  width: 70%;
+  height: 70rem;
+  transition: transform 1s, margin 1s;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+
+  @media only screen and (max-width: 1600px) {
+    width: 85%;
+  }
+  @media only screen and (max-width: 1100px) {
+    width: 100%;
+  }
+  @media only screen and (max-width: 900px) {
+    padding-top: 15rem;
+    height: 80rem;
+
+    flex-direction: column-reverse;
+  }
+  @media only screen and (max-width: 450px) {
+    height: 90rem;
+  }
+
+  &--1 {
+    & .feature-box__bg {
+      clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        80% 90%,
+        40% 100%,
+        30% 90%,
+        0 100%
+      );
+
+      @media only screen and (max-width: 900px) {
+        clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0 100%);
+      }
+    }
+  }
+  &--2 {
+    & .feature-box__bg {
+      clip-path: polygon(
+        0 10%,
+        30% 0,
+        40% 10%,
+        80% 0,
+        100% 10%,
+        100% 0,
+        100% 100%,
+        90% 100%,
+        80% 90%,
+        60% 90%,
+        50% 100%,
+        30% 100%,
+        25% 90%,
+        20% 100%,
+        0 100%
+      );
+
+      @media only screen and (max-width: 900px) {
+        clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0 100%);
+      }
+    }
+  }
+  &--3 {
+    & .feature-box__bg {
+      clip-path: polygon(
+        0 10%,
+        20% 10%,
+        25% 0,
+        30% 10%,
+        50% 10%,
+        60% 0,
+        80% 0,
+        90% 10%,
+        100% 10%,
+        100% 100%,
+        90% 90%,
+        80% 100%,
+        50% 90%,
+        40% 100%,
+        30% 90%,
+        10% 90%,
+        0 100%
+      );
+
+      @media only screen and (max-width: 900px) {
+        clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0 100%);
+      }
+    }
+  }
+  &--4 {
+    & .feature-box__bg {
+      clip-path: polygon(
+        0 10%,
+        10% 0,
+        30% 0,
+        40% 10%,
+        50% 0,
+        80% 10%,
+        90% 0,
+        100% 10%,
+        100% 100%,
+        0 100%
+      );
+
+      @media only screen and (max-width: 900px) {
+        clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0 100%);
+      }
+    }
+  }
+
+  &:not(:first-of-type) {
+    margin-top: -7rem;
+
+    @media only screen and (max-width: 900px) {
+      margin-top: -8rem;
+    }
+    @media only screen and (max-width: 450px) {
+      margin-top: -9rem;
+    }
+
+    &.pushDown {
+      margin-top: 0;
+    }
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: white;
+
+      display: none;
+
+      position: absolute;
+      transform: translateY(-20%) scale(0.999);
+      z-index: -10;
+      transform-origin: 0% 0%;
+      top: 0;
+      left: 0;
+
+      animation: featureBoxAfterShiftRight 2s;
+    }
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: white;
+
+      display: block;
+
+      position: absolute;
+      transform: translateY(-20%) scale(0.999);
+      z-index: -20;
+      top: 0;
+      left: 0;
+    }
+  }
+  &.pushDown:not(:first-of-type)::after {
+    display: block;
+  }
+  &.pushDown:not(:first-of-type)::before {
+    background-color: $color-blue-dark-1;
+  }
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column-reverse;
+    }
+
+    & .feature-box--img {
+      margin-left: 0;
+    }
+  }
+  &:nth-of-type(odd) {
+    & .feature-box--img {
+      margin-right: 0;
+    }
+  }
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #224e85 0%, #0b173a 75%);
+
+    background-color: #224e85;
+    filter: drop-shadow(0 0.2rem 1rem rgba($color-black, 0.1));
+
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+  &--text {
+    width: 100%;
+    order: 1;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+    margin-bottom: 3rem;
+
     @media only screen and (max-width: 1500px) {
-        width: 85%;
+      padding-left: 5rem;
+      padding-right: 5rem;
     }
-    @media only screen and (max-width: 850px) {
-        width: 75%;
-        flex-direction: column-reverse;
+    @media only screen and (max-width: 900px) {
+      width: 80%;
+      padding: 0;
     }
-    @media only screen and (max-width: 400px) {
-        width: 95%;
-    }
-
-    &--text {
-        width: 100%;
-        order: 1;
-
-        margin-bottom: 3rem;
-        
-        & .heading-3 {
-            color: $color-blue-dark-1;
-            margin-bottom: 2rem;
-        }
-
-    }
-    &--img {
-        height: 30rem;
-        width: 60rem;
-        margin-right: 5rem;
-        border-radius: .5rem;
-        background-position: center;
-        filter: drop-shadow(0 .2rem .5rem rgba($color-black, .1));
-
-        @media only screen and (max-width: 850px) {
-            margin-right: 0rem;
-            width: 120%;
-            height: 45rem;
-        }
-        @media only screen and (max-width: 730px) {
-            height: 30rem;
-        }
-        @media only screen and (max-width: 575px) {
-            width: 100%;
-        }
-        @media only screen and (max-width: 730px) {
-            height: 25rem;
-        }
-    }
-}
-.feature-box:nth-child(even) {
-    text-align: right;
-
-    @media only screen and (max-width: 850px) {
-        text-align: left;
+    @media only screen and (max-width: 800px) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      width: 100%;
     }
 
-    .feature-box--img {
-        order: 2;
-        margin-right: 0rem;
-        margin-left: 5rem;
-
-        @media only screen and (max-width: 850px) {
-            order: 0;
-            margin-right: 0rem;
-            margin-left: 0rem;
-        }
+    & .paragraph-small {
+      color: $color-white;
     }
+    & .heading-3 {
+      color: $color-white;
+      margin-bottom: 2rem;
+    }
+  }
+  &--img {
+    height: 30rem;
+    width: 60rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 2px;
+    background-position: center;
+    filter: drop-shadow(0 0.2rem 0.5rem rgba($color-black, 0.1));
+
+    @media only screen and (max-width: 900px) {
+      width: 80%;
+      height: 40rem;
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: auto;
+    }
+    @media only screen and (max-width: 800px) {
+      margin: 0;
+      width: 100%;
+    }
+    @media only screen and (max-width: 450px) {
+      height: 35rem;
+    }
+  }
 }

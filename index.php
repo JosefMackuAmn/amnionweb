@@ -48,37 +48,48 @@
                 </div>
             </a>
         </section>
-        
+
+        <!-- CLIP-PATHS -->
+        <svg class="svg">
+            <clipPath id="clip-path-1"  clipPathUnits="objectBoundingBox"><path  d="M0,0 H1 V1 L0.834,0.824 L0.699,0.889 L0.441,1 L0.263,0.824 L0,1 V0"></path></clipPath>
+            <clipPath id="clip-path-2" clipPathUnits="objectBoundingBox"><path d="M0,0.169 L0.263,0 L0.441,0.169 L0.834,0 L1,0.169 V1 H0.895 L0.778,0.882 H0.621 L0.522,0.958 L0.346,1 L0.263,0.882 L0.201,0.958 L0,1 V0.169"></path></clipPath>
+            <clipPath id="clip-path-3" clipPathUnits="objectBoundingBox"><path d="M0,0.106 L0.201,0.074 L0.263,0 L0.346,0.106 L0.522,0.074 L0.621,0 H0.778 L0.895,0.106 H1 V1 L0.895,0.897 L0.793,0.977 L0.522,0.897 L0.428,1 L0.338,0.931 H0.11 L0,1 V0.106"></path></clipPath>
+            <clipPath id="clip-path-4" clipPathUnits="objectBoundingBox"><path d="M0,0.064 L0.109,0.031 H0.338 L0.425,0.105 L0.524,0 L0.794,0.064 L0.894,0 L1,0.105 V1 H0 V0.064"></path></clipPath>
+        </svg>
         <!-- FEATURES -->
         <section class="index__features">
             <h2 class="heading-2">V ČEM VYNIKÁME?</h2>
-            <div class="feature-box fadeFromLeft u-hoverTranslateUp">
+            <div id="feature-box-1" class="feature-box feature-box--1 ">
                 <div class="feature-box--text">
                     <h3 class="heading-3">Zakládáme si na komunikaci s klientem</h3>
                     <p class="paragraph-small">Chceme přesně vědět, co od nás čekáte, jakou máte představu a co je cílem vašeho podnikání. Vše přetransformujeme do návrhu, který s vámi prokonzultujeme a doporučíme kroky ke zvýšení konverzního poměru. </p>
                 </div>
                 <div class="feature-box--img" style="background-image: url('./images/communication-640.jpg'); background-size: cover;"></div>
+                <div class="feature-box__bg"></div>
             </div>
-            <div class="feature-box fadeFromRight u-hoverTranslateUp">
+            <div id="feature-box-2" class="feature-box  feature-box--2 ">
                 <div class="feature-box--text">
                     <h3 class="heading-3">Vytvoříme (téměř) cokoli</h3>
                     <p class="paragraph-small">Dáme vše do toho, aby váš web splňoval vaše představy. Tvoříme nejen prezentace, ale i e-shopy a menší web aplikace.</p>
                 </div>
                 <div class="feature-box--img" style="background-image: url('./images/sketchbook-640.jpg'); background-size: cover;"></div>
+                <div class="feature-box__bg"></div>
             </div>
-            <div class="feature-box fadeFromLeft u-hoverTranslateUp">
+            <div id="feature-box-3" class="feature-box feature-box--3 ">
                 <div class="feature-box--text">
                     <h3 class="heading-3">Máme na vás čas i po dokončení zakázky</h3>
                     <p class="paragraph-small">Po zveřejnění webu nabízíme také jeho správu a pravidelnou aktualizaci. A kdykoli se na nás můžete obrátit s nápadem na jeho rozšíření.</p>
                 </div>
                 <div class="feature-box--img" style="background-image: url('./images/watches-640.jpg'); background-size: cover; transform: scaleX(-1);"></div>
+                <div class="feature-box__bg"></div>
             </div>
-            <div class="feature-box fadeFromRight u-hoverTranslateUp">
+            <div id="feature-box-4" class="feature-box feature-box--4 ">
                 <div class="feature-box--text">
                     <h3 class="heading-3">Vytváříme perzonalizované rozhraní</h3>
                     <p class="paragraph-small">Návštěvníci vašeho webu se budou na vašich stránkách cítit příjemně a to pozitivně ovlivní konverzní poměr.</p>
                 </div>
                 <div class="feature-box--img" style="background-image: url('./images/figma-640.jpg'); background-size: 120%;"></div>
+                <div class="feature-box__bg"></div>
             </div>          
             <div class="cta-text"><a href="sluzby">Projít služby -></a></div>
         </section>
