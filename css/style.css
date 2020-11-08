@@ -2738,7 +2738,7 @@ a:link {
     width: 100%;
     background-color: #F3F3F3;
     margin-top: -12rem;
-    clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 calc(100% - 10rem)); }
+    clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%); }
     @media only screen and (max-width: 1500px) {
       .about__amnion {
         padding: 21rem 15rem; } }
@@ -2776,25 +2776,12 @@ a:link {
         .about__amnion p {
           font-size: 2rem; } }
   .about__tech {
-    padding: 27rem;
+    padding: 14rem;
     width: 100%;
-    background-color: #E6F0FC;
-    margin-top: -12rem;
-    margin-bottom: -20rem; }
+    background-color: #E6F0FC; }
     @media only screen and (max-width: 1500px) {
       .about__tech {
-        padding: 21rem 15rem; } }
-    @media only screen and (max-width: 1000px) {
-      .about__tech {
-        padding: 21rem 5rem; } }
-    @media only screen and (max-width: 550px) {
-      .about__tech {
-        padding: 21rem 2rem 10rem 2rem; } }
-    .about__tech h2 {
-      margin-bottom: 18rem; }
-      @media only screen and (max-width: 390px) {
-        .about__tech h2 {
-          font-size: 3.5rem; } }
+        padding: 14rem 5rem; } }
     .about__tech__content {
       display: flex;
       flex-direction: row;
@@ -2806,7 +2793,8 @@ a:link {
         margin: 2rem; }
         .about__tech__content__slot__icon {
           height: 100%;
-          width: 100%; }
+          width: 100%;
+          object-fit: contain; }
 
 .blog {
   width: 100%;

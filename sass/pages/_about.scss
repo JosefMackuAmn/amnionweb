@@ -70,7 +70,7 @@
         width: 100%;
         background-color: $color-grey-light;
         margin-top: -12rem;
-        clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 calc(100% - 10rem));
+        clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%);
 
         &__content {
             display: flex;
@@ -109,19 +109,10 @@
     }
 
     &__tech {
-        @include paddCube;
+        @include paddSmallCube;
         width: 100%;
         background-color: $color-blue-light;
-        margin-top: -12rem;
-        margin-bottom: -20rem;
 
-        & h2 {
-            margin-bottom: 18rem;
-
-            @media only screen and (max-width: 390px) {
-                font-size: 3.5rem;
-            }
-        }
         &__content {
                 display: flex;
                 flex-direction: row;
@@ -133,11 +124,10 @@
                 width: 10rem;
                 margin: 2rem;
 
-                object-fit: contain;
-
                 &__icon {
                     height: 100%;
                     width: 100%;
+                    object-fit: contain;
                 }
             }
         }

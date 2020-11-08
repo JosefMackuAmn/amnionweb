@@ -144,7 +144,7 @@
         </container>
         
     </section>
-    <script src="js/services.js" defer></script>
+    <script src="js/services.bundle.js" defer></script>
 
     <!-- TYPES OF APPLICATIONS MOBILE VIEW -->
     <!-- TO BE DESIGNED AND CODED -->

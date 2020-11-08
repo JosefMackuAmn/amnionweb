@@ -75,7 +75,6 @@
             <!-- TECHNOLOGIES -->
             <section class="about__tech">
             
-                <h2 class="heading-2">TECHNOLOGIE</h2>
                 <div class="about__tech__content">
                     <div class="about__tech__content__slot">
                         <img src="./images/figma.png" alt="figma" class="about__tech__content__slot__icon">
