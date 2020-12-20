@@ -223,3 +223,52 @@ const onSubmitHandler = () => {
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js');
 }
+
+//////////////////////// INDEX FEATURES 
+ready(() => {
+    const indexFeatures = document.querySelector('.index__features');
+
+    const isElementActive= (el) => {
+
+        const elProps = el.getBoundingClientRect();
+        const elHeight = elProps.height;
+        const elTopOffset = elProps.y;
+        const elCenterTopOffset = Math.floor(elTopOffset + elHeight / 2);
+
+        const windowSize = document.documentElement.clientHeight;
+
+        let isActive = false;
+
+        if (elCenterTopOffset - windowSize / 2 <= 0) {
+            isActive = true;
+        }
+
+        return isActive;
+
+    }
+    if ( indexFeatures ) {
+       
+        const featureBoxes = indexFeatures.querySelectorAll('.feature-box');
+
+        window.addEventListener('scroll', () => {
+
+            featureBoxes.forEach( (featureBox, id) => {
+                
+                if (isElementActive(featureBox)) {
+
+                    if(featureBoxes[id + 1]) {
+                        featureBoxes[id + 1].classList.add('pushDown');
+                    } 
+
+                } else {
+
+                    if(featureBoxes[id + 1]) {
+                        featureBoxes[id + 1].classList.remove('pushDown');
+                    } 
+
+                }
+
+            })
+        })
+    }
+})

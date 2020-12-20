@@ -25,7 +25,6 @@
                 <option value="web_prezentation">Webová prezentace</option>
                 <option value="web_application">Webová aplikace</option>
                 <option value="eshop">E-shop</option>
-                <option value="logo">Logo</option>
                 <option value="marketing">Marketing</option>
                 <option value="query">Něco jiného / chci se zeptat</option>
             </select>

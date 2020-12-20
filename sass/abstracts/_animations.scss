@@ -335,3 +335,12 @@
         transform: rotateY(420deg);
     }
 }
+///// INDEX FEATURE-BOXES ::AFTER
+@keyframes featureBoxAfterShiftRight {
+ 0% {
+     transform: translateY(-20%) scaleX(0);
+ } 
+ 100% {
+     transform: translateY(-20%) scaleX(.999);
+ }
+}

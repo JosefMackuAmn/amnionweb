@@ -89,6 +89,8 @@ $card-width: 25rem;
     &__card {
         width: $card-width;
         height: 51rem;
+        background-color: transparent !important;
+        background-image: none !important;
         backface-visibility: hidden;
         
         position: absolute;
@@ -189,6 +191,42 @@ $card-width: 25rem;
     
                     & .heading-6 {
                         color: $color-project-fantasy-muzeum-gold;
+                    }
+                }
+            }
+        }
+        &.project--keramika-rosice {
+            .portfolio-link__card {
+                &__header {
+                    background-color: $color-white;
+    
+                    & .heading-6 {
+                        color: $color-project-keramika-rosice-brown;
+                    }
+                }
+                &__body {
+                    background-color: $color-project-keramika-rosice-beige;
+    
+                    & .heading-6 {
+                        color: $color-black;
+                    }
+                }
+            }
+        }
+        &.project--tatjana-horka {
+            .portfolio-link__card {
+                &__header {
+                    background-color: $color-project-tatjana-horka-green;
+    
+                    & .heading-6 {
+                        color: $color-white;
+                    }
+                }
+                &__body {
+                    background-color: $color-project-tatjana-horka-green-light;
+    
+                    & .heading-6 {
+                        color: $color-black;
                     }
                 }
             }
