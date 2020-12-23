@@ -39,14 +39,104 @@
             </div>         
         </section>
 
-        <!-- PROJECTS -->
-        <section class="index__about-us">
-            <a href="o-nas">
-                <div class="cta-btn">
-                    <div class="cta-btn--background"></div>    
-                    <span class="cta-btn--text">Zjistěte více o nás</span>
+        <!-- PORTFOLIO -->
+        <section class="portfolio-link">
+            <div class="portfolio-link__background">
+                <img src="images/wave-portfolio-2.svg" alt="Portfolio wave" class="portfolio-link__background__image">
+                <img src="images/wave-portfolio-1.svg" alt="Portfolio wave" class="portfolio-link__background__image">
+            </div>
+            <div class="portfolio-link__content">
+                <div class="portfolio-link__cards">
+                    <!-- CARD 1 -->
+                    <div class="portfolio-link__card project--fantasy-muzeum portfolioLinkCard_1" id="portfolioLinkCard_1">
+                        <div class="portfolio-link__card__header">
+                            <img class="portfolio-link__card__header__logo" src="images/pr-logo_fantasy-muzeum.png" alt="Logo">
+                            <h6 class="heading-6">Fantasy muzeum &&nbsp;galerie</h6>
+                        </div>
+                        <div class="portfolio-link__card__body">
+                            <h6 class="heading-6">Tomáš Krištof</h6>
+                            <a href="https://www.fantasymuzeum.cz" target="_blank" rel="noopener" class="portfolio-link__card__link">www.fantasymuzeum.cz</a>
+                            <p class="portfolio-link__card__text">"Spolupráce s AmnioN týmem nás mile překvapila. Pánové jsou mladí, plní moderních nápadů, které dodají šmrnc každému webu. Komunikují rychle a vyřeší za klienta vše potřebné. Web nám vznikl rychle a bez starostí..."</p>
+                        </div>
+                    </div>
+                    <!-- CARD 2 -->
+                    <div class="portfolio-link__card project--keramika-rosice portfolioLinkCard_2" id="portfolioLinkCard_2">
+                        <div class="portfolio-link__card__header">
+                            <img class="portfolio-link__card__header__logo" src="images/pr-logo_keramika-rosice.jpg" alt="Logo">
+                            <h6 class="heading-6">Keramika Rosice</h6>
+                        </div>
+                        <div class="portfolio-link__card__body">
+                            <h6 class="heading-6">Ing. Vlastimila Nepevná</h6>
+                            <a href="https://www.keramika-rosice.cz" target="_blank" rel="noopener" class="portfolio-link__card__link">www.keramika-rosice.cz</a>
+                            <p class="portfolio-link__card__text">"Děkuji AmnioN Teamu za profesionální přístup při přípravě a zpracování mých webových stránek. Veškeré moje požadavky a náměty byly rychle zpracovány k mé naprosté spokojenosti. Spolupráce s vaší firmou byla vstřícná a operativní."</p>
+                        </div>
+                    </div>
+                    <!-- CARD 3 -->
+                    <div class="portfolio-link__card project--tatjana-horka portfolioLinkCard_3" id="portfolioLinkCard_3">
+                        <div class="portfolio-link__card__header">
+                            <img class="portfolio-link__card__header__logo" src="images/pr-logo_tatjana-horka.png" alt="Logo">
+                            <h6 class="heading-6">Taťjana Horká</h6>
+                        </div>
+                        <div class="portfolio-link__card__body">
+                            <h6 class="heading-6">MUDr. Taťjana Horká</h6>
+                            <a href="https://www.tatjanahorka.cz" target="_blank" rel="noopener" class="portfolio-link__card__link">www.tatjanahorka.cz</a>
+                            <p class="portfolio-link__card__text">"Spolupráce s AmnioN týmem nás mile překvapila. Pánové jsou mladí, plní moderních nápadů, které dodají šmrnc každému webu. Komunikují rychle a vyřeší za klienta vše potřebné. Web nám vznikl rychle a bez starostí..."</p>
+                        </div>
+                    </div>
+                    <!-- CARD 4 -->
+                    <div class="portfolio-link__card project--fantasy-muzeum portfolioLinkCard_4" id="portfolioLinkCard_4">
+                        <div class="portfolio-link__card__header">
+                            <img class="portfolio-link__card__header__logo" src="images/pr-logo_fantasy-muzeum.png" alt="Logo">
+                            <h6 class="heading-6">Fantasy muzeum &&nbsp;galerie</h6>
+                        </div>
+                        <div class="portfolio-link__card__body">
+                            <h6 class="heading-6">Tomáš Krištof</h6>
+                            <a href="https://www.fantasymuzeum.cz" target="_blank" rel="noopener" class="portfolio-link__card__link">www.fantasymuzeum.cz</a>
+                            <p class="portfolio-link__card__text">"Spolupráce s AmnioN týmem nás mile překvapila. Pánové jsou mladí, plní moderních nápadů, které dodají šmrnc každému webu. Komunikují rychle a vyřeší za klienta vše potřebné. Web nám vznikl rychle a bez starostí..."</p>
+                        </div>
+                    </div>
+                    <!-- CARD 5 -->
+                    <div class="portfolio-link__card project--keramika-rosice portfolioLinkCard_5" id="portfolioLinkCard_5">
+                        <div class="portfolio-link__card__header">
+                            <img class="portfolio-link__card__header__logo" src="images/pr-logo_keramika-rosice.jpg" alt="Logo">
+                            <h6 class="heading-6">Keramika Rosice</h6>
+                        </div>
+                        <div class="portfolio-link__card__body">
+                            <h6 class="heading-6">Ing. Vlastimila Nepevná</h6>
+                            <a href="https://www.keramika-rosice.cz" target="_blank" rel="noopener" class="portfolio-link__card__link">www.keramika-rosice.cz</a>
+                            <p class="portfolio-link__card__text">"Děkuji AmnioN Teamu za profesionální přístup při přípravě a zpracování mých webových stránek. Veškeré moje požadavky a náměty byly rychle zpracovány k mé naprosté spokojenosti. Spolupráce s vaší firmou byla vstřícná a operativní."</p>
+                        </div>
+                    </div>
+                    <!-- CARD 6 -->
+                    <div class="portfolio-link__card project--tatjana-horka portfolioLinkCard_6" id="portfolioLinkCard_6">
+                        <div class="portfolio-link__card__header">
+                            <img class="portfolio-link__card__header__logo" src="images/pr-logo_tatjana-horka.png" alt="Logo">
+                            <h6 class="heading-6">Taťjana Horká</h6>
+                        </div>
+                        <div class="portfolio-link__card__body">
+                            <h6 class="heading-6">MUDr. Taťjana Horká</h6>
+                            <a href="https://www.tatjanahorka.cz" target="_blank" rel="noopener" class="portfolio-link__card__link">www.tatjanahorka.cz</a>
+                            <p class="portfolio-link__card__text">"Spolupráce s AmnioN týmem nás mile překvapila. Pánové jsou mladí, plní moderních nápadů, které dodají šmrnc každému webu. Komunikují rychle a vyřeší za klienta vše potřebné. Web nám vznikl rychle a bez starostí..."</p>
+                        </div>
+                    </div>
                 </div>
-            </a>
+                <a href="portfolio">
+                    <div class="cta-btn">
+                        <div class="cta-btn--background"></div>    
+                        <span class="cta-btn--text">CELÉ PORTFOLIO</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ABOUT US -->
+        <section class="index__about-us">
+            <h2 class="heading-2">tvoříme startupům weby a webové aplikace na míru.</h2>
+            <div class="index__about-us__photo">
+                <img src="images/we-1600.jpg" alt="AmnioN Team">
+                <a class="index__about-us__link" href="/o-nas">- o nás -</a>
+            </div>
+            <a class="index__about-us__link" href="/sluzby">- naše služby -</a>
         </section>
 
         <!-- CLIP-PATHS -->
@@ -93,6 +183,8 @@
             </div>          
             <div class="cta-text"><a href="sluzby">Projít služby -></a></div>
         </section>
+
+        <?php includeWithVariables('includes/contact.php', array('margintop' => 'true')); ?>
 
     </main>
 

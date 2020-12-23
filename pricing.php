@@ -36,6 +36,9 @@
                 </div>
             </div>
         </section>
+
+        <?php includeWithVariables('includes/contact.php', array('margintop' => 'true')); ?>
+
     </main>
     
 <?php

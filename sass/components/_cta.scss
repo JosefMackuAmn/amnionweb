@@ -98,13 +98,13 @@
     width: 20rem;
     height: 6rem;
     border: 2px solid $color-blue-dark-3;
-    border-radius: 10rem;
-    box-shadow: 0 .5rem .4rem .1rem rgba($color-black, .25);
+    border-radius: .5rem;
+    box-shadow: 0 .2rem .4rem .1rem rgba($color-black, .25);
     cursor: pointer;
-    background-color: $color-white;
+    background-color: $color-blue-dark-3;
     outline: none;
 
-    color: $color-blue-dark-3;
+    color: $color-white;
     font-size: $font-cta-btn;
     text-transform: uppercase;
     letter-spacing: .3rem;
@@ -116,8 +116,8 @@
     transition: all .1s;
 
     &:hover {
-        background-color: $color-blue-dark-3;        
-        color: $color-white;
+        background-color: $color-white;        
+        color: $color-blue-dark-3;
         box-shadow: 0 .3rem .4rem .1rem rgba($color-black, .25);
         transform: translateY(.1rem);
     }

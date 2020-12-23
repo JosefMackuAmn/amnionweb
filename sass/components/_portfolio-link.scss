@@ -1,0 +1,235 @@
+/////
+// Local variables
+/////
+$card-width: 25rem;
+
+.portfolio-link {
+    width: 100%;
+    height: 90rem;
+    background-color: $color-grey-light;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+
+    @media only screen and (max-width: 1400px) {
+        height: 70rem;
+    }
+
+    &__background {
+        width: 100%;
+        height: 100%;
+        margin-bottom: -2px;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        &__image {
+            width: 100%;
+            object-position: top;
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            @media only screen and (max-width: 1400px) {
+                transform: scaleY(1.5);
+            }
+            @media only screen and (max-width: 550px) {
+                transform: scaleY(2);
+            }
+
+            &:first-child {
+                transform: scaleX(-1);
+
+                @media only screen and (max-width: 1400px) {
+                    transform: scaleY(1.5) scaleX(-1);
+                }
+                @media only screen and (max-width: 550px) {
+                    transform: scaleY(2) scaleX(-1);
+                }
+            }
+        }
+    }
+
+    &__content {
+        width: 100%;
+        perspective: 1000px;
+
+        position: relative;
+
+        & > a {
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 27.5rem;
+            left: 50%;
+    
+            @media only screen and (max-height: 900px) {
+                top: 25.5rem;
+            }
+        }
+    }
+    &__cards {
+        width: $card-width;
+        height: $card-width;
+        margin: 5rem auto;
+
+        transform-style: preserve-3d;
+        transform: rotateY(60deg);
+
+        position: relative;
+        top: 0;
+
+        animation: rotatePortfolioLink 35s linear infinite;
+    }
+    &__card {
+        width: $card-width;
+        height: 51rem;
+        background-color: transparent !important;
+        background-image: none !important;
+        backface-visibility: hidden;
+        
+        position: absolute;
+
+        @media only screen and (max-height: 900px) {
+            height: 43rem;
+        }
+
+        &#portfolioLinkCard_1 {
+            transform: translateZ($card-width);
+        }
+        &#portfolioLinkCard_2 {
+            transform: rotateY(60deg) translateZ($card-width);
+        }
+        &#portfolioLinkCard_3 {
+            transform: rotateY(120deg) translateZ($card-width);
+        }
+        &#portfolioLinkCard_4 {
+            transform: rotateY(180deg) translateZ($card-width);
+        }
+        &#portfolioLinkCard_5 {
+            transform: rotateY(240deg) translateZ($card-width);
+        }
+        &#portfolioLinkCard_6 {
+            transform: rotateY(300deg) translateZ($card-width);
+        }
+
+        &__header {
+            width: 100%;
+            height: 20rem;
+            margin-bottom: 1rem;
+            padding: 3rem 3rem 5rem 3rem;
+            clip-path: polygon(0 2.5%, 100% 0, 100% 100%, 0 100%);
+
+            color: $color-white;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            @media only screen and (max-height: 900px) {
+                height: 18rem;
+            }
+
+            &__logo {
+                max-width: 40%;
+            }
+            & .heading-6 {
+                font-weight: 500;
+                text-align: center;
+                font-size: $font-smallest;
+            }
+        }
+        &__body {
+            width: 100%;
+            height: 30rem;
+            padding: 5rem 3rem 3rem 3rem;
+            clip-path: polygon(0 0, 100% 0, 100% 97.5%, 0 100%);
+
+            @media only screen and (max-height: 900px) {
+                height: 25rem;
+            }
+
+            & .heading-6 {
+                font-weight: 400;
+                text-align: center;
+                font-size: $font-smallest;
+                margin-bottom: .2rem;
+            }
+        }
+        &__link {
+            height: 2rem;
+            width: 100%;
+            margin-bottom: 1rem;
+
+            text-align: center;
+            font-size: 1.2rem;
+
+            display: block;
+        }
+        &__text {
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        &.project--fantasy-muzeum {
+            .portfolio-link__card {
+                &__header {
+                    background-color: $color-project-fantasy-muzeum-brown;
+    
+                    & .heading-6 {
+                        color: $color-project-fantasy-muzeum-gold;
+                    }
+                }
+                &__body {
+                    background-color: $color-white;
+    
+                    & .heading-6 {
+                        color: $color-project-fantasy-muzeum-gold;
+                    }
+                }
+            }
+        }
+        &.project--keramika-rosice {
+            .portfolio-link__card {
+                &__header {
+                    background-color: $color-white;
+    
+                    & .heading-6 {
+                        color: $color-project-keramika-rosice-brown;
+                    }
+                }
+                &__body {
+                    background-color: $color-project-keramika-rosice-beige;
+    
+                    & .heading-6 {
+                        color: $color-black;
+                    }
+                }
+            }
+        }
+        &.project--tatjana-horka {
+            .portfolio-link__card {
+                &__header {
+                    background-color: $color-project-tatjana-horka-green;
+    
+                    & .heading-6 {
+                        color: $color-white;
+                    }
+                }
+                &__body {
+                    background-color: $color-project-tatjana-horka-green-light;
+    
+                    & .heading-6 {
+                        color: $color-black;
+                    }
+                }
+            }
+        }
+    }
+}

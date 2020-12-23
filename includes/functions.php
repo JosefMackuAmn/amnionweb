@@ -1,6 +1,5 @@
 <?php
-function includeWithVariables($filePath, $variables = array(), $print = true)
-{
+function includeWithVariables($filePath, $variables = array(), $print = true) {
     $output = NULL;
     if(file_exists($filePath)){
         // Extract the variables to a local namespace

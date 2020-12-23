@@ -124,7 +124,6 @@
         }
     }
     &__review {
-        background-image: linear-gradient(to right, $color-project-fantasy-muzeum-brown-light, transparent);
         padding: 4rem 0 4rem 6rem;
         margin: 6rem 0;
 
@@ -147,7 +146,6 @@
             display: block;
             height: 100%;
             width: .3rem;
-            background-color: $color-project-fantasy-muzeum-gold;
 
             position: absolute;
             top: 0;
@@ -170,7 +168,6 @@
         }
     }
     &__outer-link {
-        background-image: linear-gradient(to right, $color-project-fantasy-muzeum-brown-light, transparent);
         padding: 2rem 0 2rem 4rem;
 
         letter-spacing: .1rem;
@@ -188,7 +185,6 @@
         }
         @media only screen and (max-width: 900px) {
             width: 100%;
-            background-image: linear-gradient(to right, $color-project-fantasy-muzeum-brown-light, $color-project-fantasy-muzeum-brown);
 
             display: flex;
             align-items: center;
@@ -211,7 +207,6 @@
             display: block;
             height: 100%;
             width: .3rem;
-            background-color: $color-project-fantasy-muzeum-gold;
 
             position: absolute;
             top: 0;
@@ -224,6 +219,94 @@
         }
     }
 
+    // Taťjana Horká
+    &--tatjana-horka {
+        background-image: linear-gradient(to bottom, white, $color-project-tatjana-horka-green-light);
+
+        .heading-project {
+            color: $color-black;
+        }
+
+        & .project {
+            &__review {
+                background-color: $color-project-tatjana-horka-green;
+
+                &::before {
+                    background-color: $color-project-tatjana-horka-brown;
+                }
+            }
+            &__img {
+                @media only screen and (max-width: 900px) {
+                    margin-bottom: 4rem;
+                }
+
+                & img {
+                    max-width: 50%;
+                }
+            }
+            &__about {
+                color: $color-black;
+            }
+            &__review {
+                padding: 4rem 6rem;
+                color: $color-white;
+            }
+            &__outer-link {
+                padding: 2rem 4rem;
+                background-color: $color-project-tatjana-horka-green;
+                color: $color-white;
+
+                @media only screen and (max-width: 900px) {
+                    background-color: $color-project-tatjana-horka-green;
+                }
+                
+                &::before {
+                    background-color: $color-project-tatjana-horka-brown;
+                }
+            }
+        }
+        & .cta-text {
+            color: $color-project-tatjana-horka-brown !important;
+        }
+    }
+
+    // Keramika Rosice
+    &--keramika-rosice {
+        background-color: $color-white;
+
+        .heading-project {
+            color: $color-black;
+        }
+
+        & .project {
+            &__review {
+                background-image: linear-gradient(to right, $color-project-keramika-rosice-beige, transparent);
+
+                &::before {
+                    background-color: $color-project-keramika-rosice-brown;
+                }
+            }
+            &__about, &__review {
+                color: $color-black;
+            }
+            &__outer-link {
+                background-image: linear-gradient(to right, $color-project-keramika-rosice-beige, transparent);
+                color: $color-black;
+
+                @media only screen and (max-width: 900px) {
+                    background-image: linear-gradient(to right, $color-project-keramika-rosice-beige, $color-white);
+                }
+                
+                &::before {
+                    background-color: $color-project-keramika-rosice-brown;
+                }
+            }
+        }
+        & .cta-text {
+            color: $color-project-keramika-rosice-brown !important;
+        }
+    }
+
     // Fantasy muzeum & galerie
     &--fantasy-muzeum-a-galerie {
         background-color: $color-project-fantasy-muzeum-brown;
@@ -233,11 +316,27 @@
         }
 
         & .project {
+            &__review {
+                background-image: linear-gradient(to right, $color-project-fantasy-muzeum-brown-light, transparent);
+
+                &::before {
+                    background-color: $color-project-fantasy-muzeum-gold;
+                }
+            }
             &__about, &__review {
                 color: $color-project-fantasy-muzeum-beige;
             }
             &__outer-link {
+                background-image: linear-gradient(to right, $color-project-fantasy-muzeum-brown-light, transparent);
                 color: $color-project-fantasy-muzeum-beige;
+
+                @media only screen and (max-width: 900px) {
+                    background-image: linear-gradient(to right, $color-project-fantasy-muzeum-brown-light, $color-project-fantasy-muzeum-brown);
+                }
+                
+                &::before {
+                    background-color: $color-project-fantasy-muzeum-gold;
+                }
             }
         }
         & .cta-text {

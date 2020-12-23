@@ -49,8 +49,8 @@
                 });
             }
         }
-        ready(() => {
-            setTimeout(() => {
+        ready(function() {
+            setTimeout(function() {
                 window.fbAsyncInit = function() {
                 FB.init({
                     xfbml            : true,

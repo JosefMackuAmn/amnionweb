@@ -141,7 +141,7 @@ const state = {
 
 //SERVICES-FEATURES SECTION/////////////////////////////////////////////////////////////////////////////////////úú
 
-const removeSelectedClass = buttons => {
+/* const removeSelectedClass = buttons => {
   for (const btn of buttons) {
     btn.classList.remove("services-features__button--selected");
   }
@@ -164,7 +164,7 @@ const btnClickHandler = (hook, buttons, event) => {
   //Adding selected class to the correct button
   removeSelectedClass(buttons);
   event.target.classList.add("services-features__button--selected");
-};
+}; */
 
 //DEV-PROCESS SECTION////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -461,13 +461,13 @@ ready(() => {
 
   // Services-features
 
-  const featuresHook = document.querySelector(".services-features");
+  /* const featuresHook = document.querySelector(".services-features");
   const featuresButtons = featuresHook.querySelectorAll(
     ".services-features__button"
   );
   for (const btn of featuresButtons) {
     btn.addEventListener("click", btnClickHandler.bind(this, featuresHook, featuresButtons));
-  }
+  } */
 
   // Dev-Process
 

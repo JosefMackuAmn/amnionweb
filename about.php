@@ -14,16 +14,22 @@
             <section class="about__people">
                 <container class="about__people__container">
                     <div class="person-card">
-                        <div class="person-card__photo" style="background-image: url('./images/josef-640.jpg'); background-size: cover; background-position-y: 47%;"></div>
-                        <h3 class="person-card__name">Josef Macků</h3>
-                        <p class="person-card__specification">Programátor,</p>
-                        <p class="person-card__specification">projektový manager</p>
+                        <div class="person-card__photo" style="background-image: url('./images/patrik-640.jpg'); background-size: 160%; background-position: 33% 33%;"></div>
+                        <h3 class="person-card__name">Patrik Daniel</h3>
+                        <p class="person-card__specification">Kodér,</p>
+                        <p class="person-card__specification">designer</p>
                     </div>
                     <div class="person-card">
                         <div class="person-card__photo" style="background-image: url('./images/jirka-640.jpg'); background-size: cover; background-position-y: 15%;"></div>
                         <h3 class="person-card__name">Jiří Fligl</h3>
                         <p class="person-card__specification">Designer,</p>
-                        <p class="person-card__specification">marketingový specialista</p>
+                        <p class="person-card__specification">marketing, SEO</p>
+                    </div>
+                    <div class="person-card">
+                        <div class="person-card__photo" style="background-image: url('./images/josef-640.jpg'); background-size: cover; background-position-y: 47%;"></div>
+                        <h3 class="person-card__name">Josef Macků</h3>
+                        <p class="person-card__specification">Programátor,</p>
+                        <p class="person-card__specification">manager</p>
                     </div>
                     <div class="person-card">
                         <div class="person-card__photo" style="background-image: url('./images/ondrej-640.jpg'); background-size: cover;"></div>
@@ -32,9 +38,9 @@
                         <p class="person-card__specification">kodér</p>
                     </div>
                     <div class="person-card">
-                        <div class="person-card__photo" style="background-image: url('./images/patrik-640.jpg'); background-size: 160%; background-position: 33% 33%;"></div>
-                        <h3 class="person-card__name">Patrik Daniel</h3>
-                        <p class="person-card__specification">Kodér,</p>
+                        <div class="person-card__photo" style="background-image: url('./images/kryštof.jpg'); background-size: 160%; background-position: 68% 100%;"></div>
+                        <h3 class="person-card__name">Kryštof Zabadal</h3>
+                        <p class="person-card__specification">Grafik,</p>
                         <p class="person-card__specification">designer</p>
                     </div>
                 </container>
@@ -68,22 +74,55 @@
 
             <!-- TECHNOLOGIES -->
             <section class="about__tech">
-                <h2 class="heading-2">TECHNOLOGIE</h2>
+            
                 <div class="about__tech__content">
-                    <div class="about__tech__technology">
-                        <img src="./images/node.png" alt="Node.js icon" class="about__tech__image">
-                        <p class="paragraph-big paragraph-big-dark">Pro všechny větší projekty využíváme <strong>Node.js</strong>. Jedná se o prominentí backendovou technologii moderního web-developingu, poskytující volnost a flexibilitu při tvorbě server-side části aplikace.</p>
+                    <div class="about__tech__content__slot">
+                        <img src="./images/figma.png" alt="figma" class="about__tech__content__slot__icon">
                     </div>
-                    <div class="about__tech__technology">
-                        <img src="./images/react.png" alt="React icon" class="about__tech__image">
-                        <p class="paragraph-big paragraph-big-dark">Součástí <strong>MERN stacku</strong>, tedy kombinace technologií MongoDB, Express, React a Node.js, je již zmíněný <strong>React</strong> - frontendová knihovna ulehčující tvorbu komponentů a interaktivního UI. S jeho pomocí tvoříme SPAs (Single Page Applications) poskytující nejlepší monžou user experience.</p>
+                    <div class="about__tech__content__slot">
+                        <img src="./images/node.png" alt="nodejs" class="about__tech__content__slot__icon">
                     </div>
-                    <div class="about__tech__technology">
-                        <img src="./images/php.png" alt="PHP icon" class="about__tech__image">
-                        <p class="paragraph-big paragraph-big-dark">Nejmenší prezentační weby si bohatě vystačí se zažitou <strong>PHP</strong> technologií, na níž funguje asi 80% veškerých webových stránek. Podobně jako Node.js se jedná o na serveru běžící kód, s nímž lze jednoduše zabezpečit citlivá data v <strong>MySQL</strong> databázi a “servírovat” potřebné údaje návštěvníkům webu.</p>
+                    <div class="about__tech__content__slot">
+                        <img src="./images/react.png" alt="react" class="about__tech__content__slot__icon">
+                    </div>
+                    <div class="about__tech__content__slot">
+                        <img src="./images/git-logo.svg.png" alt="github" class="about__tech__content__slot__icon">
+                    </div>
+                    <div class="about__tech__content__slot">
+                        <img src="./images/socket-io.png" alt="socket.io" class="about__tech__content__slot__icon">
+                    </div>
+                    <div class="about__tech__content__slot">
+                        <img src="./images/MongoDB-Logo.png" alt="mongoDB" class="about__tech__content__slot__icon">
+                    </div>
+                    <div class="about__tech__content__slot">
+                        <img src="./images/gsap.svg" alt="GreenSock" class="about__tech__content__slot__icon">
+                    </div>
+                    <div class="about__tech__content__slot">
+                        <img src="./images/mysql-7.svg" alt="MySQL" class="about__tech__content__slot__icon">
+                    </div>
+                    <div class="about__tech__content__slot">
+                        <img src="./images/sass.svg" alt="Sass" class="about__tech__content__slot__icon">
+                    </div>
+                    <div class="about__tech__content__slot">
+                        <img src="./images/jquery.png" alt="jQuery" class="about__tech__content__slot__icon">
+                    </div>
+                    <div class="about__tech__content__slot">
+                        <img src="./images/php.png" alt="php" class="about__tech__content__slot__icon">
+                    </div>
+                    <div class="about__tech__content__slot">
+                        <img src="./images/ga-logo.jpg" alt="Google Analytics" class="about__tech__content__slot__icon">
+                    </div>
+                    <div class="about__tech__content__slot">
+                        <img src="./images/tensorflow.png" alt="TensorFlow" class="about__tech__content__slot__icon">
+                    </div>
+                    <div class="about__tech__content__slot">
+                        <img src="./images/expo.png" alt="Expo" class="about__tech__content__slot__icon">
                     </div>
                 </div>
+
             </section>
+
+            <?php includeWithVariables('includes/contact.php', array('margintop' => 'true')); ?>
 
         </main>
 

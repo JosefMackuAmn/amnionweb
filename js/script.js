@@ -1,3 +1,17 @@
+/////
+// POLYFILLS
+/////
+if (typeof NodeList !== "undefined" && NodeList.prototype && !NodeList.prototype.forEach) {
+    // Yes, there's really no need for `Object.defineProperty` here
+    NodeList.prototype.forEach = Array.prototype.forEach;
+}
+if (!String.prototype.includes) {
+    String.prototype.includes = function(search, start) {
+      if (start === undefined) { start = 0; }
+      return this.indexOf(search, start) !== -1;
+    };
+}
+
 // Define function for executing callback when DOM content loaded
 function ready(callbackFunc) {
     if (document.readyState !== 'loading') {
@@ -19,7 +33,7 @@ function ready(callbackFunc) {
 // Define function for checking if el has parent with selector
 function hasParentWithMatchingSelector (target, selector) {
     return [...document.querySelectorAll(selector)].some(el => {
-        return el !== target && el.contains(target)
+        return el !== target && el[0].contains(target)
     });
 }
 
@@ -108,7 +122,7 @@ const showElement = (elementsFromLeft, elementsFromRight, elementsPricing) => {
     // Loop through elements with certain animation classes
     elementsFromLeft.forEach(el => {
         if (deviceWidth > 850 || !el.classList.contains('feature-box')) {
-            elTopOffset = el.getBoundingClientRect().top + window.scrollY;
+            elTopOffset = el.getBoundingClientRect().top + document.documentElement.scrollTop;
             // Add animation if the element can be seen
             if (elTopOffset < (deviceHeight + scrollTop - 100)) {
                 if (el.classList.contains('delay')) {
@@ -132,7 +146,7 @@ const showElement = (elementsFromLeft, elementsFromRight, elementsPricing) => {
     });
     elementsFromRight.forEach(el => {        
         if (deviceWidth > 850 || !el.classList.contains('feature-box')) {
-            elTopOffset = el.getBoundingClientRect().top + window.scrollY;
+            elTopOffset = el.getBoundingClientRect().top + document.documentElement.scrollTop;
             // Add animation if the element can be seen
             if (elTopOffset < (deviceHeight + scrollTop - 100)) {
                 el.style.animation = 'fromRight 1s forwards';
@@ -143,7 +157,7 @@ const showElement = (elementsFromLeft, elementsFromRight, elementsPricing) => {
         }
     })
     elementsPricing.forEach(el => {
-        elTopOffset = el.getBoundingClientRect().top + window.scrollY;
+        elTopOffset = el.getBoundingClientRect().top + document.documentElement.scrollTop;
         const elRight = el.querySelectorAll('.pricingFromRight');
         const elLeft = el.querySelectorAll('.pricingFromLeft');
         // Add animation if the element can be seen
