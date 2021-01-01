@@ -297,38 +297,44 @@
         <container class="all-we-do__content">
             <div class="all-we-do__card">
                 <div class="all-we-do__card__content">
-                    <h4 class="heading-4">Loga</h4>
-                    <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
-                </div>
-            </div>
-            <div class="all-we-do__card">
-                <div class="all-we-do__card__content">
-                    <h4 class="heading-4">Marketing</h4>
-                    <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
-                </div>
-            </div>
-            <div class="all-we-do__card">
-                <div class="all-we-do__card__content">
                     <h4 class="heading-4">Údržba</h4>
-                    <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
+                    <p class="all-we-do__card__text">V procesu tvorby webu dbáme na to, aby vaši stránku bylo možné jednoduše najít.</p>
+                </div>
+                <div class="egyptian-container">
+                    <img src="images/egyptian_maintenance.svg" alt="" class="egyptian"></img>
+                </div>
+            </div>  
+            <div class="all-we-do__card">
+                <div class="all-we-do__card__content">
+                    <h4 class="heading-4">Reklama</h4>
+                    <p class="all-we-do__card__text">V procesu tvorby webu dbáme na to, aby vaši stránku bylo možné jednoduše najít</p>
+                </div>
+                <div class="egyptian-container">
+                    <img src="images/egyptian_marketing.svg" alt="" class="egyptian"></img>
                 </div>
             </div>
             <div class="all-we-do__card">
                 <div class="all-we-do__card__content">
                     <h4 class="heading-4">SEO</h4>
-                    <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
+                    <p class="all-we-do__card__text">V procesu tvorby webu dbáme na to, aby vaši stránku bylo možné jednoduše najít</p>
                 </div>
             </div>
             <div class="all-we-do__card">
                 <div class="all-we-do__card__content">
                     <h4 class="heading-4">Analytics</h4>
-                    <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
+                    <p class="all-we-do__card__text">V procesu tvorby webu dbáme na to, aby vaši stránku bylo možné jednoduše najít</p>
+                    <div class="egyptian-container">
+                        <img src="images/egyptian_analytics.svg" alt="" class="egyptian"></img>
+                    </div>
                 </div>
             </div>
             <div class="all-we-do__card">
                 <div class="all-we-do__card__content">
                     <h4 class="heading-4">A hlavně promyšlený design</h4>
-                    <p class="all-we-do__card__text">Děláme logíska pačto máme mocq šicquovného graficka. Hip hip hurá!! Hip hurá hippies titties. Jedeme bomby z katakomby, loga a reklamy, že jsme cool řekla mi, hoe moje dope, lezem na sloup.</p>
+                    <p class="all-we-do__card__text">V procesu tvorby webu dbáme na to, aby vaši stránku bylo možné jednoduše najít</p>
+                </div>
+                <div class="egyptian-container">
+                        <img src="images/egyptian_team.svg" alt="" class="egyptian"></img>
                 </div>
             </div>
         </container>

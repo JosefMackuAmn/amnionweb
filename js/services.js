@@ -76,6 +76,8 @@ const resizeWindowAppTypesHandler = () => {
 
 // Handling logic for show-more and show-less button for mobile-phone users on App-Types section
 const showLessCardsBtnHandler = (event) => {
+
+  console.log('here');
   // Scroll to where the user has been before he clicked the 'show more' button
   document.documentElement.scrollTo(0, -state.lastScrollPos);
 
